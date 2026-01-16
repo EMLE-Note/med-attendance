@@ -495,7 +495,7 @@ html[dir="ltr"] .btn-text {
     color: var(--text-primary);
     width: 48px;
     height: 48px;
-    margin-bottom: 15px;
+    margin: 0 auto 15px;
 }
 
 .step-item h4 {
@@ -958,10 +958,15 @@ html[dir="ltr"] .modal-close {
     .step-item {
         padding: 20px;
         max-width: 100%;
+        width: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    .step-icon {
+        margin: 0 auto 15px;
     }
 
     .step-number {
