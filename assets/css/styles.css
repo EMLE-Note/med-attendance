@@ -151,23 +151,32 @@ button {
 
 .brand-names {
     display: flex;
-    flex-direction: column;
-    line-height: 1.2;
+    align-items: center;
+    line-height: 1;
 }
 
 .brand-ar {
     font-size: 1.2rem;
-    color: var(--text-primary);
-    font-weight: 800;
+    color: var(--brand-gold);
+    font-weight: 700;
 }
 
 .brand-en {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: var(--brand-gold);
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-family: 'Inter', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
+}
+
+/* Language based visibility */
+html[dir="rtl"] .brand-en {
+    display: none;
+}
+
+html[dir="ltr"] .brand-ar {
+    display: none;
 }
 
 /* Nav & Buttons */
