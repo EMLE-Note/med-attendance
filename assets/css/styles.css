@@ -938,11 +938,11 @@ html[dir="ltr"] .modal-close {
     }
 
     .step-arrow {
-        transform: rotate(90deg);
+        transform: rotate(-90deg);
     }
 
     html[dir="ltr"] .step-arrow {
-        transform: rotate(-90deg);
+        transform: rotate(90deg);
     }
 
     .step-item {
