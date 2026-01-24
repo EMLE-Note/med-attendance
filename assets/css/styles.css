@@ -1,25 +1,25 @@
 :root {
     /* Brand Colors (Constant) */
-    --brand-navy: #0a192f;
-    --brand-gold: #c5a059;
-    --brand-gold-hover: #b08d48;
+    --brand-navy: #22446d;
+    --brand-gold: #22aaa7;
+    --brand-gold-hover: #1e9592;
 
     /* Semantic Colors (Theme Dependent - Light Default) */
     --bg-main: #f8f9fa;
     --bg-card: #ffffff;
     --bg-header: #ffffff;
 
-    --text-primary: #0a192f;
+    --text-primary: #22446d;
     --text-secondary: #64748b;
 
     --border-color: #e2e8f0;
-    --shadow-color: rgba(10, 25, 47, 0.1);
+    --shadow-color: rgba(34, 68, 109, 0.1);
 
     /* UI Elements */
-    --btn-primary-bg: #0a192f;
+    --btn-primary-bg: #22446d;
     --btn-primary-text: #ffffff;
     --btn-secondary-bg: #ffffff;
-    --btn-secondary-text: #0a192f;
+    --btn-secondary-text: #22446d;
     --btn-secondary-border: #e2e8f0;
 
     --btn-ghost-color: #64748b;
@@ -32,12 +32,12 @@
     /* Institutions Section Specific (Light) */
     --bg-inst: #f1f5f9;
     /* Neutral Slate Gray (Very Light) */
-    --text-inst-title: #0a192f;
+    --text-inst-title: #22446d;
     --text-inst-desc: #64748b;
     --bg-inst-card: #ffffff;
     --border-inst-card: #e2e8f0;
-    --text-inst-card: #0a192f;
-    --bg-inst-icon: rgba(197, 160, 89, 0.1);
+    --text-inst-card: #22446d;
+    --bg-inst-icon: rgba(34, 170, 167, 0.1);
     --pattern-opacity: 0.05;
 }
 
@@ -45,7 +45,7 @@
     /* Semantic Colors (Dark Theme) */
     --bg-main: #020c1b;
     --bg-card: #112240;
-    --bg-header: #0a192f;
+    --bg-header: #0b1727;
 
     --text-primary: #e6f1ff;
     --text-secondary: #8892b0;
@@ -54,12 +54,12 @@
     --shadow-color: rgba(0, 0, 0, 0.4);
 
     /* UI Elements */
-    --btn-primary-bg: #c5a059;
-    --btn-primary-text: #0a192f;
+    --btn-primary-bg: #22aaa7;
+    --btn-primary-text: #22446d;
 
     --btn-secondary-bg: #112240;
-    --btn-secondary-text: #c5a059;
-    --btn-secondary-border: #c5a059;
+    --btn-secondary-text: #22aaa7;
+    --btn-secondary-border: #22aaa7;
 
     --btn-ghost-color: #a8b2d1;
     --btn-ghost-border: #233554;
@@ -70,9 +70,9 @@
     --text-inst-title: #ffffff;
     --text-inst-desc: #a8b2d1;
     --bg-inst-card: rgba(255, 255, 255, 0.03);
-    --border-inst-card: rgba(197, 160, 89, 0.2);
+    --border-inst-card: rgba(34, 170, 167, 0.2);
     --text-inst-card: #e6f1ff;
-    --bg-inst-icon: rgba(197, 160, 89, 0.15);
+    --bg-inst-icon: rgba(34, 170, 167, 0.15);
     --pattern-opacity: 0.03;
 }
 
@@ -233,7 +233,7 @@ html[dir="ltr"] .brand-ar {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/logo_kader.png');
+    background-image: url('../images/Kader.svg');
     /* Ensure this path is correct relative to CSS */
     background-size: 30px;
     /* Small repeatable size */
@@ -537,7 +537,7 @@ html[dir="rtl"] .step-arrow svg {
     left: -50%;
     width: 200%;
     height: 200%;
-    background-image: url('../images/logo_kader.png');
+    background-image: url('../images/Kader.svg');
     background-size: 60px;
     background-repeat: repeat;
     opacity: var(--pattern-opacity);
