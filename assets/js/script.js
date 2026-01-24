@@ -31,7 +31,9 @@ const translations = {
         inst_feat3: "إدارة صلاحيات المحاضرين",
         inst_cta: "تواصل معنا",
 
-        footer_copy: "كادر 2024 جميع الحقوق محفوظة",
+        footer_copy: "Med Attendance 2026 جميع الحقوق محفوظة",
+        coming_soon_ios: "قريباً في App Store",
+        coming_soon_android: "قريباً في Google Play",
         support_btn: "الدعم الفني",
 
         // Modal
@@ -78,7 +80,9 @@ const translations = {
         inst_feat3: "Lecturer permissions management",
         inst_cta: "Contact Us",
 
-        footer_copy: "Kader System 2024 All Rights Reserved",
+        footer_copy: "Med Attendance 2026 All Rights Reserved",
+        coming_soon_ios: "Coming Soon on App Store",
+        coming_soon_android: "Coming Soon on Google Play",
         support_btn: "Technical Support",
 
         // Modal

@@ -1198,3 +1198,67 @@ html[dir="ltr"] .modal-close {
         font-size: 0.9rem;
     }
 }
+
+/* Coming Soon Store Buttons */
+.btn-store-coming-soon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 24px;
+    background: var(--bg-card);
+    border: 2px solid var(--border-color);
+    border-radius: 16px;
+    min-width: 200px;
+    cursor: not-allowed;
+    opacity: 0.85;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.btn-store-coming-soon:hover {
+    opacity: 1;
+    border-color: var(--brand-gold);
+}
+
+.store-badge {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.coming-soon-text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--brand-gold);
+    text-align: center;
+}
+
+/* Responsive adjustments for store buttons */
+@media (max-width: 768px) {
+    .btn-store-coming-soon {
+        min-width: 160px;
+        padding: 14px 18px;
+    }
+
+    .store-badge {
+        height: 40px;
+    }
+
+    .coming-soon-text {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .action-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-store-coming-soon {
+        width: 100%;
+        max-width: 280px;
+    }
+}
