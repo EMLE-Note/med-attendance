@@ -432,6 +432,28 @@ html[dir="ltr"] .btn-text {
     color: var(--text-primary);
 }
 
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.footer-divider {
+    color: var(--border-color);
+    font-weight: 300;
+}
+
+.footer-legal-link {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-legal-link:hover {
+    color: var(--brand-gold);
+}
+
 .footer-logo {
     display: flex;
     justify-content: center;
