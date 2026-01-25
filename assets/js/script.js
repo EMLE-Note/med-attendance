@@ -35,6 +35,8 @@ const translations = {
         coming_soon_ios: "قريباً في App Store",
         coming_soon_android: "قريباً في Google Play",
         support_btn: "الدعم الفني",
+        privacy_policy: "سياسة الخصوصية",
+        terms_conditions: "الشروط والأحكام",
 
         // Modal
         modal_title: "طريقة التحميل على iPhone",
@@ -84,6 +86,8 @@ const translations = {
         coming_soon_ios: "Coming Soon on App Store",
         coming_soon_android: "Coming Soon on Google Play",
         support_btn: "Technical Support",
+        privacy_policy: "Privacy Policy",
+        terms_conditions: "Terms and Conditions",
 
         // Modal
         modal_title: "Installation on iPhone",
@@ -198,6 +202,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 element.innerHTML = translations[lang][key];
             }
         });
+
+        // Toggle Content Blocks (for pages with large bilingual content)
+        const contentEn = document.getElementById('content-en');
+        const contentAr = document.getElementById('content-ar');
+
+        if (contentEn && contentAr) {
+            if (lang === 'ar') {
+                contentEn.style.display = 'none';
+                contentAr.style.display = 'block';
+            } else {
+                contentEn.style.display = 'block';
+                contentAr.style.display = 'none';
+            }
+        }
 
         // Update Button Text
         currentLangText.textContent = translations[lang].lang_btn_text;
