@@ -52,16 +52,16 @@ const translations = {
 
         // Navigation & General
         nav_home: "الرئيسية",
-        nav_kader: "Kader Attendance",
+        nav_kader: "Attendance Supervisor",
         terms_title: "الشروط والأحكام",
         privacy_title: "سياسة الخصوصية",
         page_under_construction: "هذه الصفحة قيد الإنشاء حالياً",
         back_home: "العودة للرئيسية",
-        back_kader: "العودة لـ Kader Attendance",
+        back_kader: "العودة لـ Attendance Supervisor",
 
         // Kader Attendance Page
         kader_badge: "نظام رسمي معتمد",
-        kader_hero_title: "Kader Attendance",
+        kader_hero_title: "Attendance Supervisor",
         kader_hero_desc: "نظام إلكتروني متكامل لإدارة الحضور والغياب مخصص لقطاع التعليم الطبي. يضمن لك تسجيل الحضور بطريقة آمنة وسريعة باستخدام الهواتف المحمولة فقط.",
         kader_serving_title: "يخدم هذا النظام",
         kader_target_1: "كليات الطب والعلوم الصحية",
@@ -140,16 +140,16 @@ const translations = {
 
         // Navigation & General
         nav_home: "Home",
-        nav_kader: "Kader Attendance",
+        nav_kader: "Attendance Supervisor",
         terms_title: "Terms & Conditions",
         privacy_title: "Privacy Policy",
         page_under_construction: "This page is currently under construction",
         back_home: "Back to Home",
-        back_kader: "Back to Kader Attendance",
+        back_kader: "Back to Attendance Supervisor",
 
         // Kader Attendance Page
         kader_badge: "Official Certified System",
-        kader_hero_title: "Kader Attendance",
+        kader_hero_title: "Attendance Supervisor",
         kader_hero_desc: "An integrated electronic system for attendance management dedicated to the medical education sector. Ensures secure and fast attendance recording using mobile phones only.",
         kader_serving_title: "Serving Sectors",
         kader_target_1: "Medical & Health Sciences Faculties",
