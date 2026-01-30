@@ -233,7 +233,7 @@ html[dir="ltr"] .brand-ar {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/Kader.svg');
+    background-image: url('../images/supervisor_logo.svg');
     /* Ensure this path is correct relative to CSS */
     background-size: 30px;
     /* Small repeatable size */
@@ -559,7 +559,7 @@ html[dir="rtl"] .step-arrow svg {
     left: -50%;
     width: 200%;
     height: 200%;
-    background-image: url('../images/Kader.svg');
+    background-image: url('../images/supervisor_logo.svg');
     background-size: 60px;
     background-repeat: repeat;
     opacity: var(--pattern-opacity);
