@@ -48,7 +48,44 @@ const translations = {
         btn_download_app: "تحميل التطبيق (طلاب)",
         btn_next: "التالي",
         lang_btn_text: "English",
-        download_started: "تم بدء التنزيل! تفقد مجلد التنزيلات 📥"
+        download_started: "تم بدء التنزيل! تفقد مجلد التنزيلات 📥",
+
+        // Navigation & General
+        nav_home: "الرئيسية",
+        nav_kader: "Kader Attendance",
+        terms_title: "الشروط والأحكام",
+        privacy_title: "سياسة الخصوصية",
+        page_under_construction: "هذه الصفحة قيد الإنشاء حالياً",
+        back_home: "العودة للرئيسية",
+        back_kader: "العودة لـ Kader Attendance",
+
+        // Kader Attendance Page
+        kader_badge: "نظام رسمي معتمد",
+        kader_hero_title: "Kader Attendance",
+        kader_hero_desc: "نظام إلكتروني متكامل لإدارة الحضور والغياب مخصص لقطاع التعليم الطبي. يضمن لك تسجيل الحضور بطريقة آمنة وسريعة باستخدام الهواتف المحمولة فقط.",
+        kader_serving_title: "يخدم هذا النظام",
+        kader_target_1: "كليات الطب والعلوم الصحية",
+        kader_target_2: "مراكز التدريب الطبي",
+        kader_target_3: "المؤتمرات وورش العمل",
+        kader_target_4: "مؤسسات التعليم الطبي المستمر",
+        mech_title: "آلية العمل",
+        mech_subtitle: "تواصل مباشر بين موبايل المتعلم وموبايل المحاضر، ولا يشترط تواجد الطرفين على الشبكة.",
+        mech_nfc_title: "تقنية NFC",
+        mech_nfc_desc: "ملامسة الموبايلين لبعضهما لتسجيل الحضور فوراً بشكل آمن.",
+        mech_bt_title: "تقنية Bluetooth",
+        mech_bt_desc: "يظهر المتعلمون القريبون لدى المحاضر ليختار منهم ويسجل حضورهم.",
+        mech_manual_title: "الإضافة اليدوية",
+        mech_manual_desc: "يمكن للمحاضر إضافة المتعلم يدوياً في حال عدم توفر الطرق الأخرى.",
+        management_badge: "الإدارة والتحكم",
+        lecturer_dash_title: "نظام الحسابات والصلاحيات",
+        lecturer_title: "حساب المحاضر",
+        lecturer_feat1: "تفعيل بعد موافقة الإدارة",
+        lecturer_feat2: "رؤية السيشنات والفرق",
+        lecturer_feat3: "تسجيل الحضور (NFC, BT, يدوي)",
+        dash_title: "لوحة تحكم الإدارة",
+        dash_feat1: "متابعة لحظية لنسب الحضور",
+        dash_feat2: "تقارير تفصيلية شاملة",
+        dash_feat3: "إدارة الصلاحيات والاعتماد"
     },
     en: {
         hero_badge: "Official Certified System",
@@ -99,7 +136,44 @@ const translations = {
         btn_download_app: "Download App (Student)",
         btn_next: "Next",
         lang_btn_text: "العربية",
-        download_started: "Download started! Check your Downloads folder 📥"
+        download_started: "Download started! Check your Downloads folder 📥",
+
+        // Navigation & General
+        nav_home: "Home",
+        nav_kader: "Kader Attendance",
+        terms_title: "Terms & Conditions",
+        privacy_title: "Privacy Policy",
+        page_under_construction: "This page is currently under construction",
+        back_home: "Back to Home",
+        back_kader: "Back to Kader Attendance",
+
+        // Kader Attendance Page
+        kader_badge: "Official Certified System",
+        kader_hero_title: "Kader Attendance",
+        kader_hero_desc: "An integrated electronic system for attendance management dedicated to the medical education sector. Ensures secure and fast attendance recording using mobile phones only.",
+        kader_serving_title: "Serving Sectors",
+        kader_target_1: "Medical & Health Sciences Faculties",
+        kader_target_2: "Medical Training Centers",
+        kader_target_3: "Medical Conferences & Workshops",
+        kader_target_4: "CME Institutions",
+        mech_title: "How It Works",
+        mech_subtitle: "Direct communication between student and lecturer mobiles, no internet required for students.",
+        mech_nfc_title: "NFC Technology",
+        mech_nfc_desc: "Touch devices together for instant secure recording.",
+        mech_bt_title: "Bluetooth Technology",
+        mech_bt_desc: "Nearby students appear for the lecturer to select and record.",
+        mech_manual_title: "Manual Entry",
+        mech_manual_desc: "Lecturer can manually add students if needed.",
+        management_badge: "Management & Control",
+        lecturer_dash_title: "Accounts & Permissions",
+        lecturer_title: "Lecturer Account",
+        lecturer_feat1: "Activation upon admin approval",
+        lecturer_feat2: "View assigned courses sessions",
+        lecturer_feat3: "Record attendance (NFC, BT, Manual)",
+        dash_title: "Admin Dashboard",
+        dash_feat1: "Real-time attendance monitoring",
+        dash_feat2: "Comprehensive detailed reports",
+        dash_feat3: "Manage permissions and approvals"
     }
 };
 

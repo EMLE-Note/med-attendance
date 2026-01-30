@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kader Attendance</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;600;700&family=Tajawal:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo-container">
+                <a href="../index.html" style="display: flex; align-items: center; gap: 15px;">
+                    <img src="../assets/images/Kader.svg" alt="Med Attendance Logo" class="logo-img"
+                        onerror="this.style.display='none'">
+                    <div class="brand-names">
+                        <h1 class="brand-ar">Med Attendance</h1>
+                        <span class="brand-en">Med Attendance</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle Menu">
+                <i data-lucide="menu"></i>
+            </button>
+
+            <nav class="main-nav" id="main-nav">
+                <a href="../index.html" class="nav-link" data-i18n="nav_home">الرئيسية</a>
+
+                <!-- Theme Toggle -->
+                <button id="theme-toggle" class="btn-ghost" aria-label="Toggle Theme">
+                    <i data-lucide="moon"></i>
+                </button>
+
+                <!-- Language Toggle -->
+                <button id="lang-toggle" class="btn-ghost" aria-label="Switch Language">
+                    <i data-lucide="languages"></i>
+                    <span id="current-lang-text">English</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="badge" data-i18n="kader_badge">نظام الحضور الذكي</span>
+                    <h2 class="hero-title" data-i18n="kader_hero_title">Kader Attendance</h2>
+                    <p class="hero-subtitle" data-i18n="kader_hero_desc">
+                        نظام إلكتروني متكامل لإدارة الحضور والغياب مخصص لقطاع التعليم الطبي.
+                        يضمن لك تسجيل الحضور بطريقة آمنة وسريعة باستخدام الهواتف المحمولة فقط.
+                    </p>
+
+                    <div class="action-buttons">
+                        <!-- iOS Button - Coming Soon -->
+                        <div class="btn-store-coming-soon">
+                            <a href="https://apps.apple.com/us/app/kader-attendance/id123456789" target="_blank"
+                                class="store-link">
+                                <img src="../assets/images/app-store.png" alt="App Store" class="store-badge">
+                            </a>
+                        </div>
+                        <!-- Android Button -->
+                        <div class="btn-store-coming-soon">
+                            <a href="#" class="store-link">
+                                <img src="../assets/images/Google-Play-Logo.png" alt="Google Play" class="store-badge">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Target Audience (Serving Sector) -->
+        <section class="section-padding" style="padding: 60px 0; background: var(--bg-card);">
+            <div class="container">
+                <h2 class="section-title" data-i18n="kader_serving_title">يخدم هذا النظام</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i data-lucide="graduation-cap" class="feature-icon"></i>
+                        <h3 data-i18n="kader_target_1">كليات الطب والعلوم الصحية</h3>
+                    </div>
+                    <div class="feature-card">
+                        <i data-lucide="activity" class="feature-icon"></i>
+                        <h3 data-i18n="kader_target_2">مراكز التدريب الطبي</h3>
+                    </div>
+                    <div class="feature-card">
+                        <i data-lucide="users" class="feature-icon"></i>
+                        <h3 data-i18n="kader_target_3">المؤتمرات وورش العمل</h3>
+                    </div>
+                    <div class="feature-card">
+                        <i data-lucide="book-open" class="feature-icon"></i>
+                        <h3 data-i18n="kader_target_4">مؤسسات التعليم الطبي المستمر</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works (Mechanics) -->
+        <section class="how-it-works-section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="mech_title">آلية العمل</h2>
+                <p class="text-center" style="max-width: 700px; margin: 0 auto 40px; color: var(--text-secondary);"
+                    data-i18n="mech_subtitle">
+                    تواصل مباشر بين موبايل المتعلم وموبايل المحاضر، ولا يشترط تواجد الطرفين على الشبكة.
+                </p>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="step-number">1</div>
+                        <i data-lucide="nfc" class="feature-icon"></i>
+                        <h3 data-i18n="mech_nfc_title">تقنية NFC</h3>
+                        <p data-i18n="mech_nfc_desc">ملامسة الموبايلين لبعضهما لتسجيل الحضور فوراً بشكل آمن.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="step-number">2</div>
+                        <i data-lucide="bluetooth" class="feature-icon"></i>
+                        <h3 data-i18n="mech_bt_title">تقنية Bluetooth</h3>
+                        <p data-i18n="mech_bt_desc">يظهر المتعلمون القريبون لدى المحاضر ليختار منهم ويسجل حضورهم.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="step-number">3</div>
+                        <i data-lucide="user-plus" class="feature-icon"></i>
+                        <h3 data-i18n="mech_manual_title">الإضافة اليدوية</h3>
+                        <p data-i18n="mech_manual_desc">يمكن للمحاضر إضافة المتعلم يدوياً في حال عدم توفر الطرق الأخرى.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lecturer & Dashboard -->
+        <section class="institutions-section" style="padding: 80px 0;">
+            <div class="container">
+                <div class="institutions-header">
+                    <span class="badge" data-i18n="management_badge">الإدارة والتحكم</span>
+                    <h2 data-i18n="lecturer_dash_title">نظام الحسابات والصلاحيات</h2>
+                </div>
+
+                <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+                    <!-- Lecturer -->
+                    <div class="feature-card" style="border: 1px solid var(--brand-gold);">
+                        <i data-lucide="user-check" class="feature-icon"></i>
+                        <h3 data-i18n="lecturer_title">حساب المحاضر</h3>
+                        <ul style="list-style: none; padding: 0; margin-top: 20px; text-align: start;">
+                            <li style="margin-bottom: 10px; display: flex; gap: 10px; align-items: center;">
+                                <i data-lucide="check-circle" style="width: 16px; color: var(--brand-gold);"></i>
+                                <span data-i18n="lecturer_feat1">تفعيل بعد موافقة الإدارة</span>
+                            </li>
+                            <li style="margin-bottom: 10px; display: flex; gap: 10px; align-items: center;">
+                                <i data-lucide="check-circle" style="width: 16px; color: var(--brand-gold);"></i>
+                                <span data-i18n="lecturer_feat2">رؤية السيشنات للكورسات المسندة</span>
+                            </li>
+                            <li style="margin-bottom: 10px; display: flex; gap: 10px; align-items: center;">
+                                <i data-lucide="check-circle" style="width: 16px; color: var(--brand-gold);"></i>
+                                <span data-i18n="lecturer_feat3">تسجيل الحضور بكل الطرق (NFC, BT, يدوي)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Dashboard -->
+                    <div class="feature-card" style="border: 1px solid var(--brand-navy);">
+                        <i data-lucide="layout-dashboard" class="feature-icon"></i>
+                        <h3 data-i18n="dash_title">لوحة تحكم الإدارة</h3>
+                        <ul style="list-style: none; padding: 0; margin-top: 20px; text-align: start;">
+                            <li style="margin-bottom: 10px; display: flex; gap: 10px; align-items: center;">
+                                <i data-lucide="check-circle" style="width: 16px; color: var(--brand-gold);"></i>
+                                <span data-i18n="dash_feat1">متابعة لحظية لنسب الحضور</span>
+                            </li>
+                            <li style="margin-bottom: 10px; display: flex; gap: 10px; align-items: center;">
+                                <i data-lucide="check-circle" style="width: 16px; color: var(--brand-gold);"></i>
+                                <span data-i18n="dash_feat2">تقارير تفصيلية (محاضر، كورس، متعلم)</span>
+                            </li>
+                            <li style="margin-bottom: 10px; display: flex; gap: 10px; align-items: center;">
+                                <i data-lucide="check-circle" style="width: 16px; color: var(--brand-gold);"></i>
+                                <span data-i18n="dash_feat3">إدارة الصلاحيات واعتماد المحاضرين</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="../assets/images/Kader.svg" alt="Med Attendance Logo" class="footer-logo-img">
+            </div>
+            <p data-i18n="footer_copy">&copy; 2026 Med Attendance - جميع الحقوق محفوظة.</p>
+            <div class="footer-links">
+                <a href="https://t.me/med_attendance_crm_bot" target="_blank" class="support-link">
+                    <i data-lucide="message-circle"></i>
+                    <span data-i18n="support_btn">الدعم الفني</span>
+                </a>
+                <span class="footer-divider">|</span>
+                <a href="kader_privacy.html" class="footer-legal-link" data-i18n="privacy_policy">سياسة الخصوصية</a>
+                <span class="footer-divider">|</span>
+                <a href="kader_terms.html" class="footer-legal-link" data-i18n="terms_conditions">الشروط والأحكام</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
