@@ -211,6 +211,12 @@
                 <button id="theme-toggle" class="btn-ghost" aria-label="Toggle Theme">
                     <i data-lucide="moon"></i>
                 </button>
+
+                <!-- Language Toggle -->
+                <button id="lang-toggle" class="btn-ghost" aria-label="Switch Language">
+                    <i data-lucide="languages"></i>
+                    <span id="current-lang-text">العربية</span>
+                </button>
             </nav>
         </div>
     </header>
@@ -566,16 +572,18 @@
                 <img src="../assets/images/supervisor_logo.svg" alt="Attendance Supervisor Logo"
                     class="footer-logo-img">
             </div>
-            <p>&copy; 2025 Attendance Supervisor - All rights reserved.</p>
+            <p data-i18n="footer_copy">&copy; 2025 Attendance Supervisor - All rights reserved.</p>
             <div class="footer-links">
                 <a href="https://t.me/med_attendance_crm_bot" target="_blank" class="support-link">
                     <i data-lucide="message-circle"></i>
-                    <span>Support</span>
+                    <span data-i18n="support_btn">Support</span>
                 </a>
                 <span class="footer-divider">|</span>
-                <a href="supervisor_privacy.html" class="footer-legal-link">Privacy Policy</a>
+                <a href="supervisor_privacy.html" class="footer-legal-link" data-i18n="privacy_policy">Privacy
+                    Policy</a>
                 <span class="footer-divider">|</span>
-                <a href="supervisor_terms.html" class="footer-legal-link">Terms and Conditions</a>
+                <a href="supervisor_terms.html" class="footer-legal-link" data-i18n="terms_conditions">Terms and
+                    Conditions</a>
             </div>
         </div>
     </footer>
