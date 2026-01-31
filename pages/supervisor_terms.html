@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -150,6 +150,25 @@
                 columns: 1;
             }
         }
+
+        /* RTL Support */
+        [dir="rtl"] .info-box,
+        [dir="rtl"] .highlight-box,
+        [dir="rtl"] .warning-box,
+        [dir="rtl"] .danger-box {
+            border-left: none;
+            border-right: 4px solid var(--primary);
+        }
+
+        [dir="rtl"] .info-box.warning,
+        [dir="rtl"] .warning-box {
+            border-right-color: #f59e0b;
+        }
+
+        [dir="rtl"] .info-box.danger,
+        [dir="rtl"] .danger-box {
+            border-right-color: #ef4444;
+        }
     </style>
 </head>
 
@@ -183,7 +202,7 @@
                 <!-- Language Toggle -->
                 <button id="lang-toggle" class="btn-ghost" aria-label="Switch Language">
                     <i data-lucide="languages"></i>
-                    <span id="current-lang-text">العربية</span>
+                    <span id="current-lang-text">English</span>
                 </button>
             </nav>
         </div>
@@ -191,320 +210,596 @@
 
     <main class="legal-content">
         <div class="container">
-            <h1>Terms and Conditions</h1>
-            <p class="last-updated"><strong>Last Updated:</strong> January 2025</p>
+            <h1 data-i18n="terms_conditions">الشروط والأحكام</h1>
+            <p class="last-updated"><strong>آخر تحديث:</strong> يناير 2025</p>
 
-            <!-- Privacy Policy Link -->
-            <div class="privacy-link-box">
-                <p>Please also review our <strong>Privacy Policy</strong> which explains how we collect, use, and
-                    protect your data.</p>
-                <a href="supervisor_privacy.html" target="_blank"><strong>View Privacy Policy</strong></a>
-            </div>
+            <!-- English Content -->
+            <div id="content-en" style="display: none;">
 
-            <!-- Table of Contents -->
-            <nav class="toc">
-                <h3>Table of Contents</h3>
-                <ol>
-                    <li><a href="#acceptance">Acceptance of Terms</a></li>
-                    <li><a href="#description">Description of Service</a></li>
-                    <li><a href="#eligibility">Eligibility</a></li>
-                    <li><a href="#accounts">User Accounts</a></li>
-                    <li><a href="#responsibilities">User Responsibilities</a></li>
-                    <li><a href="#permissions">Device Permissions</a></li>
-                    <li><a href="#ownership">Data Ownership & IP</a></li>
-                    <li><a href="#third-party">Third-Party Services</a></li>
-                    <li><a href="#updates">App Updates</a></li>
-                    <li><a href="#offline">Offline Usage</a></li>
-                    <li><a href="#availability">Service Availability</a></li>
-                    <li><a href="#disclaimers">Disclaimers</a></li>
-                    <li><a href="#liability">Limitation of Liability</a></li>
-                    <li><a href="#indemnification">Indemnification</a></li>
-                    <li><a href="#termination">Account Termination</a></li>
-                    <li><a href="#deletion">Data Deletion</a></li>
-                    <li><a href="#governing">Governing Law</a></li>
-                    <li><a href="#changes">Changes to Terms</a></li>
-                    <li><a href="#general">General Provisions</a></li>
-                    <li><a href="#contact">Contact Information</a></li>
-                    <li><a href="#acknowledgment">Acknowledgment</a></li>
-                </ol>
-            </nav>
+                <!-- Privacy Policy Link -->
+                <div class="privacy-link-box">
+                    <p>Please also review our <strong>Privacy Policy</strong> which explains how we collect, use, and
+                        protect your data.</p>
+                    <a href="supervisor_privacy.html" target="_blank"><strong>View Privacy Policy</strong></a>
+                </div>
 
-            <!-- Section 1 -->
-            <h2 id="acceptance">1. Acceptance of Terms</h2>
-            <p>By downloading, installing, accessing, or using the Attendance Supervisor mobile application ("App,"
-                "Service," or "Application"), you ("User," "you," or "your") acknowledge that you have read,
-                understood, and agree to be bound by these Terms and Conditions ("Terms"). If you do not agree to
-                these Terms, you must not use the App.</p>
-            <p>These Terms constitute a legally binding agreement between you and the App provider regarding your
-                use of the Service.</p>
+                <!-- Table of Contents -->
+                <nav class="toc">
+                    <h3>Table of Contents</h3>
+                    <ol>
+                        <li><a href="#acceptance">Acceptance of Terms</a></li>
+                        <li><a href="#description">Description of Service</a></li>
+                        <li><a href="#eligibility">Eligibility</a></li>
+                        <li><a href="#accounts">User Accounts</a></li>
+                        <li><a href="#responsibilities">User Responsibilities</a></li>
+                        <li><a href="#permissions">Device Permissions</a></li>
+                        <li><a href="#ownership">Data Ownership & IP</a></li>
+                        <li><a href="#third-party">Third-Party Services</a></li>
+                        <li><a href="#updates">App Updates</a></li>
+                        <li><a href="#offline">Offline Usage</a></li>
+                        <li><a href="#availability">Service Availability</a></li>
+                        <li><a href="#disclaimers">Disclaimers</a></li>
+                        <li><a href="#liability">Limitation of Liability</a></li>
+                        <li><a href="#indemnification">Indemnification</a></li>
+                        <li><a href="#termination">Account Termination</a></li>
+                        <li><a href="#deletion">Data Deletion</a></li>
+                        <li><a href="#governing">Governing Law</a></li>
+                        <li><a href="#changes">Changes to Terms</a></li>
+                        <li><a href="#general">General Provisions</a></li>
+                        <li><a href="#contact">Contact Information</a></li>
+                        <li><a href="#acknowledgment">Acknowledgment</a></li>
+                    </ol>
+                </nav>
 
-            <!-- Section 2 -->
-            <h2 id="description">2. Description of Service</h2>
-            <p>Attendance Supervisor is a mobile application designed for educational and training institutions to
-                manage and track attendance. The App provides the following features:</p>
-            <ul>
-                <li><strong>Attendance Tracking:</strong> Record student/trainee attendance using multiple methods
-                    including NFC cards, Bluetooth Low Energy (BLE) devices, and manual entry.</li>
-                <li><strong>Event Management:</strong> View and manage events and training sessions.</li>
-                <li><strong>Team Management:</strong> Organize users into teams.</li>
-                <li><strong>Attendance Reports:</strong> View attendance statistics, present/absent lists, and
-                    historical records.</li>
-                <li><strong>Offline Functionality:</strong> Record attendance while offline with automatic
-                    synchronization when connectivity is restored.</li>
-                <li><strong>Mobile Verification:</strong> Secure account verification through Telegram.</li>
-            </ul>
+                <!-- Section 1 -->
+                <h2 id="acceptance">1. Acceptance of Terms</h2>
+                <p>By downloading, installing, accessing, or using the Attendance Supervisor mobile application ("App,"
+                    "Service," or "Application"), you ("User," "you," or "your") acknowledge that you have read,
+                    understood, and agree to be bound by these Terms and Conditions ("Terms"). If you do not agree to
+                    these Terms, you must not use the App.</p>
+                <p>These Terms constitute a legally binding agreement between you and the App provider regarding your
+                    use of the Service.</p>
 
-            <!-- Section 3 -->
-            <h2 id="eligibility">3. Eligibility</h2>
-            <p>To use the Attendance Supervisor App, you must:</p>
-            <ul>
-                <li>Be at least <strong>eighteen (18) years of age</strong>.</li>
-                <li>Be an authorized member (instructor, supervisor, or administrator) of an institution that uses
-                    the Attendance Supervisor service.</li>
-                <li>Have the legal capacity to enter into a binding agreement.</li>
-                <li>Not be prohibited from using the Service under applicable laws.</li>
-            </ul>
-
-            <!-- Section 4 -->
-            <h2 id="accounts">4. User Accounts</h2>
-            <h3>4.1 Account Registration</h3>
-            <p>To use the App, you must create an account by providing accurate and complete information, including:</p>
-            <ul>
-                <li>Full name</li>
-                <li>Mobile phone number</li>
-                <li>Password</li>
-                <li>Professional information (job title, field)</li>
-            </ul>
-            <p>You are responsible for maintaining the accuracy of your account information and updating it as
-                necessary.</p>
-
-            <h3>4.2 Account Security</h3>
-            <p>You are solely responsible for:</p>
-            <ul>
-                <li>Maintaining the confidentiality of your account credentials.</li>
-                <li>All activities that occur under your account.</li>
-                <li>Notifying us immediately of any unauthorized use of your account.</li>
-            </ul>
-            <p>You must not share your account credentials with any third party.</p>
-
-            <h3>4.3 Device Limitation</h3>
-            <div class="info-box warning">
-                <p>Your account is currently limited to use on <strong>one device at a time</strong>. Using your account
-                    on multiple devices simultaneously is not supported and may result in service interruptions.</p>
-            </div>
-
-            <h3>4.4 Mobile Verification</h3>
-            <p>For security purposes, you are required to verify your mobile phone number. Verification may be
-                completed through Telegram messaging platform. When using Telegram verification, you will interact
-                with our verification bot to receive a verification code.</p>
-
-            <!-- Section 5 -->
-            <h2 id="responsibilities">5. User Responsibilities and Conduct</h2>
-            <p>By using the App, you agree to:</p>
-            <ul>
-                <li>Provide accurate, current, and complete information.</li>
-                <li>Use the App only for its intended purpose of attendance management.</li>
-                <li>Comply with all applicable laws, regulations, and institutional policies.</li>
-                <li>Respect the privacy and rights of students, trainees, and other users.</li>
-                <li>Not attempt to gain unauthorized access to any part of the Service.</li>
-                <li>Not interfere with or disrupt the Service or servers.</li>
-                <li>Not reverse engineer, decompile, or disassemble the App.</li>
-                <li>Not use the App for any unlawful, harmful, or fraudulent purpose.</li>
-                <li>Not transmit any viruses, malware, or malicious code.</li>
-                <li>Not collect or harvest data from other users without authorization.</li>
-                <li>Not impersonate any person or entity.</li>
-                <li>Not use automated systems or software to access the Service without permission.</li>
-            </ul>
-
-            <!-- Section 6 -->
-            <h2 id="permissions">6. Device Permissions</h2>
-            <p>The App requires certain device permissions to function properly:</p>
-
-            <h3>6.1 Bluetooth and Location</h3>
-            <p>The App uses Bluetooth Low Energy (BLE) to scan for and identify student/trainee devices for
-                attendance tracking. On Android devices, Location permission is required for BLE scanning due to
-                operating system requirements. The App does not track your geographic location for any other purpose.
-            </p>
-
-            <h3>6.2 NFC (Near Field Communication)</h3>
-            <p>The App uses NFC to read student/trainee identification cards for attendance tracking. This
-                permission is only used when you actively initiate an NFC scan.</p>
-
-            <h3>6.3 Internet</h3>
-            <p>The App requires internet connectivity to synchronize attendance data, authenticate users, and
-                communicate with our servers.</p>
-
-            <div class="highlight-box">
-                <p>All permissions are used solely for the App's core attendance tracking functionality and not for
-                    any other purpose.</p>
-            </div>
-
-            <!-- Section 7 -->
-            <h2 id="ownership">7. Data Ownership and Intellectual Property</h2>
-            <h3>7.1 Application Ownership</h3>
-            <p>The App, including its design, features, functionality, source code, graphics, user interface, and
-                all related intellectual property rights, is owned by the App provider and is protected by
-                copyright, trademark, and other intellectual property laws.</p>
-
-            <h3>7.2 Attendance Data Ownership</h3>
-            <p>All attendance records and data created through the use of the App are owned by the institution(s) you
-                are
-                affiliated with. The App provider acts as a data processor on behalf of these institutions.</p>
-
-            <h3>7.3 License</h3>
-            <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use the App for its
-                intended purpose, subject to these Terms.</p>
-
-            <!-- Section 8 -->
-            <h2 id="third-party">8. Third-Party Services</h2>
-            <p>The App integrates with third-party services:</p>
-            <ul>
-                <li><strong>Telegram:</strong> Used for account verification and notifications.</li>
-                <li><strong>Google Firebase:</strong> Used for authentication and cloud services.</li>
-            </ul>
-            <p>Your use of these third-party services is subject to their respective terms and privacy policies.</p>
-
-            <!-- Section 9 -->
-            <h2 id="updates">9. App Updates</h2>
-            <p>We may release updates to the App from time to time. These updates may include bug fixes, new features,
-                or security improvements. You agree to install updates when prompted to ensure optimal functionality
-                and security.</p>
-
-            <!-- Section 10 -->
-            <h2 id="offline">10. Offline Usage</h2>
-            <p>The App supports limited offline functionality:</p>
-            <ul>
-                <li>Attendance records can be saved locally when offline.</li>
-                <li>Data will automatically sync when internet connectivity is restored.</li>
-                <li>Some features may not be available offline.</li>
-            </ul>
-
-            <!-- Section 11 -->
-            <h2 id="availability">11. Service Availability</h2>
-            <p>We strive to maintain 24/7 availability of the Service but do not guarantee uninterrupted access.
-                The Service may be temporarily unavailable due to:</p>
-            <ul>
-                <li>Scheduled maintenance</li>
-                <li>Technical issues or server problems</li>
-                <li>Force majeure events</li>
-                <li>Updates and improvements</li>
-            </ul>
-
-            <!-- Section 12 -->
-            <h2 id="disclaimers">12. Disclaimers</h2>
-            <div class="legal-text">
-                <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR
-                    IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
+                <!-- Section 2 -->
+                <h2 id="description">2. Description of Service</h2>
+                <p>Attendance Supervisor is a mobile application designed for educational and training institutions to
+                    manage and track attendance. The App provides the following features:</p>
                 <ul>
-                    <li>IMPLIED WARRANTIES OF MERCHANTABILITY</li>
-                    <li>FITNESS FOR A PARTICULAR PURPOSE</li>
-                    <li>NON-INFRINGEMENT</li>
-                    <li>ACCURACY OR COMPLETENESS OF CONTENT</li>
+                    <li><strong>Attendance Tracking:</strong> Record student/trainee attendance using multiple methods
+                        including NFC cards, Bluetooth Low Energy (BLE) devices, and manual entry.</li>
+                    <li><strong>Event Management:</strong> View and manage events and training sessions.</li>
+                    <li><strong>Team Management:</strong> Organize users into teams.</li>
+                    <li><strong>Attendance Reports:</strong> View attendance statistics, present/absent lists, and
+                        historical records.</li>
+                    <li><strong>Offline Functionality:</strong> Record attendance while offline with automatic
+                        synchronization when connectivity is restored.</li>
+                    <li><strong>Mobile Verification:</strong> Secure account verification through Telegram.</li>
                 </ul>
-                <p>WE DO NOT WARRANT THAT THE APP WILL BE ERROR-FREE, SECURE, OR UNINTERRUPTED.</p>
-            </div>
 
-            <!-- Section 13 -->
-            <h2 id="liability">13. Limitation of Liability</h2>
-            <div class="legal-text">
-                <p>To the maximum extent permitted by law, the App provider shall not be liable for any damages or
-                    losses arising from the use of, or inability to use, the App, including but not limited to:</p>
+                <!-- Section 3 -->
+                <h2 id="eligibility">3. Eligibility</h2>
+                <p>To use the Attendance Supervisor App, you must:</p>
                 <ul>
-                    <li>Loss of data or attendance records due to technical issues</li>
-                    <li>Temporary service interruptions or unavailability</li>
-                    <li>Incorrect attendance records caused by system errors</li>
-                    <li>Any indirect, incidental, or consequential damages</li>
+                    <li>Be at least <strong>eighteen (18) years of age</strong>.</li>
+                    <li>Be an authorized member (instructor, supervisor, or administrator) of an institution that uses
+                        the Attendance Supervisor service.</li>
+                    <li>Have the legal capacity to enter into a binding agreement.</li>
+                    <li>Not be prohibited from using the Service under applicable laws.</li>
                 </ul>
+
+                <!-- Section 4 -->
+                <h2 id="accounts">4. User Accounts</h2>
+                <h3>4.1 Account Registration</h3>
+                <p>To use the App, you must create an account by providing accurate and complete information, including:
+                </p>
+                <ul>
+                    <li>Full name</li>
+                    <li>Mobile phone number</li>
+                    <li>Password</li>
+                    <li>Professional information (job title, field)</li>
+                </ul>
+                <p>You are responsible for maintaining the accuracy of your account information and updating it as
+                    necessary.</p>
+
+                <h3>4.2 Account Security</h3>
+                <p>You are solely responsible for:</p>
+                <ul>
+                    <li>Maintaining the confidentiality of your account credentials.</li>
+                    <li>All activities that occur under your account.</li>
+                    <li>Notifying us immediately of any unauthorized use of your account.</li>
+                </ul>
+                <p>You must not share your account credentials with any third party.</p>
+
+                <h3>4.3 Device Limitation</h3>
+                <div class="info-box warning">
+                    <p>Your account is currently limited to use on <strong>one device at a time</strong>. Using your
+                        account
+                        on multiple devices simultaneously is not supported and may result in service interruptions.</p>
+                </div>
+
+                <h3>4.4 Mobile Verification</h3>
+                <p>For security purposes, you are required to verify your mobile phone number. Verification may be
+                    completed through Telegram messaging platform. When using Telegram verification, you will interact
+                    with our verification bot to receive a verification code.</p>
+
+                <!-- Section 5 -->
+                <h2 id="responsibilities">5. User Responsibilities and Conduct</h2>
+                <p>By using the App, you agree to:</p>
+                <ul>
+                    <li>Provide accurate, current, and complete information.</li>
+                    <li>Use the App only for its intended purpose of attendance management.</li>
+                    <li>Comply with all applicable laws, regulations, and institutional policies.</li>
+                    <li>Respect the privacy and rights of students, trainees, and other users.</li>
+                    <li>Not attempt to gain unauthorized access to any part of the Service.</li>
+                    <li>Not interfere with or disrupt the Service or servers.</li>
+                    <li>Not reverse engineer, decompile, or disassemble the App.</li>
+                    <li>Not use the App for any unlawful, harmful, or fraudulent purpose.</li>
+                    <li>Not transmit any viruses, malware, or malicious code.</li>
+                    <li>Not collect or harvest data from other users without authorization.</li>
+                    <li>Not impersonate any person or entity.</li>
+                    <li>Not use automated systems or software to access the Service without permission.</li>
+                </ul>
+
+                <!-- Section 6 -->
+                <h2 id="permissions">6. Device Permissions</h2>
+                <p>The App requires certain device permissions to function properly:</p>
+
+                <h3>6.1 Bluetooth and Location</h3>
+                <p>The App uses Bluetooth Low Energy (BLE) to scan for and identify student/trainee devices for
+                    attendance tracking. On Android devices, Location permission is required for BLE scanning due to
+                    operating system requirements. The App does not track your geographic location for any other
+                    purpose.
+                </p>
+
+                <h3>6.2 NFC (Near Field Communication)</h3>
+                <p>The App uses NFC to read student/trainee identification cards for attendance tracking. This
+                    permission is only used when you actively initiate an NFC scan.</p>
+
+                <h3>6.3 Internet</h3>
+                <p>The App requires internet connectivity to synchronize attendance data, authenticate users, and
+                    communicate with our servers.</p>
+
+                <div class="highlight-box">
+                    <p>All permissions are used solely for the App's core attendance tracking functionality and not for
+                        any other purpose.</p>
+                </div>
+
+                <!-- Section 7 -->
+                <h2 id="ownership">7. Data Ownership and Intellectual Property</h2>
+                <h3>7.1 Application Ownership</h3>
+                <p>The App, including its design, features, functionality, source code, graphics, user interface, and
+                    all related intellectual property rights, is owned by the App provider and is protected by
+                    copyright, trademark, and other intellectual property laws.</p>
+
+                <h3>7.2 Attendance Data Ownership</h3>
+                <p>All attendance records and data created through the use of the App are owned by the institution(s)
+                    you
+                    are
+                    affiliated with. The App provider acts as a data processor on behalf of these institutions.</p>
+
+                <h3>7.3 License</h3>
+                <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use the App for its
+                    intended purpose, subject to these Terms.</p>
+
+                <!-- Section 8 -->
+                <h2 id="third-party">8. Third-Party Services</h2>
+                <p>The App integrates with third-party services:</p>
+                <ul>
+                    <li><strong>Telegram:</strong> Used for account verification and notifications.</li>
+                    <li><strong>Google Firebase:</strong> Used for authentication and cloud services.</li>
+                </ul>
+                <p>Your use of these third-party services is subject to their respective terms and privacy policies.</p>
+
+                <!-- Section 9 -->
+                <h2 id="updates">9. App Updates</h2>
+                <p>We may release updates to the App from time to time. These updates may include bug fixes, new
+                    features,
+                    or security improvements. You agree to install updates when prompted to ensure optimal functionality
+                    and security.</p>
+
+                <!-- Section 10 -->
+                <h2 id="offline">10. Offline Usage</h2>
+                <p>The App supports limited offline functionality:</p>
+                <ul>
+                    <li>Attendance records can be saved locally when offline.</li>
+                    <li>Data will automatically sync when internet connectivity is restored.</li>
+                    <li>Some features may not be available offline.</li>
+                </ul>
+
+                <!-- Section 11 -->
+                <h2 id="availability">11. Service Availability</h2>
+                <p>We strive to maintain 24/7 availability of the Service but do not guarantee uninterrupted access.
+                    The Service may be temporarily unavailable due to:</p>
+                <ul>
+                    <li>Scheduled maintenance</li>
+                    <li>Technical issues or server problems</li>
+                    <li>Force majeure events</li>
+                    <li>Updates and improvements</li>
+                </ul>
+
+                <!-- Section 12 -->
+                <h2 id="disclaimers">12. Disclaimers</h2>
+                <div class="legal-text">
+                    <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR
+                        IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
+                    <ul>
+                        <li>IMPLIED WARRANTIES OF MERCHANTABILITY</li>
+                        <li>FITNESS FOR A PARTICULAR PURPOSE</li>
+                        <li>NON-INFRINGEMENT</li>
+                        <li>ACCURACY OR COMPLETENESS OF CONTENT</li>
+                    </ul>
+                    <p>WE DO NOT WARRANT THAT THE APP WILL BE ERROR-FREE, SECURE, OR UNINTERRUPTED.</p>
+                </div>
+
+                <!-- Section 13 -->
+                <h2 id="liability">13. Limitation of Liability</h2>
+                <div class="legal-text">
+                    <p>To the maximum extent permitted by law, the App provider shall not be liable for any damages or
+                        losses arising from the use of, or inability to use, the App, including but not limited to:</p>
+                    <ul>
+                        <li>Loss of data or attendance records due to technical issues</li>
+                        <li>Temporary service interruptions or unavailability</li>
+                        <li>Incorrect attendance records caused by system errors</li>
+                        <li>Any indirect, incidental, or consequential damages</li>
+                    </ul>
+                </div>
+
+                <!-- Section 14 -->
+                <h2 id="indemnification">14. Indemnification</h2>
+                <p>You agree to indemnify and hold harmless the App provider, its employees, and affiliates from any
+                    claims, losses, or damages arising from:</p>
+                <ul>
+                    <li>Your misuse of the App</li>
+                    <li>Your violation of these Terms or applicable laws</li>
+                    <li>Any unauthorized actions performed using your account</li>
+                </ul>
+
+                <!-- Section 15 -->
+                <h2 id="termination">15. Account Termination</h2>
+                <h3>15.1 Termination by You</h3>
+                <p>You may terminate your account at any time by:</p>
+                <ul>
+                    <li>Using the account deletion feature in the App</li>
+                    <li>Contacting our support team</li>
+                </ul>
+
+                <h3>15.2 Termination by Us</h3>
+                <p>We may suspend or terminate your account immediately, without prior notice, if you:</p>
+                <ul>
+                    <li>Violate these Terms</li>
+                    <li>Engage in fraudulent activity</li>
+                    <li>Pose a security risk</li>
+                    <li>Are required to be removed by law</li>
+                </ul>
+
+                <!-- Section 16 -->
+                <h2 id="deletion">16. Data Deletion</h2>
+                <p>Upon account termination:</p>
+                <ul>
+                    <li>Your personal data will be deleted in accordance with our Privacy Policy</li>
+                    <li>Attendance records may be retained by your institution as required</li>
+                </ul>
+
+                <!-- Section 17 -->
+                <h2 id="governing">17. Governing Law</h2>
+                <p>These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in
+                    which the App provider operates, without regard to its conflict of law provisions.</p>
+
+                <!-- Section 18 -->
+                <h2 id="changes">18. Changes to Terms</h2>
+                <p>We reserve the right to modify these Terms at any time. We will notify you of material changes by:
+                </p>
+                <ul>
+                    <li>Posting updated Terms in the App</li>
+                    <li>Updating the "Last Updated" date</li>
+                    <li>Sending notification through the App</li>
+                </ul>
+                <p>Your continued use of the App after changes are posted constitutes your acceptance of the modified
+                    Terms.
+                </p>
+
+                <!-- Section 19 -->
+                <h2 id="general">19. General Provisions</h2>
+                <h3>19.1 Entire Agreement</h3>
+                <p>These Terms, together with our <a href="supervisor_privacy.html" target="_blank">Privacy Policy</a>,
+                    constitute the entire agreement between you and the App provider regarding your use of the Service.
+                </p>
+
+                <h3>19.2 Severability</h3>
+                <p>If any provision of these Terms is found to be unenforceable, the remaining provisions shall continue
+                    in full force and effect.</p>
+
+                <h3>19.3 Waiver</h3>
+                <p>Our failure to enforce any right or provision of these Terms shall not constitute a waiver of such
+                    right or provision.</p>
+
+                <!-- Section 20 -->
+                <h2 id="contact">20. Contact Information</h2>
+                <div class="contact-box">
+                    <p><strong>Email</strong></p>
+                    <a href="mailto:support@med-attendance.online">support@med-attendance.online</a>
+                </div>
+
+                <!-- Section 21 -->
+                <h2 id="acknowledgment">21. Acknowledgment</h2>
+                <div class="highlight-box">
+                    <p>By using the Attendance Supervisor App, you acknowledge that you have read, understood, and agree
+                        to be bound by these Terms and Conditions and our <a href="supervisor_privacy.html"
+                            target="_blank">Privacy Policy</a>. You also acknowledge that these Terms constitute a
+                        binding legal agreement between you and the App provider.</p>
+                </div>
+
+                <div class="agreement-box"
+                    style="background: var(--primary); color: white; padding: 30px; border-radius: 12px; margin-top: 40px; text-align: center;">
+                    <p style="color: white; font-weight: 600; margin: 0;">By using Attendance Supervisor, you
+                        acknowledge
+                        that
+                        you have read, understood, and agree to be bound by these Terms and Conditions.</p>
+                </div>
             </div>
+            <!-- End English Content -->
 
-            <!-- Section 14 -->
-            <h2 id="indemnification">14. Indemnification</h2>
-            <p>You agree to indemnify and hold harmless the App provider, its employees, and affiliates from any
-                claims, losses, or damages arising from:</p>
-            <ul>
-                <li>Your misuse of the App</li>
-                <li>Your violation of these Terms or applicable laws</li>
-                <li>Any unauthorized actions performed using your account</li>
-            </ul>
+            <!-- Arabic Content -->
+            <div id="content-ar">
+                <!-- Privacy Policy Link -->
+                <div class="privacy-link-box">
+                    <p>يرجى أيضاً مراجعة <strong>سياسة الخصوصية</strong> التي توضح كيفية جمعنا واستخدامنا وحمايتنا
+                        لبياناتك.</p>
+                    <a href="supervisor_privacy.html" target="_blank"><strong>عرض سياسة الخصوصية</strong></a>
+                </div>
 
-            <!-- Section 15 -->
-            <h2 id="termination">15. Account Termination</h2>
-            <h3>15.1 Termination by You</h3>
-            <p>You may terminate your account at any time by:</p>
-            <ul>
-                <li>Using the account deletion feature in the App</li>
-                <li>Contacting our support team</li>
-            </ul>
+                <!-- Table of Contents -->
+                <nav class="toc">
+                    <h3>جدول المحتويات</h3>
+                    <ol>
+                        <li><a href="#acceptance">قبول الشروط</a></li>
+                        <li><a href="#description">وصف الخدمة</a></li>
+                        <li><a href="#eligibility">الأهلية</a></li>
+                        <li><a href="#accounts">حسابات المستخدمين</a></li>
+                        <li><a href="#responsibilities">مسؤوليات المستخدم</a></li>
+                        <li><a href="#acceptable-use">الاستخدام المقبول</a></li>
+                        <li><a href="#ip">الملكية الفكرية</a></li>
+                        <li><a href="#data">البيانات والخصوصية</a></li>
+                        <li><a href="#subscriptions">الاشتراكات والمدفوعات</a></li>
+                        <li><a href="#termination">إنهاء الخدمة</a></li>
+                        <li><a href="#disclaimers">إخلاء المسؤولية</a></li>
+                        <li><a href="#liability">تحديد المسؤولية</a></li>
+                        <li><a href="#indemnification">التعويض</a></li>
+                        <li><a href="#modifications">التعديلات على الخدمة</a></li>
+                        <li><a href="#communications">الاتصالات</a></li>
+                        <li><a href="#third-party">خدمات الطرف الثالث</a></li>
+                        <li><a href="#governing">القانون الحاكم</a></li>
+                        <li><a href="#severability">قابلية الفصل</a></li>
+                        <li><a href="#changes">التغييرات على الشروط</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                        <li><a href="#acknowledgment">الإقرار</a></li>
+                    </ol>
+                </nav>
 
-            <h3>15.2 Termination by Us</h3>
-            <p>We may suspend or terminate your account immediately, without prior notice, if you:</p>
-            <ul>
-                <li>Violate these Terms</li>
-                <li>Engage in fraudulent activity</li>
-                <li>Pose a security risk</li>
-                <li>Are required to be removed by law</li>
-            </ul>
+                <!-- Section 1 -->
+                <h2>1. قبول الشروط</h2>
+                <p>باستخدام أو الوصول إلى تطبيق Attendance Supervisor ("التطبيق" أو "الخدمة" أو "نحن")، فإنك توافق على
+                    الالتزام بهذه الشروط والأحكام ("الشروط"). إذا كنت لا توافق على هذه الشروط، يرجى عدم استخدام التطبيق.
+                </p>
+                <div class="info-box">
+                    <p><strong>مهم:</strong> تشكل هذه الشروط اتفاقية ملزمة قانوناً بينك وبين مزود التطبيق.</p>
+                </div>
 
-            <!-- Section 16 -->
-            <h2 id="deletion">16. Data Deletion</h2>
-            <p>Upon account termination:</p>
-            <ul>
-                <li>Your personal data will be deleted in accordance with our Privacy Policy</li>
-                <li>Attendance records may be retained by your institution as required</li>
-            </ul>
+                <!-- Section 2 -->
+                <h2>2. وصف الخدمة</h2>
+                <p>Attendance Supervisor هو تطبيق متخصص للمشرفين يوفر:</p>
+                <ul>
+                    <li>تتبع الحضور باستخدام تقنية NFC والبلوتوث</li>
+                    <li>إدارة الطلاب/المتدربين في الوقت الفعلي</li>
+                    <li>إنشاء وتصدير التقارير</li>
+                    <li>إمكانية العمل بدون اتصال مع المزامنة</li>
+                    <li>التكامل مع تيليجرام للإشعارات</li>
+                </ul>
 
-            <!-- Section 17 -->
-            <h2 id="governing">17. Governing Law</h2>
-            <p>These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in
-                which the App provider operates, without regard to its conflict of law provisions.</p>
+                <!-- Section 3 -->
+                <h2>3. الأهلية</h2>
+                <p>لاستخدام التطبيق، يجب أن:</p>
+                <ul>
+                    <li>يكون عمرك 18 عاماً أو أكثر</li>
+                    <li>يكون لديك السلطة القانونية لإبرام هذه الاتفاقية</li>
+                    <li>تكون مخولاً من قبل مؤسستك لاستخدام التطبيق</li>
+                    <li>تمتلك جهازاً متوافقاً (iOS 14.0+ أو Android 6.0+)</li>
+                </ul>
 
-            <!-- Section 18 -->
-            <h2 id="changes">18. Changes to Terms</h2>
-            <p>We reserve the right to modify these Terms at any time. We will notify you of material changes by:</p>
-            <ul>
-                <li>Posting updated Terms in the App</li>
-                <li>Updating the "Last Updated" date</li>
-                <li>Sending notification through the App</li>
-            </ul>
-            <p>Your continued use of the App after changes are posted constitutes your acceptance of the modified Terms.
-            </p>
+                <!-- Section 4 -->
+                <h2>4. حسابات المستخدمين</h2>
+                <h3>4.1 إنشاء الحساب</h3>
+                <p>للوصول إلى التطبيق، يجب عليك:</p>
+                <ul>
+                    <li>تقديم معلومات دقيقة وكاملة</li>
+                    <li>الحفاظ على سرية بيانات اعتماد حسابك</li>
+                    <li>تحديث معلوماتك حسب الحاجة</li>
+                </ul>
 
-            <!-- Section 19 -->
-            <h2 id="general">19. General Provisions</h2>
-            <h3>19.1 Entire Agreement</h3>
-            <p>These Terms, together with our <a href="supervisor_privacy.html" target="_blank">Privacy Policy</a>,
-                constitute the entire agreement between you and the App provider regarding your use of the Service.</p>
+                <h3>4.2 أمان الحساب</h3>
+                <p>أنت مسؤول عن:</p>
+                <ul>
+                    <li>جميع الأنشطة التي تتم تحت حسابك</li>
+                    <li>إخطارنا فوراً بأي استخدام غير مصرح به</li>
+                    <li>الحفاظ على أمان بيانات الاعتماد الخاصة بك</li>
+                </ul>
 
-            <h3>19.2 Severability</h3>
-            <p>If any provision of these Terms is found to be unenforceable, the remaining provisions shall continue
-                in full force and effect.</p>
+                <!-- Section 5 -->
+                <h2>5. مسؤوليات المستخدم</h2>
+                <p>كمشرف يستخدم التطبيق، أنت توافق على:</p>
+                <ul>
+                    <li>استخدام التطبيق فقط لأغراض تتبع الحضور المشروعة</li>
+                    <li>ضمان الجمع السليم لبيانات الحضور</li>
+                    <li>الحفاظ على سرية بيانات الطلاب</li>
+                    <li>الامتثال لسياسات مؤسستك</li>
+                    <li>الإبلاغ عن أي أخطاء أو مشاكل فنية</li>
+                </ul>
 
-            <h3>19.3 Waiver</h3>
-            <p>Our failure to enforce any right or provision of these Terms shall not constitute a waiver of such
-                right or provision.</p>
+                <!-- Section 6 -->
+                <h2>6. الاستخدام المقبول</h2>
+                <p>أنت توافق على عدم:</p>
+                <ul>
+                    <li>استخدام التطبيق لأي غرض غير قانوني</li>
+                    <li>محاولة الحصول على وصول غير مصرح به إلى الأنظمة</li>
+                    <li>التدخل في عمليات التطبيق</li>
+                    <li>مشاركة بيانات اعتماد الحساب مع الآخرين</li>
+                    <li>تسجيل حضور كاذب أو التلاعب بالسجلات</li>
+                    <li>إجراء هندسة عكسية للتطبيق أو تعديله</li>
+                    <li>انتهاك حقوق الآخرين أو القوانين المعمول بها</li>
+                </ul>
 
-            <!-- Section 20 -->
-            <h2 id="contact">20. Contact Information</h2>
-            <div class="contact-box">
-                <p><strong>Email</strong></p>
-                <a href="mailto:support@med-attendance.online">support@med-attendance.online</a>
+                <!-- Section 7 -->
+                <h2>7. الملكية الفكرية</h2>
+                <p>جميع حقوق الملكية الفكرية في التطبيق هي ملك لمزود التطبيق، بما في ذلك:</p>
+                <ul>
+                    <li>كود البرنامج والواجهة</li>
+                    <li>التصميم والرسومات</li>
+                    <li>العلامات التجارية والشعارات</li>
+                    <li>المحتوى والوثائق</li>
+                </ul>
+                <p>يُمنح لك ترخيص محدود وغير حصري وغير قابل للتحويل لاستخدام التطبيق وفقاً لهذه الشروط.</p>
+
+                <!-- Section 8 -->
+                <h2>8. البيانات والخصوصية</h2>
+                <p>يخضع جمعنا واستخدامنا لبياناتك لـ <a href="supervisor_privacy.html" target="_blank">سياسة
+                        الخصوصية</a> الخاصة بنا. باستخدام التطبيق، فإنك توافق على ممارسات البيانات الموضحة فيها.</p>
+
+                <h3>8.1 بيانات الحضور</h3>
+                <ul>
+                    <li>بيانات الحضور التي تجمعها مملوكة لمؤسستك</li>
+                    <li>أنت مسؤول عن ضمان التعامل السليم مع البيانات</li>
+                    <li>قد يتم الوصول إلى البيانات من قبل إدارة مؤسستك</li>
+                </ul>
+
+                <!-- Section 9 -->
+                <h2>9. الاشتراكات والمدفوعات</h2>
+                <div class="info-box">
+                    <p><strong>ملاحظة:</strong> يتطلب التطبيق اشتراكاً نشطاً مُقدماً من مؤسستك.</p>
+                </div>
+                <p>يتم التعامل مع ترتيبات الاشتراك والفوترة بين مزود التطبيق ومؤسستك.</p>
+
+                <!-- Section 10 -->
+                <h2>10. إنهاء الخدمة</h2>
+                <h3>10.1 الإنهاء من قبلك</h3>
+                <p>يمكنك التوقف عن استخدام التطبيق في أي وقت عن طريق:</p>
+                <ul>
+                    <li>حذف حسابك من خلال إعدادات التطبيق</li>
+                    <li>الاتصال بفريق الدعم</li>
+                    <li>إلغاء تثبيت التطبيق</li>
+                </ul>
+
+                <h3>10.2 الإنهاء من قبلنا</h3>
+                <p>قد نعلق أو ننهي وصولك إذا:</p>
+                <ul>
+                    <li>انتهكت هذه الشروط</li>
+                    <li>شاركت في أنشطة احتيالية</li>
+                    <li>طلبت مؤسستك الإنهاء</li>
+                    <li>كان ذلك مطلوباً بموجب القانون</li>
+                </ul>
+
+                <!-- Section 11 -->
+                <h2>11. إخلاء المسؤولية</h2>
+                <div class="danger-box">
+                    <p>يُقدم التطبيق "كما هو" و "كما هو متاح" دون أي ضمانات. لا نضمن:</p>
+                    <ul>
+                        <li>خدمة دون انقطاع أو خالية من الأخطاء</li>
+                        <li>دقة البيانات المسجلة</li>
+                        <li>التوافق مع جميع الأجهزة</li>
+                        <li>تلبية احتياجاتك المحددة</li>
+                    </ul>
+                </div>
+
+                <!-- Section 12 -->
+                <h2>12. تحديد المسؤولية</h2>
+                <p>إلى أقصى حد يسمح به القانون، لن يكون مزود التطبيق مسؤولاً عن:</p>
+                <ul>
+                    <li>أضرار غير مباشرة أو عرضية أو تبعية</li>
+                    <li>فقدان البيانات أو الأرباح</li>
+                    <li>انقطاع الخدمة</li>
+                    <li>إجراءات الطرف الثالث</li>
+                </ul>
+
+                <!-- Section 13 -->
+                <h2>13. التعويض</h2>
+                <p>أنت توافق على تعويض مزود التطبيق ضد أي مطالبات ناشئة عن:</p>
+                <ul>
+                    <li>استخدامك للتطبيق</li>
+                    <li>انتهاكك لهذه الشروط</li>
+                    <li>انتهاكك لحقوق أي طرف ثالث</li>
+                </ul>
+
+                <!-- Section 14 -->
+                <h2>14. التعديلات على الخدمة</h2>
+                <p>نحتفظ بالحق في:</p>
+                <ul>
+                    <li>تعديل أو تحديث التطبيق في أي وقت</li>
+                    <li>إضافة أو إزالة ميزات</li>
+                    <li>تعليق الخدمة للصيانة</li>
+                    <li>إيقاف الخدمة مع إشعار معقول</li>
+                </ul>
+
+                <!-- Section 15 -->
+                <h2>15. الاتصالات</h2>
+                <p>باستخدام التطبيق، فإنك توافق على تلقي:</p>
+                <ul>
+                    <li>إشعارات متعلقة بالخدمة</li>
+                    <li>إشعارات تحديث التطبيق</li>
+                    <li>تنبيهات أمنية</li>
+                </ul>
+                <p>يمكنك إدارة تفضيلات الاتصال من خلال إعدادات التطبيق.</p>
+
+                <!-- Section 16 -->
+                <h2>16. خدمات الطرف الثالث</h2>
+                <p>يتكامل التطبيق مع خدمات الطرف الثالث بما في ذلك:</p>
+                <ul>
+                    <li><strong>تيليجرام:</strong> للتحقق والإشعارات</li>
+                    <li><strong>خدمات السحابة:</strong> لتخزين البيانات</li>
+                </ul>
+                <p>استخدامك لهذه الخدمات يخضع لشروط الخدمة الخاصة بها.</p>
+
+                <!-- Section 17 -->
+                <h2>17. القانون الحاكم</h2>
+                <p>تخضع هذه الشروط لقوانين <strong>جمهورية مصر العربية</strong>. أي نزاعات تنشأ عن هذه الشروط تخضع
+                    للاختصاص القضائي الحصري لمحاكم مصر.</p>
+
+                <!-- Section 18 -->
+                <h2>18. قابلية الفصل</h2>
+                <p>إذا تبين أن أي حكم من هذه الشروط غير قابل للتنفيذ، تظل الأحكام المتبقية سارية المفعول بالكامل.</p>
+
+                <!-- Section 19 -->
+                <h2>19. التغييرات على الشروط</h2>
+                <p>قد نقوم بتحديث هذه الشروط من وقت لآخر. عندما نجري تغييرات:</p>
+                <ul>
+                    <li>سيتم نشر الشروط المحدثة في التطبيق</li>
+                    <li>سيتم تعديل تاريخ "آخر تحديث"</li>
+                    <li>للتغييرات الجوهرية، قد نقدم إشعاراً إضافياً</li>
+                </ul>
+                <p>استمرارك في استخدام التطبيق بعد التغييرات يشكل قبولاً للشروط المحدثة.</p>
+
+                <!-- Section 20 -->
+                <h2>20. اتصل بنا</h2>
+                <p>إذا كانت لديك أي أسئلة حول هذه الشروط، يرجى الاتصال بنا:</p>
+                <div class="contact-box">
+                    <p><strong>البريد الإلكتروني</strong></p>
+                    <a href="mailto:support@med-attendance.online">support@med-attendance.online</a>
+                </div>
+
+                <!-- Section 21 -->
+                <h2>21. الإقرار</h2>
+                <div class="highlight-box">
+                    <p>باستخدام تطبيق Attendance Supervisor، فإنك تقر بأنك قد قرأت وفهمت وتوافق على الالتزام بهذه الشروط
+                        والأحكام و<a href="supervisor_privacy.html" target="_blank">سياسة الخصوصية</a>. كما تقر بأن هذه
+                        الشروط تشكل اتفاقية قانونية ملزمة بينك وبين مزود التطبيق.</p>
+                </div>
+
+                <div class="agreement-box"
+                    style="background: var(--primary); color: white; padding: 30px; border-radius: 12px; margin-top: 40px; text-align: center;">
+                    <p style="color: white; font-weight: 600; margin: 0;">باستخدام Attendance Supervisor، فإنك تقر بأنك
+                        قد قرأت وفهمت وتوافق على الالتزام بهذه الشروط والأحكام.</p>
+                </div>
             </div>
+            <!-- End Arabic Content -->
 
-            <!-- Section 21 -->
-            <h2 id="acknowledgment">21. Acknowledgment</h2>
-            <div class="highlight-box">
-                <p>By using the Attendance Supervisor App, you acknowledge that you have read, understood, and agree
-                    to be bound by these Terms and Conditions and our <a href="supervisor_privacy.html"
-                        target="_blank">Privacy Policy</a>. You also acknowledge that these Terms constitute a
-                    binding legal agreement between you and the App provider.</p>
-            </div>
-
-            <div class="agreement-box"
-                style="background: var(--primary); color: white; padding: 30px; border-radius: 12px; margin-top: 40px; text-align: center;">
-                <p style="color: white; font-weight: 600; margin: 0;">By using Attendance Supervisor, you acknowledge
-                    that
-                    you have read, understood, and agree to be bound by these Terms and Conditions.</p>
-            </div>
         </div>
     </main>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -182,6 +182,31 @@
                 columns: 1;
             }
         }
+
+        /* RTL Support */
+        [dir="rtl"] .info-box,
+        [dir="rtl"] .highlight-box,
+        [dir="rtl"] .warning-box,
+        [dir="rtl"] .important-box {
+            border-left: none;
+            border-right: 4px solid var(--primary);
+        }
+
+        [dir="rtl"] .info-box.warning,
+        [dir="rtl"] .warning-box {
+            border-right-color: #f59e0b;
+        }
+
+        [dir="rtl"] .info-box.danger {
+            border-right-color: #ef4444;
+        }
+
+        [dir="rtl"] .data-table th,
+        [dir="rtl"] .data-table td,
+        [dir="rtl"] .summary-table th,
+        [dir="rtl"] .summary-table td {
+            text-align: right;
+        }
     </style>
 </head>
 
@@ -215,7 +240,7 @@
                 <!-- Language Toggle -->
                 <button id="lang-toggle" class="btn-ghost" aria-label="Switch Language">
                     <i data-lucide="languages"></i>
-                    <span id="current-lang-text">العربية</span>
+                    <span id="current-lang-text">English</span>
                 </button>
             </nav>
         </div>
@@ -223,345 +248,698 @@
 
     <main class="legal-content">
         <div class="container">
-            <h1>Privacy Policy</h1>
-            <p class="last-updated"><strong>Last Updated:</strong> January 2025</p>
+            <h1 data-i18n="privacy_policy">سياسة الخصوصية</h1>
+            <p class="last-updated"><strong>آخر تحديث:</strong> يناير 2025</p>
 
-            <!-- Terms Link -->
-            <div class="terms-link-box">
-                <p>Please also review our <strong>Terms and Conditions</strong> which govern your use of the App.</p>
-                <a href="supervisor_terms.html" target="_blank"><strong>View Terms and Conditions</strong></a>
-            </div>
+            <!-- English Content -->
+            <div id="content-en" style="display: none;">
 
-            <!-- Table of Contents -->
-            <nav class="toc">
-                <h3>Table of Contents</h3>
-                <ol>
-                    <li><a href="#introduction">Introduction</a></li>
-                    <li><a href="#collection">Information We Collect</a></li>
-                    <li><a href="#usage">How We Use Your Information</a></li>
-                    <li><a href="#sharing">How We Share Your Information</a></li>
-                    <li><a href="#storage">Data Storage and Security</a></li>
-                    <li><a href="#ownership">Data Ownership</a></li>
-                    <li><a href="#retention">Data Retention</a></li>
-                    <li><a href="#rights">Your Rights and Choices</a></li>
-                    <li><a href="#children">Children's Privacy</a></li>
-                    <li><a href="#international">International Data Transfers</a></li>
-                    <li><a href="#third-party">Third-Party Services</a></li>
-                    <li><a href="#offline">Offline Data and Sync</a></li>
-                    <li><a href="#changes">Changes to This Policy</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li><a href="#legal-basis">Legal Basis for Processing</a></li>
-                    <li><a href="#governing">Governing Law</a></li>
-                    <li><a href="#summary">Summary of Key Points</a></li>
-                    <li><a href="#acknowledgment">Acknowledgment</a></li>
-                </ol>
-            </nav>
+                <!-- Terms Link -->
+                <div class="terms-link-box">
+                    <p>Please also review our <strong>Terms and Conditions</strong> which govern your use of the App.
+                    </p>
+                    <a href="supervisor_terms.html" target="_blank"><strong>View Terms and Conditions</strong></a>
+                </div>
 
-            <!-- Section 1 -->
-            <h2 id="introduction">1. Introduction</h2>
-            <p>Welcome to Attendance Supervisor ("App," "Service," "we," "us," or "our"). We are committed to
-                protecting your privacy and ensuring the security of your personal information.</p>
-            <p>This Privacy Policy explains how we collect, use, store, share, and protect your information when you
-                use the Attendance Supervisor mobile application. By using the App, you consent to the practices
-                described in this Privacy Policy.</p>
-            <p>Please read this Privacy Policy carefully. If you do not agree with our policies and practices, do
-                not use the App.</p>
+                <!-- Table of Contents -->
+                <nav class="toc">
+                    <h3>Table of Contents</h3>
+                    <ol>
+                        <li><a href="#introduction">Introduction</a></li>
+                        <li><a href="#collection">Information We Collect</a></li>
+                        <li><a href="#usage">How We Use Your Information</a></li>
+                        <li><a href="#sharing">How We Share Your Information</a></li>
+                        <li><a href="#storage">Data Storage and Security</a></li>
+                        <li><a href="#ownership">Data Ownership</a></li>
+                        <li><a href="#retention">Data Retention</a></li>
+                        <li><a href="#rights">Your Rights and Choices</a></li>
+                        <li><a href="#children">Children's Privacy</a></li>
+                        <li><a href="#international">International Data Transfers</a></li>
+                        <li><a href="#third-party">Third-Party Services</a></li>
+                        <li><a href="#offline">Offline Data and Sync</a></li>
+                        <li><a href="#changes">Changes to This Policy</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#legal-basis">Legal Basis for Processing</a></li>
+                        <li><a href="#governing">Governing Law</a></li>
+                        <li><a href="#summary">Summary of Key Points</a></li>
+                        <li><a href="#acknowledgment">Acknowledgment</a></li>
+                    </ol>
+                </nav>
 
-            <!-- Section 2 -->
-            <h2 id="collection">2. Information We Collect</h2>
-            <p>We collect different types of information to provide and improve our Service.</p>
+                <!-- Section 1 -->
+                <h2 id="introduction">1. Introduction</h2>
+                <p>Welcome to Attendance Supervisor ("App," "Service," "we," "us," or "our"). We are committed to
+                    protecting your privacy and ensuring the security of your personal information.</p>
+                <p>This Privacy Policy explains how we collect, use, store, share, and protect your information when you
+                    use the Attendance Supervisor mobile application. By using the App, you consent to the practices
+                    described in this Privacy Policy.</p>
+                <p>Please read this Privacy Policy carefully. If you do not agree with our policies and practices, do
+                    not use the App.</p>
 
-            <h3>2.1 Personal Information You Provide</h3>
-            <p>When you register for an account and use the App, you provide us with the following personal information:
-            </p>
-            <table class="data-table">
-                <thead>
-                    <tr>
-                        <th>Information</th>
-                        <th>Purpose</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Full Name</strong></td>
-                        <td>Account identification and display</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Mobile Phone Number</strong></td>
-                        <td>Account registration, verification, and communication</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Password</strong></td>
-                        <td>Account security (stored in encrypted/hashed form)</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Job Title</strong></td>
-                        <td>Professional profile information</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Professional Field</strong></td>
-                        <td>Professional profile information</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Profile Photo</strong></td>
-                        <td>Account personalization (optional)</td>
-                    </tr>
-                </tbody>
-            </table>
+                <!-- Section 2 -->
+                <h2 id="collection">2. Information We Collect</h2>
+                <p>We collect different types of information to provide and improve our Service.</p>
 
-            <h3>2.2 Information Collected Automatically</h3>
-            <p>When you use the App, we automatically collect certain information:</p>
-            <table class="data-table">
-                <thead>
-                    <tr>
-                        <th>Information</th>
-                        <th>Purpose</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Device Identifier (UUID)</strong></td>
-                        <td>Device recognition and session management</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Device Type</strong></td>
-                        <td>Service optimization and support</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Operating System & Version</strong></td>
-                        <td>Compatibility and troubleshooting</td>
-                    </tr>
-                    <tr>
-                        <td><strong>App Version</strong></td>
-                        <td>Version management and updates</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3>2.3 Attendance Data</h3>
-            <p>When you use the App for attendance tracking, the following data is collected:</p>
-            <ul>
-                <li>Student/Trainee ID and Name</li>
-                <li>Check-in/Check-out Timestamps</li>
-                <li>NFC Card Identifiers</li>
-                <li>Bluetooth Device Identifiers</li>
-                <li>Attendance Status</li>
-            </ul>
-
-            <!-- Section 3 -->
-            <h2 id="usage">3. How We Use Your Information</h2>
-            <p>We use the collected information for the following purposes:</p>
-            <ul>
-                <li><strong>Account Management:</strong> Create and manage your account</li>
-                <li><strong>Service Provision:</strong> Provide attendance tracking functionality</li>
-                <li><strong>Authentication:</strong> Verify your identity and secure your account</li>
-                <li><strong>Communication:</strong> Send service-related notifications</li>
-                <li><strong>Improvement:</strong> Analyze usage patterns to improve the App</li>
-                <li><strong>Support:</strong> Respond to your inquiries and provide assistance</li>
-                <li><strong>Security:</strong> Detect and prevent fraud and security incidents</li>
-            </ul>
-
-            <!-- Section 4 -->
-            <h2 id="sharing">4. How We Share Your Information</h2>
-            <h3>4.1 With Your Institution</h3>
-            <p>We share attendance data and your professional profile with the institution(s) you are affiliated with.
-                This is necessary for the core functionality of the App.</p>
-
-            <h3>4.2 With Service Providers</h3>
-            <p>We may share information with third-party service providers who assist us in operating the App:</p>
-            <ul>
-                <li>Cloud hosting providers</li>
-                <li>Analytics services</li>
-                <li>Communication platforms (Telegram for verification)</li>
-            </ul>
-
-            <div class="important-box">
-                <p><strong>We Do Not Sell Your Data</strong></p>
-                <p>We do not sell, rent, or trade your personal information to third parties for marketing purposes.</p>
-            </div>
-
-            <!-- Section 5 -->
-            <h2 id="storage">5. Data Storage and Security</h2>
-            <h3>5.1 Security Measures</h3>
-            <p>We implement appropriate security measures to protect your information:</p>
-            <ul>
-                <li>Encrypted data transmission (HTTPS/TLS)</li>
-                <li>Secure password hashing</li>
-                <li>Access controls and authentication</li>
-                <li>Regular security assessments</li>
-            </ul>
-
-            <h3>5.2 Data Location</h3>
-            <p>Your data is stored on secure servers. By using the App, you consent to the transfer and storage of
-                your data on these servers.</p>
-
-            <!-- Section 6 -->
-            <h2 id="ownership">6. Data Ownership</h2>
-            <ul>
-                <li><strong>Your Personal Data:</strong> You retain ownership of your personal profile information</li>
-                <li><strong>Attendance Data:</strong> Owned by the institution you are affiliated with</li>
-                <li><strong>Application Data:</strong> The App provider owns aggregated, anonymized usage data</li>
-            </ul>
-
-            <!-- Section 7 -->
-            <h2 id="retention">7. Data Retention</h2>
-            <ul>
-                <li><strong>Active Accounts:</strong> Data retained while your account is active</li>
-                <li><strong>Account Deletion:</strong> Personal data deleted within 30 days of account deletion</li>
-                <li><strong>Attendance Records:</strong> May be retained by institutions as required</li>
-            </ul>
-
-            <!-- Section 8 -->
-            <h2 id="rights">8. Your Rights and Choices</h2>
-            <p>You have the following rights regarding your personal information:</p>
-            <ul>
-                <li><strong>Access:</strong> View your personal data through the App</li>
-                <li><strong>Update:</strong> Correct or update your profile information</li>
-                <li><strong>Delete:</strong> Request deletion of your account and personal data</li>
-                <li><strong>Export:</strong> Request a copy of your data</li>
-            </ul>
-
-            <h3>Account Deletion</h3>
-            <p>You can delete your account through:</p>
-            <ul>
-                <li>The account deletion feature in the App settings</li>
-                <li>Contacting our support team</li>
-            </ul>
-
-            <!-- Section 9 -->
-            <h2 id="children">9. Children's Privacy</h2>
-            <div class="warning-box">
-                <p><strong>The Attendance Supervisor App is not intended for users under 18 years of age.</strong></p>
-                <p>We do not knowingly collect personal information from children under 18. If you believe we have
-                    collected information from a minor, please contact us immediately.</p>
-            </div>
-
-            <!-- Section 10 -->
-            <h2 id="international">10. International Data Transfers</h2>
-            <p>Your information may be transferred to and processed in countries other than your own. We ensure
-                appropriate safeguards are in place for such transfers.</p>
-
-            <!-- Section 11 -->
-            <h2 id="third-party">11. Third-Party Services</h2>
-            <p>The App integrates with the following third-party services:</p>
-            <ul>
-                <li><strong>Telegram:</strong> For account verification and notifications</li>
-                <li><strong>Google Firebase:</strong> For authentication and cloud services</li>
-            </ul>
-            <p>Your use of these services is subject to their respective privacy policies.</p>
-
-            <!-- Section 12 -->
-            <h2 id="offline">12. Offline Data and Synchronization</h2>
-            <p>The App stores attendance data locally when offline. This data is automatically synchronized when
-                connectivity is restored. We recommend using device-level security to protect locally stored data.</p>
-
-            <!-- Section 13 -->
-            <h2 id="changes">13. Changes to This Privacy Policy</h2>
-            <p>We may update this Privacy Policy from time to time. When we make changes:</p>
-            <ul>
-                <li>The updated policy will be posted in the App</li>
-                <li>The "Last Updated" date will be revised</li>
-                <li>For significant changes, we may provide additional notice</li>
-            </ul>
-            <p>Your continued use of the App after changes constitutes acceptance of the updated policy.</p>
-
-            <!-- Section 14 -->
-            <h2 id="contact">14. Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy, please contact us:</p>
-            <div class="contact-box">
-                <p><strong>Email</strong></p>
-                <a href="mailto:support@med-attendance.online">support@med-attendance.online</a>
-            </div>
-
-            <!-- Section 15 -->
-            <h2 id="legal-basis">15. Legal Basis for Processing</h2>
-            <p>We process your personal information based on:</p>
-            <table class="data-table">
-                <thead>
-                    <tr>
-                        <th>Legal Basis</th>
-                        <th>Application</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Consent</strong></td>
-                        <td>When you create an account and agree to this Privacy Policy</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Contract Performance</strong></td>
-                        <td>To provide the Service you requested</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Legitimate Interests</strong></td>
-                        <td>To improve our Service and ensure security</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Legal Obligation</strong></td>
-                        <td>To comply with applicable laws</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <!-- Section 16 -->
-            <h2 id="governing">16. Governing Law</h2>
-            <p>This Privacy Policy is governed by the laws of the <strong>Arab Republic of Egypt</strong>. Any
-                disputes arising from this Privacy Policy shall be subject to the exclusive jurisdiction of the
-                courts of Egypt.</p>
-
-            <!-- Section 17 -->
-            <h2 id="summary">17. Summary of Key Points</h2>
-            <div class="summary-table">
-                <table>
+                <h3>2.1 Personal Information You Provide</h3>
+                <p>When you register for an account and use the App, you provide us with the following personal
+                    information:
+                </p>
+                <table class="data-table">
                     <thead>
                         <tr>
-                            <th>Topic</th>
-                            <th>Summary</th>
+                            <th>Information</th>
+                            <th>Purpose</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Data Collection</strong></td>
-                            <td>Name, phone, professional info, device info, attendance data</td>
+                            <td><strong>Full Name</strong></td>
+                            <td>Account identification and display</td>
                         </tr>
                         <tr>
-                            <td><strong>Data Usage</strong></td>
-                            <td>Attendance tracking services and App improvement</td>
+                            <td><strong>Mobile Phone Number</strong></td>
+                            <td>Account registration, verification, and communication</td>
                         </tr>
                         <tr>
-                            <td><strong>Data Sharing</strong></td>
-                            <td>With your institution and service providers only; never sold</td>
+                            <td><strong>Password</strong></td>
+                            <td>Account security (stored in encrypted/hashed form)</td>
                         </tr>
                         <tr>
-                            <td><strong>Data Security</strong></td>
-                            <td>Encrypted storage and transmission; secure servers</td>
+                            <td><strong>Job Title</strong></td>
+                            <td>Professional profile information</td>
                         </tr>
                         <tr>
-                            <td><strong>Your Rights</strong></td>
-                            <td>Access, update, and delete your personal information</td>
+                            <td><strong>Professional Field</strong></td>
+                            <td>Professional profile information</td>
                         </tr>
                         <tr>
-                            <td><strong>Contact</strong></td>
-                            <td>support@med-attendance.online</td>
+                            <td><strong>Profile Photo</strong></td>
+                            <td>Account personalization (optional)</td>
                         </tr>
                     </tbody>
                 </table>
-            </div>
 
-            <!-- Section 18 -->
-            <h2 id="acknowledgment">18. Acknowledgment</h2>
-            <div class="highlight-box">
-                <p>By using the Attendance Supervisor App, you acknowledge that you have read and understood this
-                    Privacy Policy and our <a href="supervisor_terms.html" target="_blank">Terms and Conditions</a>,
-                    and consent to the collection, use, and sharing of your information as described herein.</p>
-            </div>
+                <h3>2.2 Information Collected Automatically</h3>
+                <p>When you use the App, we automatically collect certain information:</p>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Information</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Device Identifier (UUID)</strong></td>
+                            <td>Device recognition and session management</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Device Type</strong></td>
+                            <td>Service optimization and support</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Operating System & Version</strong></td>
+                            <td>Compatibility and troubleshooting</td>
+                        </tr>
+                        <tr>
+                            <td><strong>App Version</strong></td>
+                            <td>Version management and updates</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-            <div class="agreement-box"
-                style="background: var(--primary); color: white; padding: 30px; border-radius: 12px; margin-top: 40px; text-align: center;">
-                <p style="color: white; font-weight: 600; margin: 0;">By using Attendance Supervisor, you acknowledge
-                    that
-                    you have read and understood this Privacy Policy.</p>
+                <h3>2.3 Attendance Data</h3>
+                <p>When you use the App for attendance tracking, the following data is collected:</p>
+                <ul>
+                    <li>Student/Trainee ID and Name</li>
+                    <li>Check-in/Check-out Timestamps</li>
+                    <li>NFC Card Identifiers</li>
+                    <li>Bluetooth Device Identifiers</li>
+                    <li>Attendance Status</li>
+                </ul>
+
+                <!-- Section 3 -->
+                <h2 id="usage">3. How We Use Your Information</h2>
+                <p>We use the collected information for the following purposes:</p>
+                <ul>
+                    <li><strong>Account Management:</strong> Create and manage your account</li>
+                    <li><strong>Service Provision:</strong> Provide attendance tracking functionality</li>
+                    <li><strong>Authentication:</strong> Verify your identity and secure your account</li>
+                    <li><strong>Communication:</strong> Send service-related notifications</li>
+                    <li><strong>Improvement:</strong> Analyze usage patterns to improve the App</li>
+                    <li><strong>Support:</strong> Respond to your inquiries and provide assistance</li>
+                    <li><strong>Security:</strong> Detect and prevent fraud and security incidents</li>
+                </ul>
+
+                <!-- Section 4 -->
+                <h2 id="sharing">4. How We Share Your Information</h2>
+                <h3>4.1 With Your Institution</h3>
+                <p>We share attendance data and your professional profile with the institution(s) you are affiliated
+                    with.
+                    This is necessary for the core functionality of the App.</p>
+
+                <h3>4.2 With Service Providers</h3>
+                <p>We may share information with third-party service providers who assist us in operating the App:</p>
+                <ul>
+                    <li>Cloud hosting providers</li>
+                    <li>Analytics services</li>
+                    <li>Communication platforms (Telegram for verification)</li>
+                </ul>
+
+                <div class="important-box">
+                    <p><strong>We Do Not Sell Your Data</strong></p>
+                    <p>We do not sell, rent, or trade your personal information to third parties for marketing purposes.
+                    </p>
+                </div>
+
+                <!-- Section 5 -->
+                <h2 id="storage">5. Data Storage and Security</h2>
+                <h3>5.1 Security Measures</h3>
+                <p>We implement appropriate security measures to protect your information:</p>
+                <ul>
+                    <li>Encrypted data transmission (HTTPS/TLS)</li>
+                    <li>Secure password hashing</li>
+                    <li>Access controls and authentication</li>
+                    <li>Regular security assessments</li>
+                </ul>
+
+                <h3>5.2 Data Location</h3>
+                <p>Your data is stored on secure servers. By using the App, you consent to the transfer and storage of
+                    your data on these servers.</p>
+
+                <!-- Section 6 -->
+                <h2 id="ownership">6. Data Ownership</h2>
+                <ul>
+                    <li><strong>Your Personal Data:</strong> You retain ownership of your personal profile information
+                    </li>
+                    <li><strong>Attendance Data:</strong> Owned by the institution you are affiliated with</li>
+                    <li><strong>Application Data:</strong> The App provider owns aggregated, anonymized usage data</li>
+                </ul>
+
+                <!-- Section 7 -->
+                <h2 id="retention">7. Data Retention</h2>
+                <ul>
+                    <li><strong>Active Accounts:</strong> Data retained while your account is active</li>
+                    <li><strong>Account Deletion:</strong> Personal data deleted within 30 days of account deletion</li>
+                    <li><strong>Attendance Records:</strong> May be retained by institutions as required</li>
+                </ul>
+
+                <!-- Section 8 -->
+                <h2 id="rights">8. Your Rights and Choices</h2>
+                <p>You have the following rights regarding your personal information:</p>
+                <ul>
+                    <li><strong>Access:</strong> View your personal data through the App</li>
+                    <li><strong>Update:</strong> Correct or update your profile information</li>
+                    <li><strong>Delete:</strong> Request deletion of your account and personal data</li>
+                    <li><strong>Export:</strong> Request a copy of your data</li>
+                </ul>
+
+                <h3>Account Deletion</h3>
+                <p>You can delete your account through:</p>
+                <ul>
+                    <li>The account deletion feature in the App settings</li>
+                    <li>Contacting our support team</li>
+                </ul>
+
+                <!-- Section 9 -->
+                <h2 id="children">9. Children's Privacy</h2>
+                <div class="warning-box">
+                    <p><strong>The Attendance Supervisor App is not intended for users under 18 years of age.</strong>
+                    </p>
+                    <p>We do not knowingly collect personal information from children under 18. If you believe we have
+                        collected information from a minor, please contact us immediately.</p>
+                </div>
+
+                <!-- Section 10 -->
+                <h2 id="international">10. International Data Transfers</h2>
+                <p>Your information may be transferred to and processed in countries other than your own. We ensure
+                    appropriate safeguards are in place for such transfers.</p>
+
+                <!-- Section 11 -->
+                <h2 id="third-party">11. Third-Party Services</h2>
+                <p>The App integrates with the following third-party services:</p>
+                <ul>
+                    <li><strong>Telegram:</strong> For account verification and notifications</li>
+                    <li><strong>Google Firebase:</strong> For authentication and cloud services</li>
+                </ul>
+                <p>Your use of these services is subject to their respective privacy policies.</p>
+
+                <!-- Section 12 -->
+                <h2 id="offline">12. Offline Data and Synchronization</h2>
+                <p>The App stores attendance data locally when offline. This data is automatically synchronized when
+                    connectivity is restored. We recommend using device-level security to protect locally stored data.
+                </p>
+
+                <!-- Section 13 -->
+                <h2 id="changes">13. Changes to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy from time to time. When we make changes:</p>
+                <ul>
+                    <li>The updated policy will be posted in the App</li>
+                    <li>The "Last Updated" date will be revised</li>
+                    <li>For significant changes, we may provide additional notice</li>
+                </ul>
+                <p>Your continued use of the App after changes constitutes acceptance of the updated policy.</p>
+
+                <!-- Section 14 -->
+                <h2 id="contact">14. Contact Us</h2>
+                <p>If you have any questions about this Privacy Policy, please contact us:</p>
+                <div class="contact-box">
+                    <p><strong>Email</strong></p>
+                    <a href="mailto:support@med-attendance.online">support@med-attendance.online</a>
+                </div>
+
+                <!-- Section 15 -->
+                <h2 id="legal-basis">15. Legal Basis for Processing</h2>
+                <p>We process your personal information based on:</p>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Legal Basis</th>
+                            <th>Application</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Consent</strong></td>
+                            <td>When you create an account and agree to this Privacy Policy</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Contract Performance</strong></td>
+                            <td>To provide the Service you requested</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Legitimate Interests</strong></td>
+                            <td>To improve our Service and ensure security</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Legal Obligation</strong></td>
+                            <td>To comply with applicable laws</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Section 16 -->
+                <h2 id="governing">16. Governing Law</h2>
+                <p>This Privacy Policy is governed by the laws of the <strong>Arab Republic of Egypt</strong>. Any
+                    disputes arising from this Privacy Policy shall be subject to the exclusive jurisdiction of the
+                    courts of Egypt.</p>
+
+                <!-- Section 17 -->
+                <h2 id="summary">17. Summary of Key Points</h2>
+                <div class="summary-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Topic</th>
+                                <th>Summary</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Data Collection</strong></td>
+                                <td>Name, phone, professional info, device info, attendance data</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Usage</strong></td>
+                                <td>Attendance tracking services and App improvement</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Sharing</strong></td>
+                                <td>With your institution and service providers only; never sold</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Security</strong></td>
+                                <td>Encrypted storage and transmission; secure servers</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Your Rights</strong></td>
+                                <td>Access, update, and delete your personal information</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Contact</strong></td>
+                                <td>support@med-attendance.online</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Section 18 -->
+                <h2 id="acknowledgment">18. Acknowledgment</h2>
+                <div class="highlight-box">
+                    <p>By using the Attendance Supervisor App, you acknowledge that you have read and understood this
+                        Privacy Policy and our <a href="supervisor_terms.html" target="_blank">Terms and Conditions</a>,
+                        and consent to the collection, use, and sharing of your information as described herein.</p>
+                </div>
+
+                <div class="agreement-box"
+                    style="background: var(--primary); color: white; padding: 30px; border-radius: 12px; margin-top: 40px; text-align: center;">
+                    <p style="color: white; font-weight: 600; margin: 0;">By using Attendance Supervisor, you
+                        acknowledge
+                        that
+                        you have read and understood this Privacy Policy.</p>
+                </div>
             </div>
+            <!-- End English Content -->
+
+            <!-- Arabic Content -->
+            <div id="content-ar">
+                <!-- Terms Link -->
+                <div class="terms-link-box">
+                    <p>يرجى أيضاً مراجعة <strong>الشروط والأحكام</strong> التي تحكم استخدامك للتطبيق.</p>
+                    <a href="supervisor_terms.html" target="_blank"><strong>عرض الشروط والأحكام</strong></a>
+                </div>
+
+                <!-- Table of Contents -->
+                <nav class="toc">
+                    <h3>جدول المحتويات</h3>
+                    <ol>
+                        <li><a href="#introduction">مقدمة</a></li>
+                        <li><a href="#collection">المعلومات التي نجمعها</a></li>
+                        <li><a href="#usage">كيف نستخدم معلوماتك</a></li>
+                        <li><a href="#sharing">كيف نشارك معلوماتك</a></li>
+                        <li><a href="#storage">تخزين البيانات والأمان</a></li>
+                        <li><a href="#ownership">ملكية البيانات</a></li>
+                        <li><a href="#retention">الاحتفاظ بالبيانات</a></li>
+                        <li><a href="#rights">حقوقك وخياراتك</a></li>
+                        <li><a href="#children">خصوصية الأطفال</a></li>
+                        <li><a href="#international">نقل البيانات الدولي</a></li>
+                        <li><a href="#third-party">خدمات الطرف الثالث</a></li>
+                        <li><a href="#offline">البيانات غير المتصلة والمزامنة</a></li>
+                        <li><a href="#changes">التغييرات على هذه السياسة</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                        <li><a href="#legal-basis">الأساس القانوني للمعالجة</a></li>
+                        <li><a href="#governing">القانون الحاكم</a></li>
+                        <li><a href="#summary">ملخص النقاط الرئيسية</a></li>
+                        <li><a href="#acknowledgment">الإقرار</a></li>
+                    </ol>
+                </nav>
+
+                <!-- Section 1 -->
+                <h2>1. مقدمة</h2>
+                <p>مرحباً بك في Attendance Supervisor ("التطبيق" أو "الخدمة" أو "نحن"). نحن ملتزمون بحماية خصوصيتك وضمان
+                    أمان معلوماتك الشخصية.</p>
+                <p>تشرح سياسة الخصوصية هذه كيف نجمع ونستخدم ونخزن ونشارك ونحمي معلوماتك عند استخدامك لتطبيق Attendance
+                    Supervisor للهاتف المحمول. باستخدام التطبيق، فإنك توافق على الممارسات الموضحة في سياسة الخصوصية هذه.
+                </p>
+                <p>يرجى قراءة سياسة الخصوصية هذه بعناية. إذا كنت لا توافق على سياساتنا وممارساتنا، فلا تستخدم التطبيق.
+                </p>
+
+                <!-- Section 2 -->
+                <h2>2. المعلومات التي نجمعها</h2>
+                <p>نجمع أنواعاً مختلفة من المعلومات لتقديم خدمتنا وتحسينها.</p>
+
+                <h3>2.1 المعلومات الشخصية التي تقدمها</h3>
+                <p>عند التسجيل للحصول على حساب واستخدام التطبيق، تقدم لنا المعلومات الشخصية التالية:</p>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>المعلومات</th>
+                            <th>الغرض</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>الاسم الكامل</strong></td>
+                            <td>تعريف الحساب وعرضه</td>
+                        </tr>
+                        <tr>
+                            <td><strong>رقم الهاتف المحمول</strong></td>
+                            <td>تسجيل الحساب والتحقق والتواصل</td>
+                        </tr>
+                        <tr>
+                            <td><strong>كلمة المرور</strong></td>
+                            <td>أمان الحساب (مخزنة بشكل مشفر)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>المسمى الوظيفي</strong></td>
+                            <td>معلومات الملف الشخصي المهني</td>
+                        </tr>
+                        <tr>
+                            <td><strong>المجال المهني</strong></td>
+                            <td>معلومات الملف الشخصي المهني</td>
+                        </tr>
+                        <tr>
+                            <td><strong>صورة الملف الشخصي</strong></td>
+                            <td>تخصيص الحساب (اختياري)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>2.2 المعلومات التي يتم جمعها تلقائياً</h3>
+                <p>عند استخدام التطبيق، نجمع تلقائياً معلومات معينة:</p>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>المعلومات</th>
+                            <th>الغرض</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>معرف الجهاز (UUID)</strong></td>
+                            <td>التعرف على الجهاز وإدارة الجلسات</td>
+                        </tr>
+                        <tr>
+                            <td><strong>نوع الجهاز</strong></td>
+                            <td>تحسين الخدمة والدعم</td>
+                        </tr>
+                        <tr>
+                            <td><strong>نظام التشغيل والإصدار</strong></td>
+                            <td>التوافق واستكشاف الأخطاء</td>
+                        </tr>
+                        <tr>
+                            <td><strong>إصدار التطبيق</strong></td>
+                            <td>إدارة الإصدارات والتحديثات</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>2.3 بيانات الحضور</h3>
+                <p>عند استخدام التطبيق لتتبع الحضور، يتم جمع البيانات التالية:</p>
+                <ul>
+                    <li>معرف واسم الطالب/المتدرب</li>
+                    <li>طوابع وقت تسجيل الدخول/الخروج</li>
+                    <li>معرفات بطاقات NFC</li>
+                    <li>معرفات أجهزة البلوتوث</li>
+                    <li>حالة الحضور</li>
+                </ul>
+
+                <!-- Section 3 -->
+                <h2>3. كيف نستخدم معلوماتك</h2>
+                <p>نستخدم المعلومات التي نجمعها للأغراض التالية:</p>
+                <ul>
+                    <li><strong>إدارة الحساب:</strong> إنشاء وإدارة حسابك</li>
+                    <li><strong>تقديم الخدمة:</strong> توفير وظائف تتبع الحضور</li>
+                    <li><strong>المصادقة:</strong> التحقق من هويتك وتأمين حسابك</li>
+                    <li><strong>التواصل:</strong> إرسال إشعارات متعلقة بالخدمة</li>
+                    <li><strong>التحسين:</strong> تحليل أنماط الاستخدام لتحسين التطبيق</li>
+                    <li><strong>الدعم:</strong> الرد على استفساراتك وتقديم المساعدة</li>
+                    <li><strong>الأمان:</strong> اكتشاف ومنع الاحتيال والحوادث الأمنية</li>
+                </ul>
+
+                <!-- Section 4 -->
+                <h2>4. كيف نشارك معلوماتك</h2>
+                <h3>4.1 مع مؤسستك</h3>
+                <p>نشارك بيانات الحضور وملفك الشخصي المهني مع المؤسسة(المؤسسات) التي أنت تابع لها. هذا ضروري للوظائف
+                    الأساسية للتطبيق.</p>
+
+                <h3>4.2 مع مزودي الخدمة</h3>
+                <p>قد نشارك المعلومات مع مزودي خدمة الطرف الثالث الذين يساعدوننا في تشغيل التطبيق:</p>
+                <ul>
+                    <li>مزودي الاستضافة السحابية</li>
+                    <li>خدمات التحليلات</li>
+                    <li>منصات التواصل (تيليجرام للتحقق)</li>
+                </ul>
+
+                <div class="important-box">
+                    <p><strong>نحن لا نبيع بياناتك</strong></p>
+                    <p>نحن لا نبيع أو نؤجر أو نتاجر في معلوماتك الشخصية لأطراف ثالثة لأغراض تسويقية.</p>
+                </div>
+
+                <!-- Section 5 -->
+                <h2>5. تخزين البيانات والأمان</h2>
+                <h3>5.1 تدابير الأمان</h3>
+                <p>ننفذ تدابير أمنية مناسبة لحماية معلوماتك:</p>
+                <ul>
+                    <li>نقل البيانات المشفر (HTTPS/TLS)</li>
+                    <li>تشفير كلمات المرور الآمن</li>
+                    <li>ضوابط الوصول والمصادقة</li>
+                    <li>تقييمات أمنية منتظمة</li>
+                </ul>
+
+                <h3>5.2 موقع البيانات</h3>
+                <p>يتم تخزين بياناتك على خوادم آمنة. باستخدام التطبيق، فإنك توافق على نقل وتخزين بياناتك على هذه
+                    الخوادم.</p>
+
+                <!-- Section 6 -->
+                <h2>6. ملكية البيانات</h2>
+                <ul>
+                    <li><strong>بياناتك الشخصية:</strong> تحتفظ بملكية معلومات ملفك الشخصي</li>
+                    <li><strong>بيانات الحضور:</strong> مملوكة للمؤسسة التي أنت تابع لها</li>
+                    <li><strong>بيانات التطبيق:</strong> يمتلك مزود التطبيق البيانات المجمعة والمجهولة</li>
+                </ul>
+
+                <!-- Section 7 -->
+                <h2>7. الاحتفاظ بالبيانات</h2>
+                <ul>
+                    <li><strong>الحسابات النشطة:</strong> يتم الاحتفاظ بالبيانات طالما كان حسابك نشطاً</li>
+                    <li><strong>حذف الحساب:</strong> يتم حذف البيانات الشخصية خلال 30 يوماً من حذف الحساب</li>
+                    <li><strong>سجلات الحضور:</strong> قد تحتفظ بها المؤسسات حسب الحاجة</li>
+                </ul>
+
+                <!-- Section 8 -->
+                <h2>8. حقوقك وخياراتك</h2>
+                <p>لديك الحقوق التالية فيما يتعلق بمعلوماتك الشخصية:</p>
+                <ul>
+                    <li><strong>الوصول:</strong> عرض بياناتك الشخصية من خلال التطبيق</li>
+                    <li><strong>التحديث:</strong> تصحيح أو تحديث معلومات ملفك الشخصي</li>
+                    <li><strong>الحذف:</strong> طلب حذف حسابك وبياناتك الشخصية</li>
+                    <li><strong>التصدير:</strong> طلب نسخة من بياناتك</li>
+                </ul>
+
+                <h3>حذف الحساب</h3>
+                <p>يمكنك حذف حسابك من خلال:</p>
+                <ul>
+                    <li>ميزة حذف الحساب في إعدادات التطبيق</li>
+                    <li>الاتصال بفريق الدعم لدينا</li>
+                </ul>
+
+                <!-- Section 9 -->
+                <h2>9. خصوصية الأطفال</h2>
+                <div class="warning-box">
+                    <p><strong>تطبيق Attendance Supervisor غير مخصص للمستخدمين الذين تقل أعمارهم عن 18 عاماً.</strong>
+                    </p>
+                    <p>نحن لا نجمع معلومات شخصية من الأطفال دون 18 عاماً عن علم. إذا كنت تعتقد أننا جمعنا معلومات من
+                        قاصر، يرجى الاتصال بنا فوراً.</p>
+                </div>
+
+                <!-- Section 10 -->
+                <h2>10. نقل البيانات الدولي</h2>
+                <p>قد يتم نقل معلوماتك ومعالجتها في دول أخرى غير دولتك. نحن نضمن وجود ضمانات مناسبة لمثل هذه التحويلات.
+                </p>
+
+                <!-- Section 11 -->
+                <h2>11. خدمات الطرف الثالث</h2>
+                <p>يتكامل التطبيق مع خدمات الطرف الثالث التالية:</p>
+                <ul>
+                    <li><strong>تيليجرام:</strong> للتحقق من الحساب والإشعارات</li>
+                    <li><strong>Google Firebase:</strong> للمصادقة والخدمات السحابية</li>
+                </ul>
+                <p>استخدامك لهذه الخدمات يخضع لسياسات الخصوصية الخاصة بها.</p>
+
+                <!-- Section 12 -->
+                <h2>12. البيانات غير المتصلة والمزامنة</h2>
+                <p>يخزن التطبيق بيانات الحضور محلياً عند عدم الاتصال. تتم مزامنة هذه البيانات تلقائياً عند استعادة
+                    الاتصال. نوصي باستخدام أمان على مستوى الجهاز لحماية البيانات المخزنة محلياً.</p>
+
+                <!-- Section 13 -->
+                <h2>13. التغييرات على سياسة الخصوصية هذه</h2>
+                <p>قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. عندما نجري تغييرات:</p>
+                <ul>
+                    <li>سيتم نشر السياسة المحدثة في التطبيق</li>
+                    <li>سيتم تعديل تاريخ "آخر تحديث"</li>
+                    <li>للتغييرات الجوهرية، قد نقدم إشعاراً إضافياً</li>
+                </ul>
+                <p>استمرارك في استخدام التطبيق بعد التغييرات يشكل قبولاً للسياسة المحدثة.</p>
+
+                <!-- Section 14 -->
+                <h2>14. اتصل بنا</h2>
+                <p>إذا كانت لديك أي أسئلة حول سياسة الخصوصية هذه، يرجى الاتصال بنا:</p>
+                <div class="contact-box">
+                    <p><strong>البريد الإلكتروني</strong></p>
+                    <a href="mailto:support@med-attendance.online">support@med-attendance.online</a>
+                </div>
+
+                <!-- Section 15 -->
+                <h2>15. الأساس القانوني للمعالجة</h2>
+                <p>نعالج معلوماتك الشخصية بناءً على:</p>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>الأساس القانوني</th>
+                            <th>التطبيق</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>الموافقة</strong></td>
+                            <td>عند إنشاء حساب والموافقة على سياسة الخصوصية هذه</td>
+                        </tr>
+                        <tr>
+                            <td><strong>تنفيذ العقد</strong></td>
+                            <td>لتقديم الخدمة التي طلبتها</td>
+                        </tr>
+                        <tr>
+                            <td><strong>المصالح المشروعة</strong></td>
+                            <td>لتحسين خدمتنا وضمان الأمان</td>
+                        </tr>
+                        <tr>
+                            <td><strong>الالتزام القانوني</strong></td>
+                            <td>للامتثال للقوانين المعمول بها</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Section 16 -->
+                <h2>16. القانون الحاكم</h2>
+                <p>تخضع سياسة الخصوصية هذه لقوانين <strong>جمهورية مصر العربية</strong>. أي نزاعات تنشأ عن سياسة
+                    الخصوصية هذه تخضع للاختصاص القضائي الحصري لمحاكم مصر.</p>
+
+                <!-- Section 17 -->
+                <h2>17. ملخص النقاط الرئيسية</h2>
+                <div class="summary-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>الموضوع</th>
+                                <th>الملخص</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>جمع البيانات</strong></td>
+                                <td>الاسم، الهاتف، المعلومات المهنية، معلومات الجهاز، بيانات الحضور</td>
+                            </tr>
+                            <tr>
+                                <td><strong>استخدام البيانات</strong></td>
+                                <td>خدمات تتبع الحضور وتحسين التطبيق</td>
+                            </tr>
+                            <tr>
+                                <td><strong>مشاركة البيانات</strong></td>
+                                <td>مع مؤسستك ومزودي الخدمة فقط؛ لا تُباع أبداً</td>
+                            </tr>
+                            <tr>
+                                <td><strong>أمان البيانات</strong></td>
+                                <td>تخزين ونقل مشفر؛ خوادم آمنة</td>
+                            </tr>
+                            <tr>
+                                <td><strong>حقوقك</strong></td>
+                                <td>الوصول وتحديث وحذف معلوماتك الشخصية</td>
+                            </tr>
+                            <tr>
+                                <td><strong>الاتصال</strong></td>
+                                <td>support@med-attendance.online</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Section 18 -->
+                <h2>18. الإقرار</h2>
+                <div class="highlight-box">
+                    <p>باستخدام تطبيق Attendance Supervisor، فإنك تقر بأنك قد قرأت وفهمت سياسة الخصوصية هذه و<a
+                            href="supervisor_terms.html" target="_blank">الشروط والأحكام</a>، وتوافق على جمع واستخدام
+                        ومشاركة معلوماتك كما هو موضح هنا.</p>
+                </div>
+
+                <div class="agreement-box"
+                    style="background: var(--primary); color: white; padding: 30px; border-radius: 12px; margin-top: 40px; text-align: center;">
+                    <p style="color: white; font-weight: 600; margin: 0;">باستخدام Attendance Supervisor، فإنك تقر بأنك
+                        قد قرأت وفهمت سياسة الخصوصية هذه.</p>
+                </div>
+            </div>
+            <!-- End Arabic Content -->
+
         </div>
     </main>
 
