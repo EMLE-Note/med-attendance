@@ -203,6 +203,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize Theme
     setTheme(currentTheme);
 
+    // Initialize Language (Fix for untranslated footer on load)
+    updateLanguage(currentLang);
+
     // 4. Mobile Menu Toggle
     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
     const mainNav = document.getElementById('main-nav');
