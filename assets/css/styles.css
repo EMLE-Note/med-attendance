@@ -107,8 +107,8 @@
 
 /* Specific Contrast & Color Overrides for Dark Mode */
 [data-theme="dark"] .step-number {
-    color: var(--bg-main) !important;
-    background-color: var(--brand-gold) !important;
+    color: var(--bg-main);
+    background-color: var(--brand-gold);
     /* Steps remain Teal (Primary) */
 }
 
