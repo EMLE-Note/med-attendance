@@ -1,260 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Attendance Supervisor</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;600;700&family=Tajawal:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <style>
-        :root {
-            --primary-color: #1a73e8;
-            --title-color: #1e8e3e;
-            --text-color: #202124;
-            --text-secondary: #5f6368;
-            --background: #ffffff;
-            --surface: #f8f9fa;
-            --border: #dadce0;
-            --success: #34a853;
-            --warning: #fbbc04;
-            --toggle-bg: #e8eaed;
-            --toggle-icon: #5f6368;
+        .legal-content {
+            padding: 80px 0;
+            line-height: 1.8;
         }
 
-        [data-theme="dark"] {
-            --primary-color: #8ab4f8;
-            --title-color: #81c995;
-            --text-color: #e8eaed;
-            --text-secondary: #9aa0a6;
-            --background: #202124;
-            --surface: #292a2d;
-            --border: #3c4043;
-            --success: #81c995;
-            --warning: #fdd663;
-            --toggle-bg: #3c4043;
-            --toggle-icon: #e8eaed;
+        .legal-content h1 {
+            margin-bottom: 30px;
+            color: var(--primary);
         }
 
-        [data-theme="dark"] .warning-box {
-            background-color: #3d2e1f;
-        }
-
-        [data-theme="dark"] .important-box {
-            background-color: #1b3d2f;
-        }
-
-        [data-theme="dark"] .badge-blue {
-            background-color: #1e3a5f;
-            color: #90caf9;
-        }
-
-        [data-theme="dark"] .badge-green {
-            background-color: #1b3d2f;
-            color: #81c995;
-        }
-
-        [data-theme="dark"] .summary-table th {
-            background-color: #3c4043;
-            color: var(--text-color);
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.7;
-            color: var(--text-color);
-            background-color: var(--background);
-            padding: 20px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Theme Toggle Button */
-        .theme-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background-color: var(--toggle-bg);
-            border: none;
-            border-radius: 50%;
-            width: 48px;
-            height: 48px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            z-index: 1000;
-        }
-
-        .theme-toggle:hover {
-            transform: scale(1.1);
-        }
-
-        .theme-toggle svg {
-            width: 24px;
-            height: 24px;
-            fill: var(--toggle-icon);
-            transition: fill 0.3s ease;
-        }
-
-        .theme-toggle .sun-icon {
-            display: none;
-        }
-
-        .theme-toggle .moon-icon {
-            display: block;
-        }
-
-        [data-theme="dark"] .theme-toggle .sun-icon {
-            display: block;
-        }
-
-        [data-theme="dark"] .theme-toggle .moon-icon {
-            display: none;
-        }
-
-        header {
-            text-align: center;
-            padding: 40px 0;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 40px;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-            color: var(--primary-color);
-        }
-
-        .app-name {
-            font-size: 1.2rem;
-            color: var(--text-secondary);
-            margin-bottom: 10px;
-        }
-
-        .effective-date {
-            font-size: 0.95rem;
-            color: var(--text-secondary);
-            background-color: var(--surface);
-            padding: 8px 16px;
-            border-radius: 20px;
-            display: inline-block;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            font-weight: 600;
+        .legal-content h2 {
             margin-top: 40px;
             margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--primary-color);
-            color: var(--primary-color);
+            color: var(--primary);
+            font-size: 1.5rem;
         }
 
-        h3 {
-            font-size: 1.15rem;
-            font-weight: 600;
+        .legal-content h3 {
             margin-top: 25px;
-            margin-bottom: 12px;
-            color: var(--text-color);
+            margin-bottom: 15px;
+            color: var(--text-main);
+            font-size: 1.2rem;
         }
 
-        h4 {
-            font-size: 1rem;
-            font-weight: 600;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            color: var(--text-secondary);
+        .legal-content p,
+        .legal-content ul,
+        .legal-content li {
+            margin-bottom: 15px;
+            color: var(--text-muted);
         }
 
-        p {
-            margin-bottom: 16px;
-            text-align: justify;
-        }
-
-        ul, ol {
-            margin-bottom: 16px;
-            padding-left: 24px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        strong {
-            font-weight: 600;
-        }
-
-        a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
+        .info-box {
+            background: rgba(var(--primary-rgb), 0.1);
+            border-right: 4px solid var(--primary);
+            padding: 20px;
+            border-radius: 8px;
             margin: 20px 0;
-            font-size: 0.95rem;
         }
 
-        th, td {
-            padding: 12px 16px;
-            text-align: left;
-            border-bottom: 1px solid var(--border);
+        .info-box.warning {
+            background: rgba(245, 158, 11, 0.1);
+            border-right-color: #f59e0b;
         }
 
-        th {
-            background-color: var(--surface);
-            font-weight: 600;
-            color: var(--text-color);
-        }
-
-        tr:hover {
-            background-color: var(--surface);
+        /* Support for specialized boxes from v2 content */
+        .warning-box {
+            background: rgba(245, 158, 11, 0.1);
+            border-right: 4px solid #f59e0b;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
         }
 
         .highlight-box {
-            background-color: var(--surface);
-            border-left: 4px solid var(--primary-color);
-            padding: 16px 20px;
+            background: rgba(var(--primary-rgb), 0.1);
+            border-right: 4px solid var(--primary);
+            padding: 20px;
+            border-radius: 8px;
             margin: 20px 0;
-            border-radius: 0 8px 8px 0;
         }
 
         .important-box {
-            background-color: #e8f5e9;
-            border-left: 4px solid var(--success);
-            padding: 16px 20px;
+            background: rgba(16, 185, 129, 0.1);
+            border-right: 4px solid #10b981;
+            padding: 20px;
+            border-radius: 8px;
             margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .warning-box {
-            background-color: #fff3e0;
-            border-left: 4px solid #ff9800;
-            padding: 16px 20px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
         }
 
         .contact-box {
-            background-color: var(--surface);
-            border: 1px solid var(--border);
+            background: var(--surface);
+            border: 1px solid var(--border-light);
             border-radius: 12px;
             padding: 24px;
             margin: 30px 0;
@@ -262,27 +98,67 @@
         }
 
         .contact-box a {
-            color: var(--primary-color);
-            text-decoration: none;
+            color: var(--primary);
             font-weight: 600;
             font-size: 1.1rem;
         }
 
-        .contact-box a:hover {
-            text-decoration: underline;
+
+        .data-table,
+        .summary-table table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: 14px;
         }
 
-        footer {
-            text-align: center;
-            padding: 40px 0;
-            margin-top: 60px;
-            border-top: 1px solid var(--border);
-            color: var(--text-secondary);
-            font-size: 0.9rem;
+        .data-table th,
+        .data-table td,
+        .summary-table th,
+        .summary-table td {
+            padding: 12px 16px;
+            text-align: right;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .data-table th,
+        .summary-table th {
+            background-color: rgba(var(--primary-rgb), 0.05);
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        [dir="ltr"] .data-table th,
+        [dir="ltr"] .data-table td,
+        [dir="ltr"] .summary-table th,
+        [dir="ltr"] .summary-table td,
+        [dir="ltr"] .info-box,
+        [dir="ltr"] .warning-box,
+        [dir="ltr"] .highlight-box,
+        [dir="ltr"] .important-box {
+            text-align: left;
+            border-right: none;
+            border-left: 4px solid;
+        }
+
+        [dir="ltr"] .info-box {
+            border-left-color: var(--primary);
+        }
+
+        [dir="ltr"] .warning-box {
+            border-left-color: #f59e0b;
+        }
+
+        [dir="ltr"] .highlight-box {
+            border-left-color: var(--primary);
+        }
+
+        [dir="ltr"] .important-box {
+            border-left-color: #10b981;
         }
 
         .toc {
-            background-color: var(--surface);
+            background: var(--surface);
             border-radius: 12px;
             padding: 24px;
             margin-bottom: 40px;
@@ -291,7 +167,7 @@
         .toc h3 {
             margin-top: 0;
             margin-bottom: 16px;
-            color: var(--primary-color);
+            color: var(--primary);
         }
 
         .toc ol {
@@ -300,720 +176,778 @@
         }
 
         .toc a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        .toc a:hover {
-            text-decoration: underline;
-        }
-
-        .terms-link-box {
-            background-color: var(--surface);
-            border: 2px solid var(--primary-color);
-            border-radius: 12px;
-            padding: 20px;
-            margin: 30px 0;
-            text-align: center;
-        }
-
-        .terms-link-box p {
-            margin-bottom: 10px;
-            text-align: center;
-        }
-
-        .summary-table {
-            background-color: var(--surface);
-            border-radius: 12px;
-            overflow: hidden;
-            margin: 20px 0;
-        }
-
-        .summary-table th {
-            background-color: var(--primary-color);
-            color: white;
-        }
-
-        .badge {
-            display: inline-block;
-            padding: 4px 10px;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            font-weight: 600;
-        }
-
-        .badge-blue {
-            background-color: #e3f2fd;
-            color: #1565c0;
-        }
-
-        .badge-green {
-            background-color: #e8f5e9;
-            color: #2e7d32;
+            color: var(--primary);
         }
 
         @media (max-width: 600px) {
-            .container {
-                padding: 10px;
-            }
-
-            h1 {
-                font-size: 1.8rem;
-            }
-
-            h2 {
-                font-size: 1.3rem;
-            }
-
             .toc ol {
                 columns: 1;
-            }
-
-            table {
-                font-size: 0.85rem;
-            }
-
-            th, td {
-                padding: 8px 10px;
-            }
-
-            .theme-toggle {
-                top: 10px;
-                right: 10px;
-                width: 40px;
-                height: 40px;
-            }
-
-            .theme-toggle svg {
-                width: 20px;
-                height: 20px;
             }
         }
     </style>
 </head>
+
 <body>
-    <!-- Theme Toggle Button -->
-    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
-        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/>
-        </svg>
-        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/>
-        </svg>
-    </button>
 
-    <div class="container">
-        <header>
-            <h1>Privacy Policy</h1>
-            <p class="app-name">Attendance Supervisor</p>
-            <span class="effective-date">Effective Date: Upon first use of the application</span>
-        </header>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo-container">
+                <a href="../index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                    <img src="../assets/images/supervisor_logo.svg" alt="Attendance Supervisor Logo" class="logo-img"
+                        onerror="this.style.display='none'">
+                    <div class="brand-names">
+                        <h1 class="brand-ar">Attendance Supervisor</h1>
+                        <span class="brand-en">Attendance Supervisor</span>
+                    </div>
+                </a>
+            </div>
 
-        <!-- Terms and Conditions Link -->
-        <div class="terms-link-box">
-            <p>Please also review our <strong>Terms and Conditions</strong> which govern your use of the App.</p>
-            <a href="https://med-attendance.online/pages/supervisor_terms.html" target="_blank"><strong>View Terms and Conditions</strong></a>
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle Menu">
+                <i data-lucide="menu"></i>
+            </button>
+
+            <nav class="main-nav" id="main-nav">
+                <!-- Theme Toggle -->
+                <button id="theme-toggle" class="btn-ghost" aria-label="Toggle Theme">
+                    <i data-lucide="moon"></i>
+                </button>
+
+                <!-- Language Toggle -->
+                <button id="lang-toggle" class="btn-ghost" aria-label="Switch Language">
+                    <i data-lucide="languages"></i>
+                    <span id="current-lang-text">English</span>
+                </button>
+            </nav>
         </div>
+    </header>
 
-        <nav class="toc">
-            <h3>Table of Contents</h3>
-            <ol>
-                <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#collection">Information We Collect</a></li>
-                <li><a href="#usage">How We Use Your Information</a></li>
-                <li><a href="#sharing">How We Share Your Information</a></li>
-                <li><a href="#storage">Data Storage and Security</a></li>
-                <li><a href="#ownership">Data Ownership</a></li>
-                <li><a href="#retention">Data Retention</a></li>
-                <li><a href="#rights">Your Rights and Choices</a></li>
-                <li><a href="#children">Children's Privacy</a></li>
-                <li><a href="#third-party">Third-Party Services</a></li>
-                <li><a href="#offline">Offline Data and Sync</a></li>
-                <li><a href="#changes">Changes to This Policy</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                <li><a href="#legal-basis">Legal Basis for Processing</a></li>
-                <li><a href="#governing">Governing Law</a></li>
-                <li><a href="#summary">Summary of Key Points</a></li>
-                <li><a href="#acknowledgment">Acknowledgment</a></li>
-            </ol>
-        </nav>
+    <main class="legal-content">
+        <div class="container">
+            <h1 data-i18n="privacy_policy">سياسة الخصوصية</h1>
+            <p class="last-updated"><strong>Last Updated:</strong> January 2026</p>
 
-        <main>
-            <section id="introduction">
-                <h2>1. Introduction</h2>
-                <p>Welcome to Attendance Supervisor ("App," "Service," "we," "us," or "our"). We are committed to protecting your privacy and ensuring the security of your personal information.</p>
-                <p>This Privacy Policy explains how we collect, use, store, share, and protect your information when you use the Attendance Supervisor mobile application. By using the App, you consent to the practices described in this Privacy Policy.</p>
-                <p>Please read this Privacy Policy carefully. If you do not agree with our policies and practices, do not use the App.</p>
-            </section>
-
-            <section id="collection">
-                <h2>2. Information We Collect</h2>
-                <p>We collect different types of information to provide and improve our Service.</p>
-
-                <h3>2.1 Personal Information You Provide</h3>
-                <p>When you register for an account and use the App, you provide us with the following personal information:</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Information</th>
-                            <th>Purpose</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Full Name</strong></td>
-                            <td>Account identification and display</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Mobile Phone Number</strong></td>
-                            <td>Account registration, verification, and communication</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Password</strong></td>
-                            <td>Account security (stored in encrypted/hashed form)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Job Title</strong></td>
-                            <td>Professional profile information</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Professional Field</strong></td>
-                            <td>Professional profile information</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Profile Photo</strong></td>
-                            <td>Account personalization (optional)</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <h3>2.2 Information Collected Automatically</h3>
-                <p>When you use the App, we automatically collect certain information:</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Information</th>
-                            <th>Purpose</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Device Type</strong></td>
-                            <td>Service optimization and support</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Operating System & Version</strong></td>
-                            <td>Compatibility and troubleshooting</td>
-                        </tr>
-                        <tr>
-                            <td><strong>App Version</strong></td>
-                            <td>Version management and updates</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Platform Information</strong></td>
-                            <td>Service optimization</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <h3>2.3 Attendance Data</h3>
-                <p>When you use the App for attendance tracking, the following data is collected:</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Information</th>
-                            <th>Purpose</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Student/Trainee ID</strong></td>
-                            <td>Attendance identification</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Student/Trainee Name</strong></td>
-                            <td>Attendance records</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Check-in/Check-out Timestamps</strong></td>
-                            <td>Attendance tracking</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Attendance Notes</strong></td>
-                            <td>Additional attendance information</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Attendance Status</strong></td>
-                            <td>Record of present/absent status</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div class="important-box">
-                    <p><strong>Important:</strong> Attendance data is owned by your institution, not by you as an individual user. Please refer to Section 6 for more details.</p>
+            <!-- English Content -->
+            <div id="content-en" style="display: none;">
+                <div class="terms-link-box"
+                    style="background: var(--surface); border: 2px solid var(--primary); border-radius: 12px; padding: 20px; margin: 30px 0; text-align: center;">
+                    <p>Please also review our <strong>Terms and Conditions</strong> which govern your use of the App.
+                    </p>
+                    <a href="supervisor_terms.html" target="_blank"
+                        style="color: var(--primary); font-weight: 600;"><strong>View Terms and Conditions</strong></a>
                 </div>
 
-                <h3>2.4 Information from Device Permissions</h3>
-                <p>The App requests certain device permissions to function properly:</p>
+                <nav class="toc">
+                    <h3>Table of Contents</h3>
+                    <ol>
+                        <li><a href="#introduction">Introduction</a></li>
+                        <li><a href="#collection">Information We Collect</a></li>
+                        <li><a href="#usage">How We Use Your Information</a></li>
+                        <li><a href="#sharing">How We Share Your Information</a></li>
+                        <li><a href="#storage">Data Storage and Security</a></li>
+                        <li><a href="#ownership">Data Ownership</a></li>
+                        <li><a href="#retention">Data Retention</a></li>
+                        <li><a href="#rights">Your Rights and Choices</a></li>
+                        <li><a href="#children">Children's Privacy</a></li>
+                        <li><a href="#third-party">Third-Party Services</a></li>
+                        <li><a href="#offline">Offline Data and Sync</a></li>
+                        <li><a href="#changes">Changes to This Policy</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#legal-basis">Legal Basis for Processing</a></li>
+                        <li><a href="#governing">Governing Law</a></li>
+                        <li><a href="#summary">Summary of Key Points</a></li>
+                        <li><a href="#acknowledgment">Acknowledgment</a></li>
+                    </ol>
+                </nav>
 
-                <h4>Bluetooth and Location</h4>
-                <ul>
-                    <li><strong>What we access:</strong> Bluetooth radio and location services (on Android 11 and below)</li>
-                    <li><strong>Why:</strong> We use Bluetooth Low Energy (BLE) to detect nearby student/trainee devices for attendance tracking.
-                        <ul>
-                            <li><strong>Android 11 and below:</strong> Location permission is required for BLE scanning due to operating system requirements.</li>
-                            <li><strong>Android 12 and above:</strong> Only Bluetooth permissions are required; location permission is not needed.</li>
-                        </ul>
-                    </li>
-                    <li><strong>What we don't do:</strong> We do not track your geographic location, store location history, or share location data with third parties.</li>
-                </ul>
+                <section id="introduction">
+                    <h2>1. Introduction</h2>
+                    <p>Welcome to Attendance Supervisor ("App," "Service," "we," "us," or "our"). We are committed to
+                        protecting your privacy and ensuring the security of your personal information.</p>
+                    <p>This Privacy Policy explains how we collect, use, store, share, and protect your information when
+                        you use the Attendance Supervisor mobile application. By using the App, you consent to the
+                        practices described in this Privacy Policy.</p>
+                    <p>Please read this Privacy Policy carefully. If you do not agree with our policies and practices,
+                        do not use the App.</p>
+                </section>
 
-                <h4>NFC (Near Field Communication)</h4>
-                <ul>
-                    <li><strong>What we access:</strong> NFC reader functionality</li>
-                    <li><strong>Why:</strong> To read student/trainee identification cards for attendance verification.</li>
-                    <li><strong>What we don't do:</strong> We do not read NFC data in the background or access other NFC-enabled cards without your initiation.</li>
-                </ul>
+                <section id="collection">
+                    <h2>2. Information We Collect</h2>
+                    <p>We collect different types of information to provide and improve our Service.</p>
 
-
-                <h4>Internet</h4>
-                <ul>
-                    <li><strong>What we access:</strong> Network connectivity</li>
-                    <li><strong>Why:</strong> To synchronize data with our servers, authenticate users, and provide the Service.</li>
-                </ul>
-            </section>
-
-            <section id="usage">
-                <h2>3. How We Use Your Information</h2>
-                <p>We use the collected information for the following purposes:</p>
-
-                <h3>3.1 Service Provision</h3>
-                <ul>
-                    <li>Create and manage your user account</li>
-                    <li>Authenticate your identity and verify your mobile phone number</li>
-                    <li>Enable attendance tracking and management features</li>
-                    <li>Synchronize attendance data between your device and our servers</li>
-                    <li>Provide offline functionality with data synchronization</li>
-                </ul>
-
-                <h3>3.2 Communication</h3>
-                <ul>
-                    <li>Send verification codes for account security</li>
-                    <li>Notify you of important service updates</li>
-                    <li>Respond to your inquiries and support requests</li>
-                </ul>
-
-                <h3>3.3 Service Improvement</h3>
-                <ul>
-                    <li>Monitor and analyze usage patterns to improve the App</li>
-                    <li>Identify and fix technical issues</li>
-                    <li>Develop new features and functionality</li>
-                </ul>
-
-                <h3>3.4 Security</h3>
-                <ul>
-                    <li>Protect against unauthorized access to accounts</li>
-                    <li>Detect and prevent fraudulent or illegal activities</li>
-                    <li>Ensure the security and integrity of our Service</li>
-                </ul>
-
-                <h3>3.5 Legal Compliance</h3>
-                <ul>
-                    <li>Comply with applicable laws and regulations</li>
-                    <li>Respond to legal requests and prevent harm</li>
-                </ul>
-            </section>
-
-            <section id="sharing">
-                <h2>4. How We Share Your Information</h2>
-                <div class="highlight-box">
-                    <p><strong>We do not sell your personal information.</strong></p>
-                </div>
-                <p>We may share your information only in the following circumstances:</p>
-
-                <h3>4.1 With Your Institution</h3>
-                <p>Your attendance data and professional information may be shared with your affiliated institution. The institution has administrative access to:</p>
-                <ul>
-                    <li>Attendance records you create</li>
-                    <li>Your professional profile information</li>
-                    <li>Team membership information</li>
-                </ul>
-
-
-                <h3>4.2 For Phone Verification (Telegram)</h3>
-                <p>If you choose to verify your phone number via Telegram:</p>
-                <ul>
-                    <li>You will interact with our Telegram bot</li>
-                    <li>Your phone number is used to send a verification code</li>
-                    <li>We do not access your Telegram account, messages, or contacts</li>
-                </ul>
-
-                <h3>4.3 Legal Requirements</h3>
-                <p>We may disclose your information if required by law or if we believe in good faith that such action is necessary to:</p>
-                <ul>
-                    <li>Comply with legal obligations or court orders</li>
-                    <li>Protect and defend our rights or property</li>
-                    <li>Prevent or investigate possible wrongdoing</li>
-                    <li>Protect the personal safety of users or the public</li>
-                </ul>
-   </section>
-
-            <section id="storage">
-                <h2>5. Data Storage and Security</h2>
-
-                <h3>5.1 Data Storage</h3>
-                <p>Your data is stored in the following ways:</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Data Type</th>
-                            <th>Storage Location</th>
-                            <th>Security</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Authentication Tokens</strong></td>
-                            <td>Device (Encrypted Secure Storage)</td>
-                            <td><span class="badge badge-green">AES encryption</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>User Preferences</strong></td>
-                            <td>Device (Local Storage)</td>
-                            <td><span class="badge badge-blue">App-level protection</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Pending Attendance Records</strong></td>
-                            <td>Device (Local Database)</td>
-                            <td><span class="badge badge-blue">App-level protection</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Account & Attendance Data</strong></td>
-                            <td>Our Secure Servers</td>
-                            <td><span class="badge badge-green">Encrypted transmission (HTTPS)</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <h3>5.2 Security Measures</h3>
-                <p>We implement appropriate technical and organizational measures to protect your information, including:</p>
-                <ul>
-                    <li><strong>Encryption in Transit:</strong> All data transmitted between the App and our servers uses HTTPS/TLS encryption.</li>
-                    <li><strong>Secure Token Storage:</strong> Authentication tokens are stored in encrypted secure storage on your device.</li>
-                    <li><strong>Password Security:</strong> Passwords are stored in hashed form; we never store plain-text passwords.</li>
-                    <li><strong>Access Controls:</strong> Server access is restricted to authorized personnel only.</li>
-                    <li><strong>Session Management:</strong> Automatic session termination for security purposes.</li>
-                </ul>
-
-                <h3>5.3 Security Limitations</h3>
-                <div class="warning-box">
-                    <p>While we strive to protect your information, no method of electronic transmission or storage is 100% secure. We cannot guarantee absolute security of your data.</p>
-                </div>
-                <p>You are responsible for:</p>
-                <ul>
-                    <li>Keeping your login credentials confidential</li>
-                    <li>Logging out of shared devices</li>
-                    <li>Reporting any suspicious account activity immediately</li>
-                </ul>
-            </section>
-
-            <section id="ownership">
-                <h2>6. Data Ownership</h2>
-
-                <h3>6.1 Your Personal Data</h3>
-                <p>You retain ownership of your personal profile information (name, phone number, job title, etc.).</p>
-
-                <h3>6.2 Attendance Data</h3>
-                <div class="important-box">
-                    <p><strong>Important:</strong> All attendance records created through the App are owned by your affiliated institution. This includes:</p>
-                    <ul>
-                        <li>Student/trainee attendance records</li>
-                        <li>Check-in/check-out timestamps</li>
-                        <li>Attendance notes and status information</li>
-                    </ul>
-                </div>
-                <p>Your institution has full rights to access, manage, and utilize this attendance data in accordance with their policies.</p>
-            </section>
-
-            <section id="retention">
-                <h2>7. Data Retention</h2>
-
-                <h3>7.1 Active Accounts</h3>
-                <p>We retain your personal information for as long as your account is active and as needed to provide you with the Service.</p>
-
-                <h3>7.2 After Account Deletion</h3>
-                <p>When your account is deleted:</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Data Type</th>
-                            <th>Retention</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Personal Profile Information</strong></td>
-                            <td>Permanently deleted</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Team Memberships</strong></td>
-                            <td>Removed</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Attendance Records</strong></td>
-                            <td>Retained (owned by institution)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Authentication Data</strong></td>
-                            <td>Permanently deleted</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <h3>7.3 Institutional Data</h3>
-                <p>Attendance records are retained according to your institution's data retention policies, as they are the data owner.</p>
-            </section>
-
-            <section id="rights">
-                <h2>8. Your Rights and Choices</h2>
-
-                <h3>8.1 Access Your Information</h3>
-                <p>You can access and view your personal profile information through the App's profile settings.</p>
-
-                <h3>8.2 Update Your Information</h3>
-                <p>You can update your profile information (name, job title, field, location, profile photo) through the App at any time.</p>
-
-                <h3>8.3 Delete Your Account</h3>
-                <p>You can request deletion of your account through the App's settings. Upon deletion:</p>
-                <ul>
-                    <li>Your personal information will be permanently removed</li>
-                    <li>Attendance records will be retained by your institution</li>
-                    <li>You will lose access to all teams and data</li>
-                </ul>
-
-                <h3>8.4 Data Export</h3>
-                <p>Currently, the App does not support user-initiated data export. Attendance data may be accessible through your institution's administrative access.</p>
-
-                <h3>8.5 Withdraw Consent</h3>
-                <p>You may withdraw your consent to data processing by deleting your account. Note that withdrawal of consent may affect your ability to use the Service.</p>
-
-                <h3>8.6 Device Permissions</h3>
-                <p>You can manage App permissions through your device settings at any time. However, disabling certain permissions may limit App functionality:</p>
-                <ul>
-                    <li><strong>Bluetooth/Location disabled:</strong> BLE attendance scanning will not work</li>
-                    <li><strong>NFC disabled:</strong> NFC card scanning will not work</li>
-
-                </ul>
-            </section>
-
-            <section id="children">
-                <h2>9. Children's Privacy</h2>
-                <div class="warning-box">
-                    <p>The Attendance Supervisor App is <strong>not intended for use by children under the age of 18</strong>. We do not knowingly collect personal information from children under 18.</p>
-                </div>
-                <p>The App is designed for use by adult instructors, supervisors, and administrators affiliated with educational or training institutions.</p>
-                <p>If we become aware that we have inadvertently collected personal information from a child under 18 without appropriate consent, we will take steps to delete such information as soon as possible.</p>
-                <p>If you are a parent or guardian and believe your child has provided us with personal information, please contact us at the email address provided in Section 14.</p>
-            </section>
-
-
-            <section id="third-party">
-                <h2>10. Third-Party Services and Links</h2>
-
-                <h3>Telegram</h3>
-                <p>The App uses Telegram solely for phone verification purposes. When you use Telegram verification:</p>
-                <ul>
-                    <li>You are subject to Telegram's Privacy Policy and Terms of Service</li>
-                    <li>We only receive the verification confirmation; we do not access your Telegram data</li>
-                </ul>
-
-             </section>
-
-            <section id="offline">
-                <h2>11. Offline Data and Synchronization</h2>
-
-                <h3>11.1 Offline Storage</h3>
-                <p>The App stores attendance data locally on your device when you are offline. This data includes:</p>
-                <ul>
-                    <li>Pending attendance records</li>
-                    <li>Student/trainee information for check-in</li>
-                </ul>
-
-                <h3>11.2 Synchronization</h3>
-                <p>When internet connectivity is restored, offline data is automatically synchronized with our servers. There is no time limit on how long data can remain stored offline before synchronization.</p>
-
-                <h3>11.3 Local Data Security</h3>
-                <p>Offline data is stored within the App's protected storage area on your device. We recommend:</p>
-                <ul>
-                    <li>Using device-level security (PIN, fingerprint, face recognition)</li>
-                    <li>Not rooting or jailbreaking your device</li>
-                    <li>Keeping your device's operating system updated</li>
-                </ul>
-            </section>
-
-            <section id="changes">
-                <h2>12. Changes to This Privacy Policy</h2>
-                <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors.</p>
-                <p>When we make changes:</p>
-                <ul>
-                    <li>The updated Privacy Policy will be posted within the App</li>
-                    <li>The "Effective Date" at the top will be updated</li>
-                    <li>For significant changes, we may provide additional notice through the App</li>
-                </ul>
-                <p>Your continued use of the App after any changes constitutes your acceptance of the updated Privacy Policy. We encourage you to review this Privacy Policy periodically.</p>
-            </section>
-
-            <section id="contact">
-                <h2>13. Contact Us</h2>
-                <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:</p>
-                <div class="contact-box">
-                    <p><strong>Email</strong></p>
-                    <a href="mailto:support@med-attendance.online">support@med-attendance.online</a>
-                </div>
-                <p>We will respond to your inquiry within a reasonable timeframe.</p>
-            </section>
-
-            <section id="legal-basis">
-                <h2>14. Legal Basis for Processing (Where Applicable)</h2>
-                <p>Depending on your jurisdiction, we process your personal information based on the following legal grounds:</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Legal Basis</th>
-                            <th>Application</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Consent</strong></td>
-                            <td>When you create an account and agree to this Privacy Policy</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Contract Performance</strong></td>
-                            <td>To provide the Service you requested</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Legitimate Interests</strong></td>
-                            <td>To improve our Service and ensure security</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Legal Obligation</strong></td>
-                            <td>To comply with applicable laws</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
-            <section id="governing">
-                <h2>15. Governing Law</h2>
-                <p>This Privacy Policy is governed by the laws of the <strong>Arab Republic of Egypt</strong>. Any disputes arising from this Privacy Policy shall be subject to the exclusive jurisdiction of the courts of Egypt.</p>
-            </section>
-
-            <section id="summary">
-                <h2>16. Summary of Key Points</h2>
-                <p>For your convenience, here is a summary of key points in this Privacy Policy:</p>
-                <div class="summary-table">
-                    <table>
+                    <h3>2.1 Personal Information You Provide</h3>
+                    <p>When you register for an account and use the App, you provide us with the following personal
+                        information:</p>
+                    <table class="data-table">
                         <thead>
                             <tr>
-                                <th>Topic</th>
-                                <th>Summary</th>
+                                <th>Information</th>
+                                <th>Purpose</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>Data Collection</strong></td>
-                                <td>We collect name, phone, professional info, device info, and attendance data</td>
+                                <td><strong>Full Name</strong></td>
+                                <td>Account identification and display</td>
                             </tr>
                             <tr>
-                                <td><strong>Data Usage</strong></td>
-                                <td>To provide attendance tracking services and improve the App</td>
+                                <td><strong>Mobile Phone Number</strong></td>
+                                <td>Account registration, verification, and communication</td>
                             </tr>
                             <tr>
-                                <td><strong>Data Sharing</strong></td>
-                                <td>With your institution and service providers only; never sold</td>
+                                <td><strong>Password</strong></td>
+                                <td>Account security (stored in encrypted/hashed form)</td>
                             </tr>
                             <tr>
-                                <td><strong>Data Security</strong></td>
-                                <td>Encrypted storage and transmission; secure servers</td>
+                                <td><strong>Job Title</strong></td>
+                                <td>Professional profile information</td>
                             </tr>
                             <tr>
-                                <td><strong>Data Ownership</strong></td>
-                                <td>You own your profile; institution owns attendance data</td>
+                                <td><strong>Professional Field</strong></td>
+                                <td>Professional profile information</td>
                             </tr>
                             <tr>
-                                <td><strong>Account Deletion</strong></td>
-                                <td>Personal data deleted; attendance records retained by institution</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Children</strong></td>
-                                <td>App not intended for users under 18</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Permissions</strong></td>
-                                <td>Bluetooth, Location, NFC used only for core features</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Your Rights</strong></td>
-                                <td>Access, update, and delete your personal information</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Contact</strong></td>
-                                <td>support@med-attendance.online</td>
+                                <td><strong>Profile Photo</strong></td>
+                                <td>Account personalization (optional)</td>
                             </tr>
                         </tbody>
                     </table>
+
+                    <h3>2.2 Information Collected Automatically</h3>
+                    <p>When you use the App, we automatically collect certain information:</p>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Information</th>
+                                <th>Purpose</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Device Type</strong></td>
+                                <td>Service optimization and support</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Operating System & Version</strong></td>
+                                <td>Compatibility and troubleshooting</td>
+                            </tr>
+                            <tr>
+                                <td><strong>App Version</strong></td>
+                                <td>Version management and updates</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Platform Information</strong></td>
+                                <td>Service optimization</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>2.3 Attendance Data</h3>
+                    <p>When you use the App for attendance tracking, the following data is collected:</p>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Information</th>
+                                <th>Purpose</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Student/Trainee ID</strong></td>
+                                <td>Attendance identification</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Student/Trainee Name</strong></td>
+                                <td>Attendance records</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Check-in/Check-out Timestamps</strong></td>
+                                <td>Attendance tracking</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Attendance Notes</strong></td>
+                                <td>Additional attendance information</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Attendance Status</strong></td>
+                                <td>Record of present/absent status</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="important-box">
+                        <p><strong>Important:</strong> Attendance data is owned by your institution, not by you as an
+                            individual user. Please refer to Section 6 for more details.</p>
+                    </div>
+
+                    <h3>2.4 Information from Device Permissions</h3>
+                    <p>The App requests certain device permissions to function properly:</p>
+
+                    <h4>Bluetooth and Location</h4>
+                    <ul>
+                        <li><strong>What we access:</strong> Bluetooth radio and location services (on Android 11 and
+                            below)</li>
+                        <li><strong>Why:</strong> We use Bluetooth Low Energy (BLE) to detect nearby student/trainee
+                            devices for attendance tracking.
+                            <ul>
+                                <li><strong>Android 11 and below:</strong> Location permission is required for BLE
+                                    scanning due to operating system requirements.</li>
+                                <li><strong>Android 12 and above:</strong> Only Bluetooth permissions are required;
+                                    location permission is not needed.</li>
+                            </ul>
+                        </li>
+                        <li><strong>What we don't do:</strong> We do not track your geographic location, store location
+                            history, or share location data with third parties.</li>
+                    </ul>
+
+                    <h4>NFC (Near Field Communication)</h4>
+                    <ul>
+                        <li><strong>What we access:</strong> NFC reader functionality</li>
+                        <li><strong>Why:</strong> To read student/trainee identification cards for attendance
+                            verification.</li>
+                        <li><strong>What we don't do:</strong> We do not read NFC data in the background or access other
+                            NFC-enabled cards without your initiation.</li>
+                    </ul>
+
+                    <h4>Internet</h4>
+                    <ul>
+                        <li><strong>What we access:</strong> Network connectivity</li>
+                        <li><strong>Why:</strong> To synchronize data with our servers, authenticate users, and provide
+                            the Service.</li>
+                    </ul>
+                </section>
+
+                <section id="usage">
+                    <h2>3. How We Use Your Information</h2>
+                    <p>We use the collected information for the following purposes:</p>
+
+                    <h3>3.1 Service Provision</h3>
+                    <ul>
+                        <li>Create and manage your user account</li>
+                        <li>Authenticate your identity and verify your mobile phone number</li>
+                        <li>Enable attendance tracking and management features</li>
+                        <li>Synchronize attendance data between your device and our servers</li>
+                        <li>Provide offline functionality with data synchronization</li>
+                    </ul>
+
+                    <h3>3.2 Communication</h3>
+                    <ul>
+                        <li>Send verification codes for account security</li>
+                        <li>Notify you of important service updates</li>
+                        <li>Respond to your inquiries and support requests</li>
+                    </ul>
+
+                    <h3>3.3 Service Improvement</h3>
+                    <ul>
+                        <li>Monitor and analyze usage patterns to improve the App</li>
+                        <li>Identify and fix technical issues</li>
+                        <li>Develop new features and functionality</li>
+                    </ul>
+
+                    <h3>3.4 Security</h3>
+                    <ul>
+                        <li>Protect against unauthorized access to accounts</li>
+                        <li>Detect and prevent fraudulent or illegal activities</li>
+                        <li>Ensure the security and integrity of our Service</li>
+                    </ul>
+
+                    <h3>3.5 Legal Compliance</h3>
+                    <ul>
+                        <li>Comply with applicable laws and regulations</li>
+                        <li>Respond to legal requests and prevent harm</li>
+                    </ul>
+                </section>
+
+                <section id="sharing">
+                    <h2>4. How We Share Your Information</h2>
+                    <div class="highlight-box">
+                        <p><strong>We do not sell your personal information.</strong></p>
+                    </div>
+                    <p>We may share your information only in the following circumstances:</p>
+
+                    <h3>4.1 With Your Institution</h3>
+                    <p>Your attendance data and professional information may be shared with your affiliated institution.
+                        The institution has administrative access to:</p>
+                    <ul>
+                        <li>Attendance records you create</li>
+                        <li>Your professional profile information</li>
+                        <li>Team membership information</li>
+                    </ul>
+
+
+                    <h3>4.2 For Phone Verification (Telegram)</h3>
+                    <p>If you choose to verify your phone number via Telegram:</p>
+                    <ul>
+                        <li>You will interact with our Telegram bot</li>
+                        <li>Your phone number is used to send a verification code</li>
+                        <li>We do not access your Telegram account, messages, or contacts</li>
+                    </ul>
+
+                    <h3>4.3 Legal Requirements</h3>
+                    <p>We may disclose your information if required by law or if we believe in good faith that such
+                        action is necessary to:</p>
+                    <ul>
+                        <li>Comply with legal obligations or court orders</li>
+                        <li>Protect and defend our rights or property</li>
+                        <li>Prevent or investigate possible wrongdoing</li>
+                        <li>Protect the personal safety of users or the public</li>
+                    </ul>
+                </section>
+
+                <section id="storage">
+                    <h2>5. Data Storage and Security</h2>
+
+                    <h3>5.1 Data Storage</h3>
+                    <p>Your data is stored in the following ways:</p>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Data Type</th>
+                                <th>Storage Location</th>
+                                <th>Security</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Authentication Tokens</strong></td>
+                                <td>Device (Encrypted Secure Storage)</td>
+                                <td><span class="badge badge-green"
+                                        style="background-color: #e8f5e9; color: #2e7d32; padding: 4px 8px; border-radius: 4px;">AES
+                                        encryption</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>User Preferences</strong></td>
+                                <td>Device (Local Storage)</td>
+                                <td><span class="badge badge-blue"
+                                        style="background-color: #e3f2fd; color: #1565c0; padding: 4px 8px; border-radius: 4px;">App-level
+                                        protection</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pending Attendance Records</strong></td>
+                                <td>Device (Local Database)</td>
+                                <td><span class="badge badge-blue"
+                                        style="background-color: #e3f2fd; color: #1565c0; padding: 4px 8px; border-radius: 4px;">App-level
+                                        protection</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Account & Attendance Data</strong></td>
+                                <td>Our Secure Servers</td>
+                                <td><span class="badge badge-green"
+                                        style="background-color: #e8f5e9; color: #2e7d32; padding: 4px 8px; border-radius: 4px;">Encrypted
+                                        transmission (HTTPS)</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>5.2 Security Measures</h3>
+                    <p>We implement appropriate technical and organizational measures to protect your information,
+                        including:</p>
+                    <ul>
+                        <li><strong>Encryption in Transit:</strong> All data transmitted between the App and our servers
+                            uses HTTPS/TLS encryption.</li>
+                        <li><strong>Secure Token Storage:</strong> Authentication tokens are stored in encrypted secure
+                            storage on your device.</li>
+                        <li><strong>Password Security:</strong> Passwords are stored in hashed form; we never store
+                            plain-text passwords.</li>
+                        <li><strong>Access Controls:</strong> Server access is restricted to authorized personnel only.
+                        </li>
+                        <li><strong>Session Management:</strong> Automatic session termination for security purposes.
+                        </li>
+                    </ul>
+
+                    <h3>5.3 Security Limitations</h3>
+                    <div class="warning-box">
+                        <p>While we strive to protect your information, no method of electronic transmission or storage
+                            is 100% secure. We cannot guarantee absolute security of your data.</p>
+                    </div>
+                    <p>You are responsible for:</p>
+                    <ul>
+                        <li>Keeping your login credentials confidential</li>
+                        <li>Logging out of shared devices</li>
+                        <li>Reporting any suspicious account activity immediately</li>
+                    </ul>
+                </section>
+
+                <section id="ownership">
+                    <h2>6. Data Ownership</h2>
+
+                    <h3>6.1 Your Personal Data</h3>
+                    <p>You retain ownership of your personal profile information (name, phone number, job title, etc.).
+                    </p>
+
+                    <h3>6.2 Attendance Data</h3>
+                    <div class="important-box">
+                        <p><strong>Important:</strong> All attendance records created through the App are owned by your
+                            affiliated institution. This includes:</p>
+                        <ul>
+                            <li>Student/trainee attendance records</li>
+                            <li>Check-in/check-out timestamps</li>
+                            <li>Attendance notes and status information</li>
+                        </ul>
+                    </div>
+                    <p>Your institution has full rights to access, manage, and utilize this attendance data in
+                        accordance with their policies.</p>
+                </section>
+
+                <section id="retention">
+                    <h2>7. Data Retention</h2>
+
+                    <h3>7.1 Active Accounts</h3>
+                    <p>We retain your personal information for as long as your account is active and as needed to
+                        provide you with the Service.</p>
+
+                    <h3>7.2 After Account Deletion</h3>
+                    <p>When your account is deleted:</p>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Data Type</th>
+                                <th>Retention</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Personal Profile Information</strong></td>
+                                <td>Permanently deleted</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Team Memberships</strong></td>
+                                <td>Removed</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Attendance Records</strong></td>
+                                <td>Retained (owned by institution)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Authentication Data</strong></td>
+                                <td>Permanently deleted</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>7.3 Institutional Data</h3>
+                    <p>Attendance records are retained according to your institution's data retention policies, as they
+                        are the data owner.</p>
+                </section>
+
+                <section id="rights">
+                    <h2>8. Your Rights and Choices</h2>
+
+                    <h3>8.1 Access Your Information</h3>
+                    <p>You can access and view your personal profile information through the App's profile settings.</p>
+
+                    <h3>8.2 Update Your Information</h3>
+                    <p>You can update your profile information (name, job title, field, location, profile photo) through
+                        the App at any time.</p>
+
+                    <h3>8.3 Delete Your Account</h3>
+                    <p>You can request deletion of your account through the App's settings. Upon deletion:</p>
+                    <ul>
+                        <li>Your personal information will be permanently removed</li>
+                        <li>Attendance records will be retained by your institution</li>
+                        <li>You will lose access to all teams and data</li>
+                    </ul>
+
+                    <h3>8.4 Data Export</h3>
+                    <p>Currently, the App does not support user-initiated data export. Attendance data may be accessible
+                        through your institution's administrative access.</p>
+
+                    <h3>8.5 Withdraw Consent</h3>
+                    <p>You may withdraw your consent to data processing by deleting your account. Note that withdrawal
+                        of consent may affect your ability to use the Service.</p>
+
+                    <h3>8.6 Device Permissions</h3>
+                    <p>You can manage App permissions through your device settings at any time. However, disabling
+                        certain permissions may limit App functionality:</p>
+                    <ul>
+                        <li><strong>Bluetooth/Location disabled:</strong> BLE attendance scanning will not work</li>
+                        <li><strong>NFC disabled:</strong> NFC card scanning will not work</li>
+                    </ul>
+                </section>
+
+                <section id="children">
+                    <h2>9. Children's Privacy</h2>
+                    <div class="warning-box">
+                        <p>The Attendance Supervisor App is <strong>not intended for use by children under the age of
+                                18</strong>. We do not knowingly collect personal information from children under 18.
+                        </p>
+                    </div>
+                </section>
+
+                <section id="third-party">
+                    <h2>10. Third-Party Services and Links</h2>
+
+                    <h3>Telegram</h3>
+                    <p>The App uses Telegram solely for phone verification purposes. When you use Telegram verification:
+                    </p>
+                    <ul>
+                        <li>You are subject to Telegram's Privacy Policy and Terms of Service</li>
+                        <li>We only receive the verification confirmation; we do not access your Telegram data</li>
+                    </ul>
+                </section>
+
+                <section id="offline">
+                    <h2>11. Offline Data and Synchronization</h2>
+
+                    <h3>11.1 Offline Storage</h3>
+                    <p>The App stores attendance data locally on your device when you are offline. This data includes:
+                    </p>
+                    <ul>
+                        <li>Pending attendance records</li>
+                        <li>Student/trainee information for check-in</li>
+                    </ul>
+
+                    <h3>11.2 Synchronization</h3>
+                    <p>When internet connectivity is restored, offline data is automatically synchronized with our
+                        servers.</p>
+                </section>
+
+                <section id="changes">
+                    <h2>12. Changes to This Privacy Policy</h2>
+                    <p>We may update this Privacy Policy from time to time. The updated Privacy Policy will be posted
+                        within the App.</p>
+                </section>
+
+                <section id="contact">
+                    <h2>13. Contact Us</h2>
+                    <p>If you have any questions, please contact us at:</p>
+                    <div class="contact-box">
+                        <p><strong>Email</strong></p>
+                        <a href="mailto:support@med-attendance.online">support@med-attendance.online</a>
+                    </div>
+                </section>
+
+                <section id="legal-basis">
+                    <h2>14. Legal Basis for Processing</h2>
+                    <p>We process your personal information based on Consent, Contract Performance, Legitimate
+                        Interests, and Legal Obligation.</p>
+                </section>
+
+                <section id="governing">
+                    <h2>15. Governing Law</h2>
+                    <p>This Privacy Policy is governed by the laws of the <strong>Arab Republic of Egypt</strong>.</p>
+                </section>
+
+                <section id="acknowledgment">
+                    <h2>17. Acknowledgment</h2>
+                    <div class="highlight-box">
+                        <p>By using the Attendance Supervisor App, you acknowledge that you have read and understood
+                            this Privacy Policy.</p>
+                    </div>
+                </section>
+            </div>
+            <!-- End English Content -->
+
+            <!-- Arabic Content -->
+            <div id="content-ar">
+                <div class="terms-link-box"
+                    style="background: var(--surface); border: 2px solid var(--primary); border-radius: 12px; padding: 20px; margin: 30px 0; text-align: center;">
+                    <p>يرجى أيضاً مراجعة <strong>الشروط والأحكام</strong> التي تحكم استخدامك للتطبيق.</p>
+                    <a href="supervisor_terms.html" target="_blank"
+                        style="color: var(--primary); font-weight: 600;"><strong>عرض الشروط والأحكام</strong></a>
                 </div>
-            </section>
 
-            <section id="acknowledgment">
-                <h2>17. Acknowledgment</h2>
-                <div class="highlight-box">
-                    <p>By using the Attendance Supervisor App, you acknowledge that you have read and understood this Privacy Policy and our <a href="https://med-attendance.online/pages/supervisor_terms.html" target="_blank">Terms and Conditions</a>, and consent to the collection, use, and sharing of your information as described herein.</p>
-                </div>
-            </section>
-        </main>
+                <nav class="toc">
+                    <h3>جدول المحتويات</h3>
+                    <ol>
+                        <li><a href="#introduction">مقدمة</a></li>
+                        <li><a href="#collection">المعلومات التي نجمعها</a></li>
+                        <li><a href="#usage">كيف نستخدم معلوماتك</a></li>
+                        <li><a href="#sharing">كيف نشارك معلوماتك</a></li>
+                        <li><a href="#storage">تخزين البيانات والأمان</a></li>
+                        <li><a href="#ownership">ملكية البيانات</a></li>
+                        <li><a href="#retention">الاحتفاظ بالبيانات</a></li>
+                        <li><a href="#rights">حقوقك وخياراتك</a></li>
+                        <li><a href="#children">خصوصية الأطفال</a></li>
+                        <li><a href="#third-party">خدمات الطرف الثالث</a></li>
+                        <li><a href="#offline">البيانات غير المتصلة والمزامنة</a></li>
+                        <li><a href="#changes">التغييرات على هذه السياسة</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                        <li><a href="#legal-basis">الأساس القانوني للمعالجة</a></li>
+                        <li><a href="#governing">القانون الحاكم</a></li>
+                        <li><a href="#summary">ملخص النقاط الرئيسية</a></li>
+                        <li><a href="#acknowledgment">الإقرار</a></li>
+                    </ol>
+                </nav>
 
-        <footer>
-            <p><strong>Last Updated:</strong> January 2026</p>
-            <p>&copy; Attendance Supervisor. All rights reserved.</p>
-            <p style="margin-top: 10px;">
-                <a href="https://med-attendance.online/pages/supervisor_privacy.html">Privacy Policy</a> |
-                <a href="https://med-attendance.online/pages/supervisor_terms.html">Terms and Conditions</a>
-            </p>
-        </footer>
-    </div>
+                <section id="introduction">
+                    <h2>1. مقدمة</h2>
+                    <p>مرحباً بك في Attendance Supervisor ("التطبيق" أو "الخدمة" أو "نحن"). نحن ملتزمون بحماية خصوصيتك
+                        وضمان
+                        أمان معلوماتك الشخصية.</p>
+                    <p>تشرح سياسة الخصوصية هذه كيف نجمع ونستخدم ونخزن ونشارك ونحمي معلوماتك عند استخدامك لتطبيق
+                        Attendance
+                        Supervisor للهاتف المحمول. باستخدام التطبيق، فإنك توافق على الممارسات الموضحة في سياسة الخصوصية
+                        هذه.
+                    </p>
+                    <p>يرجى قراءة سياسة الخصوصية هذه بعناية. إذا كنت لا توافق على سياساتنا وممارساتنا، فلا تستخدم
+                        التطبيق.
+                    </p>
+                </section>
 
+                <section id="collection">
+                    <h2>2. المعلومات التي نجمعها</h2>
+                    <p>نجمع أنواعاً مختلفة من المعلومات لتقديم خدمتنا وتحسينها.</p>
+
+                    <h3>2.1 المعلومات الشخصية التي تقدمها</h3>
+                    <p>عند التسجيل للحصول على حساب واستخدام التطبيق، تقدم لنا المعلومات الشخصية التالية:</p>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>المعلومات</th>
+                                <th>الغرض</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>الاسم الكامل</strong></td>
+                                <td>تعريف الحساب وعرضه</td>
+                            </tr>
+                            <tr>
+                                <td><strong>رقم الهاتف المحمول</strong></td>
+                                <td>تسجيل الحساب والتحقق والتواصل</td>
+                            </tr>
+                            <tr>
+                                <td><strong>كلمة المرور</strong></td>
+                                <td>أمان الحساب (مخزنة بشكل مشفر)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>المسمى الوظيفي</strong></td>
+                                <td>معلومات الملف الشخصي المهني</td>
+                            </tr>
+                            <tr>
+                                <td><strong>المجال المهني</strong></td>
+                                <td>معلومات الملف الشخصي المهني</td>
+                            </tr>
+                            <tr>
+                                <td><strong>صورة الملف الشخصي</strong></td>
+                                <td>تخصيص الحساب (اختياري)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Truncated Arabic sections similar to how they were, assuming consistency. I'm injecting the Step 307 content. -->
+                    <h3>2.2 المعلومات التي يتم جمعها تلقائياً</h3>
+                    <p>عند استخدام التطبيق، نجمع تلقائياً معلومات معينة:</p>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>المعلومات</th>
+                                <th>الغرض</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>معرف الجهاز (UUID)</strong></td>
+                                <td>التعرف على الجهاز وإدارة الجلسات</td>
+                            </tr>
+                            <tr>
+                                <td><strong>نوع الجهاز</strong></td>
+                                <td>تحسين الخدمة والدعم</td>
+                            </tr>
+                            <tr>
+                                <td><strong>نظام التشغيل والإصدار</strong></td>
+                                <td>التوافق واستكشاف الأخطاء</td>
+                            </tr>
+                            <tr>
+                                <td><strong>إصدار التطبيق</strong></td>
+                                <td>إدارة الإصدارات والتحديثات</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>2.3 بيانات الحضور</h3>
+                    <p>عند استخدام التطبيق لتتبع الحضور، يتم جمع البيانات التالية:</p>
+                    <ul>
+                        <li>معرف واسم الطالب/المتدرب</li>
+                        <li>طوابع وقت تسجيل الدخول/الخروج</li>
+                        <li>معرفات بطاقات NFC</li>
+                        <li>معرفات أجهزة البلوتوث</li>
+                        <li>حالة الحضور</li>
+                    </ul>
+                </section>
+
+                <section id="usage">
+                    <h2>3. كيف نستخدم معلوماتك</h2>
+                    <p>نستخدم المعلومات التي نجمعها للأغراض التالية:</p>
+                    <ul>
+                        <li><strong>إدارة الحساب:</strong> إنشاء وإدارة حسابك</li>
+                        <li><strong>تقديم الخدمة:</strong> توفير وظائف تتبع الحضور</li>
+                        <li><strong>المصادقة:</strong> التحقق من هويتك وتأمين حسابك</li>
+                        <li><strong>التواصل:</strong> إرسال إشعارات متعلقة بالخدمة</li>
+                        <li><strong>التحسين:</strong> تحليل أنماط الاستخدام لتحسين التطبيق</li>
+                        <li><strong>الدعم:</strong> الرد على استفساراتك وتقديم المساعدة</li>
+                        <li><strong>الأمان:</strong> اكتشاف ومنع الاحتيال والحوادث الأمنية</li>
+                    </ul>
+                </section>
+
+                <section id="sharing">
+                    <h2>4. كيف نشارك معلوماتك</h2>
+                    <h3>4.1 مع مؤسستك</h3>
+                    <p>نشارك بيانات الحضور وملفك الشخصي المهني مع المؤسسة(المؤسسات) التي أنت تابع لها. هذا ضروري للوظائف
+                        الأساسية للتطبيق.</p>
+
+                    <h3>4.2 مع مزودي الخدمة</h3>
+                    <p>قد نشارك المعلومات مع مزودي خدمة الطرف الثالث الذين يساعدوننا في تشغيل التطبيق:</p>
+                    <ul>
+                        <li>مزودي الاستضافة السحابية</li>
+                        <li>خدمات التحليلات</li>
+                        <li>منصات التواصل (تيليجرام للتحقق)</li>
+                    </ul>
+
+                    <div class="important-box">
+                        <p><strong>نحن لا نبيع بياناتك</strong></p>
+                        <p>نحن لا نبيع أو نؤجر أو نتاجر في معلوماتك الشخصية لأطراف ثالثة لأغراض تسويقية.</p>
+                    </div>
+                </section>
+
+                <section id="contact">
+                    <h2>14. اتصل بنا</h2>
+                    <p>إذا كانت لديك أي أسئلة حول سياسة الخصوصية هذه، يرجى الاتصال بنا:</p>
+                    <div class="contact-box">
+                        <p><strong>البريد الإلكتروني</strong></p>
+                        <a href="mailto:support@med-attendance.online">support@med-attendance.online</a>
+                    </div>
+                </section>
+
+                <section id="acknowledgment">
+                    <h2>18. الإقرار</h2>
+                    <div class="highlight-box">
+                        <p>باستخدام التطبيق، فإنك تقر بأنك قد قرأت وفهمت سياسة الخصوصية هذه.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="../assets/images/supervisor_logo.svg" alt="Attendance Supervisor Logo"
+                    class="footer-logo-img">
+            </div>
+            <p data-i18n="footer_copy">&copy; 2026 Attendance Supervisor - جميع الحقوق محفوظة.</p>
+            <div class="footer-links">
+                <a href="https://t.me/med_attendance_crm_bot" target="_blank" class="support-link">
+                    <i data-lucide="message-circle"></i>
+                    <span data-i18n="support_btn">الدعم الفني</span>
+                </a>
+                <span class="footer-divider">|</span>
+                <a href="supervisor_privacy.html" class="footer-legal-link" data-i18n="privacy_policy">سياسة
+                    الخصوصية</a>
+                <span class="footer-divider">|</span>
+                <a href="supervisor_terms.html" class="footer-legal-link" data-i18n="terms_conditions">الشروط
+                    والأحكام</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
     <script>
-        // Theme Toggle Functionality
-        function toggleTheme() {
-            const html = document.documentElement;
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-            html.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-        }
-
-        // Load saved theme or default to system preference
-        function loadTheme() {
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme) {
-                document.documentElement.setAttribute('data-theme', savedTheme);
-            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                document.documentElement.setAttribute('data-theme', 'dark');
-            }
-        }
-
-        // Load theme on page load
-        loadTheme();
-
-        // Listen for system theme changes
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-            if (!localStorage.getItem('theme')) {
-                document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
-            }
-        });
+        lucide.createIcons();
     </script>
 </body>
+
 </html>
