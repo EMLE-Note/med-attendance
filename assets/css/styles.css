@@ -42,38 +42,91 @@
 }
 
 [data-theme="dark"] {
-    /* Semantic Colors (Dark Theme) */
-    --bg-main: #020c1b;
-    --bg-card: #112240;
-    --bg-header: #0b1727;
+    /* Analogous Harmony & High Contrast */
+    /* Base: Deep Navy/Slate for backgrounds */
+    --bg-main: #0b1120;
+    /* Darkest Slate/Navy */
+    --bg-card: #1e293b;
+    /* Lighter Slate */
+    --bg-header: #0b1120;
+    /* Matches main bg */
 
-    --text-primary: #e6f1ff;
-    --text-secondary: #8892b0;
+    /* Text: Pure White for maximum legibility */
+    --text-primary: #ffffff;
+    --text-secondary: #cbd5e1;
+    /* Light Grayish Blue (Slate 300) */
 
-    --border-color: #233554;
-    --shadow-color: rgba(0, 0, 0, 0.4);
+    --border-color: #334155;
+    /* Slate 700 */
+    --shadow-color: rgba(0, 0, 0, 0.6);
 
-    /* UI Elements */
-    --btn-primary-bg: #22aaa7;
-    --btn-primary-text: #22446d;
+    /* Accents: Analogous Colors (Teal & Blue) */
+    /* Teal (Green-Blue) - Used for primary actions/highlights */
+    --brand-gold: #2dd4bf;
+    /* Bright Teal */
 
-    --btn-secondary-bg: #112240;
-    --btn-secondary-text: #22aaa7;
-    --btn-secondary-border: #22aaa7;
+    /* Blue - Used for secondary accents */
+    --brand-navy: #60a5fa;
+    /* Bright Blue (Softened) */
 
-    --btn-ghost-color: #a8b2d1;
-    --btn-ghost-border: #233554;
+    /* UI Elements - Contrast Fixes */
+    /* Primary Button: Bright Teal Background -> Dark Text */
+    --btn-primary-bg: #2dd4bf;
+    /* Teal 400 (Kept as primary accent) */
+    --btn-primary-text: #0f172a;
+
+    /* Secondary Button: Muted White/Gray -> Less visual noise */
+    --btn-secondary-bg: transparent;
+    --btn-secondary-text: #e2e8f0;
+    /* Slate 200 */
+    --btn-secondary-border: #475569;
+    /* Slate 600 */
+
+    --btn-ghost-color: #cbd5e1;
+    --btn-ghost-border: #334155;
+
+    /* Brand Overrides for Dark Mode */
+    --brand-gold: #2dd4bf;
+    /* Still allows access to Teal, but usage restricts it */
+    --brand-navy: #60a5fa;
+    /* Soft Blue */
 
     /* Institutions Section Specific (Dark) */
-    --bg-inst: #020c1b;
-    /* Darker than main bg for depth */
+    --bg-inst: #020617;
+
     --text-inst-title: #ffffff;
-    --text-inst-desc: #a8b2d1;
-    --bg-inst-card: rgba(255, 255, 255, 0.03);
-    --border-inst-card: rgba(34, 170, 167, 0.2);
-    --text-inst-card: #e6f1ff;
-    --bg-inst-icon: rgba(34, 170, 167, 0.15);
-    --pattern-opacity: 0.03;
+    --text-inst-desc: #94a3b8;
+    --bg-inst-card: rgba(30, 41, 59, 0.6);
+    --border-inst-card: rgba(96, 165, 250, 0.2);
+    /* Blue border instead of Teal */
+    --text-inst-card: #e2e8f0;
+    --bg-inst-icon: rgba(96, 165, 250, 0.1);
+    /* Blue icon bg instead of Teal */
+    --pattern-opacity: 0.05;
+}
+
+/* Specific Contrast & Color Overrides for Dark Mode */
+[data-theme="dark"] .step-number {
+    color: var(--bg-main) !important;
+    background-color: var(--brand-gold) !important;
+    /* Steps remain Teal (Primary) */
+}
+
+/* Reduce Teal usage on secondary elements */
+[data-theme="dark"] .badge {
+    color: var(--brand-navy);
+    /* Blue instead of Teal */
+    border-color: var(--brand-navy);
+}
+
+[data-theme="dark"] .feature-icon {
+    color: var(--brand-navy);
+    /* Blue instead of Teal */
+}
+
+[data-theme="dark"] .inst-feature-icon i {
+    color: var(--brand-navy);
+    /* Blue instead of Teal */
 }
 
 /* Global Reset */
