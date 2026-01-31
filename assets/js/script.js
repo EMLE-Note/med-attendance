@@ -197,7 +197,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const step2Indicator = document.getElementById('step-2-indicator');
 
     // State
-    let currentLang = 'ar';
+    // State
+    let currentLang = localStorage.getItem('lang') || 'en';
     let currentTheme = localStorage.getItem('theme') || 'light';
 
     // Initialize Theme
@@ -268,6 +269,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function updateLanguage(lang) {
+        // Persist Language
+        localStorage.setItem('lang', lang);
+
         // Update HTML dir and lang
         html.lang = lang;
         html.dir = lang === 'ar' ? 'rtl' : 'ltr';
