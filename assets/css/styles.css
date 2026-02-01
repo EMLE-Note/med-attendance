@@ -1335,10 +1335,255 @@ html[dir="ltr"] .modal-close {
     .action-buttons {
         flex-direction: column;
         align-items: center;
+        gap: 12px;
     }
 
     .btn-store-coming-soon {
         width: 100%;
         max-width: 280px;
+    }
+
+    /* Additional mobile tweaks from previous update */
+    .logo-img {
+        height: 36px;
+    }
+
+    .brand-ar,
+    .brand-en {
+        font-size: 1.1rem;
+    }
+
+    .btn-ghost {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+}
+
+/* =========================================
+   Legal Pages Styles (Terms & Privacy)
+   ========================================= */
+.legal-content {
+    padding: 80px 0;
+    line-height: 1.8;
+}
+
+.legal-content h1 {
+    margin-bottom: 30px;
+    color: var(--text-primary);
+}
+
+.legal-content h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+}
+
+.legal-content h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.legal-content p,
+.legal-content ul,
+.legal-content li {
+    margin-bottom: 15px;
+    color: var(--text-secondary);
+}
+
+.legal-content a {
+    color: var(--brand-gold);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.legal-content a:hover {
+    text-decoration: underline;
+}
+
+/* Info Boxes */
+.info-box,
+.warning-box,
+.highlight-box,
+.important-box,
+.danger-box,
+.contact-box,
+.agreement-box {
+    padding: 24px;
+    border-radius: 12px;
+    margin: 25px 0;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+}
+
+.info-box {
+    border-right: 4px solid var(--brand-navy);
+    background: rgba(34, 68, 109, 0.05);
+}
+
+.warning-box {
+    border-right: 4px solid #f59e0b;
+    background: rgba(245, 158, 11, 0.1);
+}
+
+.danger-box {
+    border-right: 4px solid #ef4444;
+    background: rgba(239, 68, 68, 0.1);
+}
+
+.highlight-box {
+    border-right: 4px solid var(--brand-gold);
+    background: rgba(34, 170, 167, 0.1);
+}
+
+.important-box {
+    border-right: 4px solid #10b981;
+    background: rgba(16, 185, 129, 0.1);
+}
+
+.contact-box {
+    text-align: center;
+    border: 1px solid var(--brand-gold);
+}
+
+.privacy-link-box {
+    background: var(--bg-card);
+    border: 2px solid var(--brand-gold);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+/* LTR Support for Boxes */
+html[dir="ltr"] .info-box,
+html[dir="ltr"] .warning-box,
+html[dir="ltr"] .highlight-box,
+html[dir="ltr"] .important-box,
+html[dir="ltr"] .danger-box {
+    border-right: none;
+    border-left: 4px solid;
+}
+
+html[dir="ltr"] .info-box {
+    border-left-color: var(--brand-navy);
+}
+
+html[dir="ltr"] .warning-box {
+    border-left-color: #f59e0b;
+}
+
+html[dir="ltr"] .danger-box {
+    border-left-color: #ef4444;
+}
+
+html[dir="ltr"] .highlight-box {
+    border-left-color: var(--brand-gold);
+}
+
+html[dir="ltr"] .important-box {
+    border-left-color: #10b981;
+}
+
+/* Table of Contents */
+.toc {
+    background: var(--bg-card);
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 40px;
+    border: 1px solid var(--border-color);
+}
+
+.toc h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--brand-gold);
+}
+
+.toc ol {
+    columns: 2;
+    column-gap: 40px;
+    padding-inline-start: 20px;
+}
+
+.toc li {
+    margin-bottom: 10px;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* Tables */
+.data-table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+    margin: 24px 0;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+    /* Force scroll on mobile */
+    font-size: 0.95rem;
+}
+
+.data-table th,
+.data-table td {
+    padding: 16px;
+    border-bottom: 1px solid var(--border-color);
+    text-align: right;
+}
+
+html[dir="ltr"] .data-table th,
+html[dir="ltr"] .data-table td {
+    text-align: left;
+}
+
+.data-table th {
+    background-color: var(--bg-inst);
+    color: var(--text-primary);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.data-table tr:hover td {
+    background-color: var(--bg-inst);
+}
+
+/* Legal Pages Mobile Optimization */
+@media (max-width: 768px) {
+    .legal-content {
+        padding: 40px 0;
+    }
+
+    .toc {
+        padding: 20px;
+    }
+
+    .toc ol {
+        columns: 1;
+    }
+
+    .legal-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .legal-content h2 {
+        font-size: 1.4rem;
+        margin-top: 30px;
+    }
+
+    .info-box,
+    .warning-box,
+    .highlight-box,
+    .important-box,
+    .danger-box {
+        padding: 16px;
+        font-size: 0.95rem;
     }
 }
