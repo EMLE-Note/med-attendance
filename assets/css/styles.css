@@ -1286,6 +1286,41 @@ html[dir="ltr"] .modal-close {
     }
 }
 
+/* Store Buttons */
+.btn-store {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 24px;
+    background: var(--bg-card);
+    border: 2px solid var(--border-color);
+    border-radius: 16px;
+    min-width: 200px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.btn-store:hover {
+    transform: translateY(-5px);
+    border-color: var(--brand-gold);
+    box-shadow: 0 8px 25px var(--shadow-color);
+}
+
+.store-text {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-align: center;
+    transition: color 0.3s;
+}
+
+.btn-store:hover .store-text {
+    color: var(--brand-gold);
+}
+
 /* Coming Soon Store Buttons */
 .btn-store-coming-soon {
     display: flex;
@@ -1324,6 +1359,8 @@ html[dir="ltr"] .modal-close {
 
 /* Responsive adjustments for store buttons */
 @media (max-width: 768px) {
+
+    .btn-store,
     .btn-store-coming-soon {
         min-width: 160px;
         padding: 14px 18px;
@@ -1333,6 +1370,7 @@ html[dir="ltr"] .modal-close {
         height: 40px;
     }
 
+    .store-text,
     .coming-soon-text {
         font-size: 0.8rem;
     }
@@ -1345,6 +1383,7 @@ html[dir="ltr"] .modal-close {
         gap: 12px;
     }
 
+    .btn-store,
     .btn-store-coming-soon {
         width: 100%;
         max-width: 280px;
