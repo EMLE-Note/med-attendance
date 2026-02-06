@@ -1244,21 +1244,21 @@ const translations = {
         // Terms & Conditions (English)
         terms_last_updated: "<strong>Last Updated:</strong> January 24, 2026",
         terms_sec1: `
-    < h2 > <span class="section-number">1.</span> Agreement to Terms</h2 >
+            <h2><span class="section-number">1.</span> Agreement to Terms</h2>
             <p>Welcome to Med Attendance. These Terms and Conditions ("Terms") constitute a legally binding agreement between you ("User," "you," or "your") and Med Attendance ("we," "us," or "our") governing your use of the Med Attendance mobile application ("App").</p>
             <p>By downloading, installing, or using the App, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree to these Terms, do not use the App.</p>
-`,
+        `,
         terms_sec2: `
-    < h2 > <span class="section-number">2.</span> Eligibility</h2 >
+            <h2><span class="section-number">2.</span> Eligibility</h2>
             <p>To use Med Attendance, you must:</p>
             <ul>
                 <li>Be at least <strong>16 years of age</strong></li>
                 <li>Be a registered student at a participating educational institution</li>
             </ul>
             <p>By using the App, you represent and warrant that you meet all eligibility requirements.</p>
-`,
+        `,
         terms_sec3: `
-    < h2 > <span class="section-number">3.</span> Account Registration</h2 >
+            <h2><span class="section-number">3.</span> Account Registration</h2>
             <h3>3.1 Account Creation</h3>
             <p>To use the App, you must create an account by providing:</p>
             <ul>
@@ -1280,7 +1280,7 @@ const translations = {
             <p>Each user may only maintain one account. Creating multiple accounts is prohibited and may result in termination of all associated accounts.</p>
 `,
         terms_sec4: `
-    < h2 > <span class="section-number">4.</span> Device Binding and Security</h2 >
+            <h2><span class="section-number">4.</span> Device Binding and Security</h2>
             <h3>4.1 Device Registration</h3>
             <div class="highlight-box">
                 <p>To prevent unauthorized access and account sharing, the App implements a device binding security measure:</p>
@@ -1323,7 +1323,7 @@ const translations = {
             <p>Violation of these rules may result in immediate account suspension or termination.</p>
 `,
         terms_sec5: `
-    < h2 > <span class="section-number">5.</span> Attendance Tracking</h2 >
+            <h2><span class="section-number">5.</span> Attendance Tracking</h2>
             <h3>5.1 Bluetooth and NFC Attendance</h3>
             <p>The App uses wireless technologies to verify attendance while you actively participate in sessions:</p>
             <ul>
@@ -1356,7 +1356,7 @@ const translations = {
             </div>
 `,
         terms_sec6: `
-    < h2 > <span class="section-number">6.</span> Acceptable Use</h2 >
+            <h2><span class="section-number">6.</span> Acceptable Use</h2>
             <h3>6.1 Permitted Use</h3>
             <p>You may use the App only for:</p>
             <ul>
@@ -1379,7 +1379,7 @@ const translations = {
             </ul>
 `,
         terms_sec7: `
-    < h2 > <span class="section-number">7.</span> Intellectual Property</h2 >
+            <h2><span class="section-number">7.</span> Intellectual Property</h2>
             <h3>7.1 Ownership</h3>
             <p>The App, including all content, features, and functionality, is owned by Med Attendance and is protected by copyright, trademark, and other intellectual property laws.</p>
             <h3>7.2 Limited License</h3>
@@ -1394,11 +1394,11 @@ const translations = {
             </ul>
 `,
         terms_sec8: `
-    < h2 > <span class="section-number">8.</span> Privacy</h2 >
+            <h2><span class="section-number">8.</span> Privacy</h2>
         <p>Your use of the App is also governed by our Privacy Policy, which is incorporated into these Terms by reference. Please review our <a href="privacy.html">Privacy Policy</a> to understand how we collect, use, and protect your information.</p>
 `,
         terms_sec9: `
-    < h2 > <span class="section-number">9.</span> Educational Institution Relationship</h2 >
+            <h2><span class="section-number">9.</span> Educational Institution Relationship</h2>
             <h3>9.1 No Guarantee</h3>
             <p>We do not guarantee that:</p>
             <ul>
@@ -1408,7 +1408,7 @@ const translations = {
             <p>You are responsible for verifying your attendance records and reporting discrepancies promptly.</p>
 `,
         terms_sec10: `
-    < h2 > <span class="section-number">10.</span> Service Availability</h2 >
+            <h2><span class="section-number">10.</span> Service Availability</h2>
             <h3>10.1 Availability</h3>
             <p>We strive to maintain the App's availability but do not guarantee uninterrupted access. The App may be unavailable due to:</p>
             <ul>
@@ -1426,7 +1426,7 @@ const translations = {
             </ul>
 `,
         terms_sec11: `
-    < h2 > <span class="section-number">11.</span> Disclaimer of Warranties</h2 >
+            <h2><span class="section-number">11.</span> Disclaimer of Warranties</h2>
         <div class="legal-text">
             <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
             <ul>
@@ -1439,7 +1439,7 @@ const translations = {
         </div>
 `,
         terms_sec12: `
-    < h2 > <span class="section-number">12.</span> Limitation of Liability</h2 >
+            <h2><span class="section-number">12.</span> Limitation of Liability</h2>
         <div class="legal-text">
             <p>To the maximum extent permitted by law, Med Attendance shall not be held responsible for any damages or losses resulting from the use of, or inability to use, the App.</p>
             <ul>
@@ -1452,7 +1452,7 @@ const translations = {
         </div>
 `,
         terms_sec13: `
-    < h2 > <span class="section-number">13.</span> Indemnification</h2 >
+            <h2><span class="section-number">13.</span> Indemnification</h2>
             <p>You agree to indemnify and hold harmless Med Attendance, its employees, and affiliates from any claims, losses, or damages arising from:</p>
             <ul>
                 <li>Your misuse of the App</li>
@@ -1461,7 +1461,7 @@ const translations = {
             </ul>
 `,
         terms_sec14: `
-    < h2 > <span class="section-number">14.</span> Account Termination</h2 >
+            <h2><span class="section-number">14.</span> Account Termination</h2>
             <h3>14.1 Termination by You</h3>
             <p>You may terminate your account at any time by:</p>
             <ul>
@@ -1485,7 +1485,7 @@ const translations = {
             </ul>
 `,
         terms_sec15: `
-    < h2 > <span class="section-number">15.</span> General Provisions</h2 >
+            <h2><span class="section-number">15.</span> General Provisions</h2>
             <h3>15.1 Entire Agreement</h3>
             <p>These Terms, together with the Privacy Policy, constitute the entire agreement between you and Med Attendance regarding the App.</p>
             <h3>15.2 Severability</h3>
@@ -1498,7 +1498,7 @@ const translations = {
             <p>We may provide notices to you through the App, email, or other reasonable means.</p>
 `,
         terms_sec16: `
-    < h2 > <span class="section-number">16.</span> Changes to Terms</h2 >
+            <h2><span class="section-number">16.</span> Changes to Terms</h2>
             <p>We reserve the right to modify these Terms at any time. We will notify you of material changes by:</p>
             <ul>
                 <li>Posting updated Terms in the App</li>
@@ -1508,34 +1508,34 @@ const translations = {
             <p>Your continued use of the App after changes are posted constitutes your acceptance of the modified Terms.</p>
 `,
         terms_contact: `
-    < div class="contact-section" >
+            <div class="contact-section">
                 <h2><span class="section-number">17.</span> Contact Information</h2>
                 <p>If you have any questions about these Terms, please contact us:</p>
                 <p><strong>Email:</strong> support@med-attendance.online </p>
             </div>
     `,
         terms_agreement: `
-    < div class="agreement-box" style = "background: var(--brand-navy); color: white; padding: 30px; border-radius: 12px; margin-top: 40px; text-align: center;" >
-        <p style="color: white; font-weight: 600; margin: 0;">By using Med Attendance, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.</p>
+            <div class="agreement-box" style="background: var(--brand-navy); color: white; padding: 30px; border-radius: 12px; margin-top: 40px; text-align: center;">
+                <p style="color: white; font-weight: 600; margin: 0;">By using Med Attendance, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.</p>
             </div>
     `,
 
         // Privacy Policy
         privacy_title: "Privacy Policy",
         privacy_intro: `
-    < h2 > Introduction</h2 >
+            <h2>Introduction</h2>
             <p>This Privacy Policy describes how Med Attendance ("we," "us," or "our") collects, uses, and shares information when you use our mobile application ("App"). We are committed to protecting your privacy and ensuring transparency about our data practices.</p>
             <p>By using Med Attendance, you agree to the collection and use of information in accordance with this policy. If you do not agree with this policy, please do not use the App.</p>
 `,
         privacy_age: `
-    < h2 > Age Requirements</h2 >
+            <h2>Age Requirements</h2>
         <div class="warning-box">
             <p><strong>Med Attendance is intended for users who are 16 years of age or older.</strong></p>
             <p>We do not knowingly collect personal information from children under 16. If you are under 16, please do not use this App or provide any personal information. If we learn that we have collected personal information from a child under 16, we will delete that information promptly.</p>
         </div>
 `,
         privacy_collect: `
-    < h2 > Information We Collect</h2 >
+            <h2>Information We Collect</h2>
             <h3>Personal Information You Provide</h3>
             <p>When you register and use Med Attendance, we collect the following information:</p>
             <ul>
@@ -1562,7 +1562,7 @@ const translations = {
             </ul>
 `,
         privacy_ble_nfc: `
-    < h3 > Bluetooth and NFC Data</h3 >
+            <h3>Bluetooth and NFC Data</h3>
         <div class="highlight-box">
             <p>To enable attendance tracking functionality, the App broadcasts limited identification data for academic verification purposes:</p>
             <ul>
@@ -1573,7 +1573,7 @@ const translations = {
         </div>
 `,
         privacy_use: `
-    < h2 > How We Use Your Information</h2 >
+            <h2>How We Use Your Information</h2>
             <p>We use the collected information for the following purposes:</p>
             <ul>
                 <li><strong>Authentication:</strong> To verify your identity and secure your account</li>
@@ -1584,7 +1584,7 @@ const translations = {
             </ul>
 `,
         privacy_permissions: `
-    < h2 > Permissions We Request</h2 >
+            <h2>Permissions We Request</h2>
         <table class="data-table">
             <thead>
                 <tr>
@@ -1613,7 +1613,7 @@ const translations = {
         </table>
 `,
         privacy_storage: `
-    < h2 > Data Storage and Security</h2 >
+            <h2>Data Storage and Security</h2>
             <h3>Local Storage</h3>
             <ul>
                 <li>Sensitive data (authentication tokens, device identifiers) is stored using encrypted secure storage on your device</li>
@@ -1621,7 +1621,7 @@ const translations = {
             </ul>
 `,
         privacy_sharing: `
-    < h2 > Data Sharing</h2 >
+            <h2>Data Sharing</h2>
             <h3>Educational Institutions</h3>
             <p>We share your attendance data with the educational institutions where you are enrolled. This includes:</p>
             <ul>
@@ -1637,14 +1637,14 @@ const translations = {
             <p>We may disclose your information if required by law, legal process, or government request, or to protect our rights, privacy, safety, or property.</p>
 `,
         privacy_retention: `
-    < h2 > Data Retention</h2 >
+            <h2>Data Retention</h2>
         <ul>
             <li><strong>Active Accounts:</strong> We retain your data as long as your account is active</li>
             <li><strong>Deleted Accounts:</strong> When you delete your account, all your personal data is immediately and permanently deleted from our servers</li>
         </ul>
 `,
         privacy_rights: `
-    < h2 > Your Rights and Choices</h2 >
+            <h2>Your Rights and Choices</h2>
             <h3>Access and Update</h3>
             <p>You can view and update your profile information at any time through the App settings.</p>
             <h3>Account Deletion</h3>
@@ -1661,7 +1661,7 @@ const translations = {
             </ul>
 `,
         privacy_changes: `
-    < h2 > Changes to This Privacy Policy</h2 >
+            <h2>Changes to This Privacy Policy</h2>
             <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by:</p>
             <ul>
                 <li>Posting the updated policy in the App</li>
@@ -1670,7 +1670,7 @@ const translations = {
             <p>Your continued use of the App after changes are posted constitutes your acceptance of the updated policy.</p>
 `,
         privacy_contact: `
-    < div class="contact-section" >
+            <div class="contact-section">
                 <h2>Contact Us</h2>
                 <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:</p>
                 <p><strong>Email:</strong> support@med-attendance.online </p>
@@ -1682,7 +1682,7 @@ const translations = {
             </div>
 `,
         privacy_summary: `
-    < h2 > Summary of Data Practices</h2 >
+            <h2>Summary of Data Practices</h2>
             <table class="data-table">
                 <thead>
                     <tr>
