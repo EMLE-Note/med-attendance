@@ -1270,7 +1270,24 @@ const translations = {
                 <li>Additional profile information as required</li>
             </ul>
             <p>You agree to provide accurate, current, and complete information during registration and to update such information to keep it accurate, current, and complete.</p>
-            <h3>3.2 Account Security</h3>
+            <h3>3.2 Student Account Verification</h3>
+            <div class="highlight-box">
+                <p>If you are a student affiliated with a university that has contracted with Med Attendance, you may verify your account by providing the following additional information:</p>
+                <ul>
+                    <li>Your official name and university email address</li>
+                    <li>Your seat number and academic information (year, department, group)</li>
+                    <li>An official photo for identity verification</li>
+                    <li>Identity documents (such as student ID or national ID)</li>
+                </ul>
+                <p><strong>Important:</strong> By submitting this information, you consent to its use for:</p>
+                <ul>
+                    <li>Documentation by the college administration</li>
+                    <li>Enrollment in your academic tracks</li>
+                    <li>Identity verification to confirm you are the account holder</li>
+                </ul>
+                <p>This data will be reviewed by the College Information Systems Department. Any future modifications require an official request approved by the Dean or Vice Dean.</p>
+            </div>
+            <h3>3.3 Account Security</h3>
             <p>You are responsible for:</p>
             <ul>
                 <li>Maintaining the confidentiality of your login credentials</li>
@@ -1278,9 +1295,9 @@ const translations = {
                 <li>Notifying us immediately of any unauthorized use of your account</li>
             </ul>
             <p>We are not liable for any loss or damage arising from your failure to protect your account credentials.</p>
-            <h3>3.3 One Account Per Person</h3>
+            <h3>3.4 One Account Per Person</h3>
             <p>Each user may only maintain one account. Creating multiple accounts is prohibited and may result in termination of all associated accounts.</p>
-`,
+        `,
         terms_sec4: `
             <h2><span class="section-number">4.</span> Device Binding and Security</h2>
             <h3>4.1 Device Registration</h3>
@@ -1323,7 +1340,7 @@ const translations = {
                 <li>Transfer your account credentials to another person</li>
             </ul>
             <p>Violation of these rules may result in immediate account suspension or termination.</p>
-`,
+        `,
         terms_sec5: `
             <h2><span class="section-number">5.</span> Attendance Tracking</h2>
             <h3>5.1 Bluetooth and NFC Attendance</h3>
@@ -1356,7 +1373,7 @@ const translations = {
                     <li>Legal action where applicable</li>
                 </ul>
             </div>
-`,
+        `,
         terms_sec6: `
             <h2><span class="section-number">6.</span> Acceptable Use</h2>
             <h3>6.1 Permitted Use</h3>
@@ -1379,7 +1396,7 @@ const translations = {
                 <li>Transmit viruses, malware, or other harmful code</li>
                 <li>Violate any applicable laws or regulations</li>
             </ul>
-`,
+        `,
         terms_sec7: `
             <h2><span class="section-number">7.</span> Intellectual Property</h2>
             <h3>7.1 Ownership</h3>
@@ -1394,11 +1411,11 @@ const translations = {
                 <li>Use the App's name, logo, or branding without permission</li>
                 <li>Sublicense or transfer your rights to use the App</li>
             </ul>
-`,
+        `,
         terms_sec8: `
             <h2><span class="section-number">8.</span> Privacy</h2>
-        <p>Your use of the App is also governed by our Privacy Policy, which is incorporated into these Terms by reference. Please review our <a href="privacy.html">Privacy Policy</a> to understand how we collect, use, and protect your information.</p>
-`,
+            <p>Your use of the App is also governed by our Privacy Policy, which is incorporated into these Terms by reference. Please review our <a href="privacy.html">Privacy Policy</a> to understand how we collect, use, and protect your information.</p>
+        `,
         terms_sec9: `
             <h2><span class="section-number">9.</span> Educational Institution Relationship</h2>
             <h3>9.1 No Guarantee</h3>
@@ -1408,7 +1425,7 @@ const translations = {
                 <li>Technical issues will not occasionally affect attendance recording</li>
             </ul>
             <p>You are responsible for verifying your attendance records and reporting discrepancies promptly.</p>
-`,
+        `,
         terms_sec10: `
             <h2><span class="section-number">10.</span> Service Availability</h2>
             <h3>10.1 Availability</h3>
@@ -1426,33 +1443,31 @@ const translations = {
                 <li>Update features and functionality</li>
                 <li>Change these Terms with notice to users</li>
             </ul>
-`,
+        `,
         terms_sec11: `
             <h2><span class="section-number">11.</span> Disclaimer of Warranties</h2>
-        <div class="legal-text">
-            <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
-            <ul>
+            <div class="legal-text">
+                <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
                 <li>IMPLIED WARRANTIES OF MERCHANTABILITY</li>
                 <li>FITNESS FOR A PARTICULAR PURPOSE</li>
                 <li>NON-INFRINGEMENT</li>
                 <li>ACCURACY OR COMPLETENESS OF CONTENT</li>
-            </ul>
-            <p>WE DO NOT WARRANT THAT THE APP WILL BE ERROR-FREE, SECURE, OR UNINTERRUPTED.</p>
-        </div>
-`,
+                <p>WE DO NOT WARRANT THAT THE APP WILL BE ERROR-FREE, SECURE, OR UNINTERRUPTED.</p>
+            </div>
+        `,
         terms_sec12: `
             <h2><span class="section-number">12.</span> Limitation of Liability</h2>
-        <div class="legal-text">
-            <p>To the maximum extent permitted by law, Med Attendance shall not be held responsible for any damages or losses resulting from the use of, or inability to use, the App.</p>
-            <ul>
-                <li>Loss of data or attendance records due to technical issues</li>
-                <li>Temporary service interruptions or unavailability</li>
-                <li>Incorrect or missed attendance caused by system or connectivity errors</li>
-                <li>Any indirect, incidental, or unexpected damages</li>
-            </ul>
-            <p>The App is provided free of charge, and therefore Med Attendance does not accept any financial liability arising from its use.</p>
-        </div>
-`,
+            <div class="legal-text">
+                <p>To the maximum extent permitted by law, Med Attendance shall not be held responsible for any damages or losses resulting from the use of, or inability to use, the App.</p>
+                <ul>
+                    <li>Loss of data or attendance records due to technical issues</li>
+                    <li>Temporary service interruptions or unavailability</li>
+                    <li>Incorrect or missed attendance caused by system or connectivity errors</li>
+                    <li>Any indirect, incidental, or unexpected damages</li>
+                </ul>
+                <p>The App is provided free of charge, and therefore Med Attendance does not accept any financial liability arising from its use.</p>
+            </div>
+        `,
         terms_sec13: `
             <h2><span class="section-number">13.</span> Indemnification</h2>
             <p>You agree to indemnify and hold harmless Med Attendance, its employees, and affiliates from any claims, losses, or damages arising from:</p>
@@ -1461,7 +1476,7 @@ const translations = {
                 <li>Your violation of these Terms or applicable laws</li>
                 <li>Any unauthorized actions performed using your account</li>
             </ul>
-`,
+        `,
         terms_sec14: `
             <h2><span class="section-number">14.</span> Account Termination</h2>
             <h3>14.1 Termination by You</h3>
@@ -1485,7 +1500,7 @@ const translations = {
                 <li>Your right to use the App ceases immediately</li>
                 <li>Your personal data will be deleted in accordance with our Privacy Policy</li>
             </ul>
-`,
+        `,
         terms_sec15: `
             <h2><span class="section-number">15.</span> General Provisions</h2>
             <h3>15.1 Entire Agreement</h3>
@@ -1498,7 +1513,7 @@ const translations = {
             <p>You may not assign or transfer your rights under these Terms. We may assign our rights without restriction.</p>
             <h3>15.5 Notices</h3>
             <p>We may provide notices to you through the App, email, or other reasonable means.</p>
-`,
+        `,
         terms_sec16: `
             <h2><span class="section-number">16.</span> Changes to Terms</h2>
             <p>We reserve the right to modify these Terms at any time. We will notify you of material changes by:</p>
@@ -1508,19 +1523,19 @@ const translations = {
                 <li>Sending notification through the App</li>
             </ul>
             <p>Your continued use of the App after changes are posted constitutes your acceptance of the modified Terms.</p>
-`,
+        `,
         terms_contact: `
             <div class="contact-section">
                 <h2><span class="section-number">17.</span> Contact Information</h2>
                 <p>If you have any questions about these Terms, please contact us:</p>
                 <p><strong>Email:</strong> support@med-attendance.online </p>
             </div>
-    `,
+        `,
         terms_agreement: `
             <div class="agreement-box" style="background: var(--brand-navy); color: white; padding: 30px; border-radius: 12px; margin-top: 40px; text-align: center;">
                 <p style="color: white; font-weight: 600; margin: 0;">By using Med Attendance, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.</p>
             </div>
-    `,
+        `,
 
         // Privacy Policy
         privacy_title: "Privacy Policy",
@@ -1528,27 +1543,46 @@ const translations = {
             <h2>Introduction</h2>
             <p>This Privacy Policy describes how Med Attendance ("we," "us," or "our") collects, uses, and shares information when you use our mobile application ("App"). We are committed to protecting your privacy and ensuring transparency about our data practices.</p>
             <p>By using Med Attendance, you agree to the collection and use of information in accordance with this policy. If you do not agree with this policy, please do not use the App.</p>
-`,
+        `,
         privacy_age: `
             <h2>Age Requirements</h2>
-        <div class="warning-box">
-            <p><strong>Med Attendance is intended for users who are 16 years of age or older.</strong></p>
-            <p>We do not knowingly collect personal information from children under 16. If you are under 16, please do not use this App or provide any personal information. If we learn that we have collected personal information from a child under 16, we will delete that information promptly.</p>
-        </div>
-`,
+            <div class="warning-box">
+                <p><strong>Med Attendance is intended for users who are 16 years of age or older.</strong></p>
+                <p>We do not knowingly collect personal information from children under 16. If you are under 16, please do not use this App or provide any personal information. If we learn that we have collected personal information from a child under 16, we will delete that information promptly.</p>
+            </div>
+        `,
         privacy_collect: `
             <h2>Information We Collect</h2>
             <h3>Personal Information You Provide</h3>
             <p>When you register and use Med Attendance, we collect the following information:</p>
             <ul>
                 <li><strong>Account Information:</strong> Full name, mobile phone number (with country code), and password</li>
-                <li><strong>Profile Information:(Optional)</strong> Profile photo, graduation year, field of study, educational status, and location/region</li>
+                <li><strong>Profile Information:</strong> Profile photo (optional for basic accounts, required for verified student accounts), graduation year, field of study, educational status, and location/region</li>
                 <li><strong>Authentication Data:</strong> Login credentials and verification codes (OTP)</li>
             </ul>
             <h3>Attendance Data</h3>
             <ul>
                 <li>Attendance records (presence/absence logs)</li>
             </ul>
+            <h3>For University Students (Account Verification)</h3>
+            <div class="highlight-box">
+                <p>If you are a student affiliated with a university that has contracted with Med Attendance and choose to verify your account, we collect additional information for the following purposes:</p>
+                <ul>
+                    <li><strong>To document student data</strong> by the college administration</li>
+                    <li><strong>To enroll students</strong> in their academic tracks</li>
+                    <li><strong>To verify identity</strong> and confirm that the account holder is indeed the student</li>
+                </ul>
+                <p><strong>Additional data collected includes:</strong></p>
+                <ul>
+                    <li><strong>Official Name:</strong> Your full legal name as registered with the university</li>
+                    <li><strong>University Email:</strong> Your official university email address (e.g., @medicine.zu.edu.eg)</li>
+                    <li><strong>Seat Number:</strong> Your academic seat/registration number</li>
+                    <li><strong>Academic Information:</strong> Academic year, academic type (department), and group/subgroup assignment</li>
+                    <li><strong>Official Photo:</strong> A clear personal photo for identity verification (cannot be changed after submission)</li>
+                    <li><strong>Identity Documents:</strong> Images of official identification documents (such as student ID or national ID) for verification purposes</li>
+                </ul>
+                <p><strong>Important:</strong> This data is reviewed by the College Information Systems Department and relevant administrative departments. Any modifications to this data can only be made through an official request approved by the Dean or Vice Dean.</p>
+            </div>
             <h3>Device Information</h3>
             <p>We automatically collect certain device information to provide and improve our services:</p>
             <ul>
@@ -1562,18 +1596,18 @@ const translations = {
                 <li>Operating system and version</li>
                 <li>App version and build number</li>
             </ul>
-`,
+        `,
         privacy_ble_nfc: `
             <h3>Bluetooth and NFC Data</h3>
-        <div class="highlight-box">
-            <p>To enable attendance tracking functionality, the App broadcasts limited identification data for academic verification purposes:</p>
-            <ul>
-                <li><strong>Bluetooth Low Energy (BLE):</strong> A unique identifier (user ID) and your display name are temporarily transmitted to nearby attendance readers when you enable Bluetooth attendance mode.</li>
-                <li><strong>NFC Card Emulation:</strong> Your unique identifier (user ID) is transmitted when you tap your device on an NFC attendance reader.</li>
-            </ul>
-            <p><strong>Important:</strong> This data is only broadcast while you actively use the attendance feature, and is limited to your user ID and display name solely for verifying your presence in sessions. It is not used for advertising or tracking purposes.</p>
-        </div>
-`,
+            <div class="highlight-box">
+                <p>To enable attendance tracking functionality, the App broadcasts limited identification data for academic verification purposes:</p>
+                <ul>
+                    <li><strong>Bluetooth Low Energy (BLE):</strong> A unique identifier (user ID) and your display name are temporarily transmitted to nearby attendance readers when you enable Bluetooth attendance mode.</li>
+                    <li><strong>NFC Card Emulation:</strong> Your unique identifier (user ID) is transmitted when you tap your device on an NFC attendance reader.</li>
+                </ul>
+                <p><strong>Important:</strong> This data is only broadcast while you actively use the attendance feature, and is limited to your user ID and display name solely for verifying your presence in sessions. It is not used for advertising or tracking purposes.</p>
+            </div>
+        `,
         privacy_use: `
             <h2>How We Use Your Information</h2>
             <p>We use the collected information for the following purposes:</p>
@@ -1584,36 +1618,36 @@ const translations = {
                 <li><strong>Service Improvement:</strong> To analyze usage patterns and improve the App</li>
                 <li><strong>Security:</strong> To detect and prevent fraud, abuse, and security incidents</li>
             </ul>
-`,
+        `,
         privacy_permissions: `
             <h2>Permissions We Request</h2>
-        <table class="data-table">
-            <thead>
-                <tr>
-                    <th>Permission</th>
-                    <th>Purpose</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Internet</strong></td>
-                    <td>Required to communicate with our servers and sync your data</td>
-                </tr>
-                <tr>
-                    <td><strong>Bluetooth</strong></td>
-                    <td>Required to broadcast your digital ID to attendance readers for proximity-based attendance</td>
-                </tr>
-                <tr>
-                    <td><strong>NFC</strong></td>
-                    <td>Required to emulate a digital ID card for tap-based attendance</td>
-                </tr>
-                <tr>
-                    <td><strong>Photo Library</strong></td>
-                    <td>Optional - used only if you choose to select an existing photo for your profile</td>
-                </tr>
-            </tbody>
-        </table>
-`,
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Permission</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Internet</strong></td>
+                        <td>Required to communicate with our servers and sync your data</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bluetooth</strong></td>
+                        <td>Required to broadcast your digital ID to attendance readers for proximity-based attendance</td>
+                    </tr>
+                    <tr>
+                        <td><strong>NFC</strong></td>
+                        <td>Required to emulate a digital ID card for tap-based attendance</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Photo Library</strong></td>
+                        <td>Optional - used only if you choose to select an existing photo for your profile</td>
+                    </tr>
+                </tbody>
+            </table>
+        `,
         privacy_storage: `
             <h2>Data Storage and Security</h2>
             <h3>Local Storage</h3>
@@ -1621,7 +1655,7 @@ const translations = {
                 <li>Sensitive data (authentication tokens, device identifiers) is stored using encrypted secure storage on your device</li>
                 <li>Non-sensitive preferences (display name, profile settings) are stored locally for offline access</li>
             </ul>
-`,
+        `,
         privacy_sharing: `
             <h2>Data Sharing</h2>
             <h3>Educational Institutions</h3>
@@ -1637,14 +1671,14 @@ const translations = {
             </div>
             <h3>Legal Requirements</h3>
             <p>We may disclose your information if required by law, legal process, or government request, or to protect our rights, privacy, safety, or property.</p>
-`,
+        `,
         privacy_retention: `
             <h2>Data Retention</h2>
-        <ul>
-            <li><strong>Active Accounts:</strong> We retain your data as long as your account is active</li>
-            <li><strong>Deleted Accounts:</strong> When you delete your account, all your personal data is immediately and permanently deleted from our servers</li>
-        </ul>
-`,
+            <ul>
+                <li><strong>Active Accounts:</strong> We retain your data as long as your account is active</li>
+                <li><strong>Deleted Accounts:</strong> When you delete your account, all your personal data is immediately and permanently deleted from our servers</li>
+            </ul>
+        `,
         privacy_rights: `
             <h2>Your Rights and Choices</h2>
             <h3>Access and Update</h3>
@@ -1661,7 +1695,7 @@ const translations = {
             <ul>
                 <li>Turning off Bluetooth or NFC in your device settings</li>
             </ul>
-`,
+        `,
         privacy_changes: `
             <h2>Changes to This Privacy Policy</h2>
             <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by:</p>
@@ -1670,7 +1704,7 @@ const translations = {
                 <li>Updating the "Last Updated" date at the top of this policy</li>
             </ul>
             <p>Your continued use of the App after changes are posted constitutes your acceptance of the updated policy.</p>
-`,
+        `,
         privacy_contact: `
             <div class="contact-section">
                 <h2>Contact Us</h2>
@@ -1682,7 +1716,7 @@ const translations = {
                     <li><a href="terms.html">Terms and Conditions</a></li>
                 </ul>
             </div>
-`,
+        `,
         privacy_summary: `
             <h2>Summary of Data Practices</h2>
             <table class="data-table">
@@ -1727,9 +1761,58 @@ const translations = {
                     </tr>
                 </tbody>
             </table>
+            <h3>For Verified University Students</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Collected</th>
+                        <th>Shared</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Official Name</td>
+                        <td>Yes</td>
+                        <td>Yes (with institution)</td>
+                        <td>Student documentation</td>
+                    </tr>
+                    <tr>
+                        <td>University Email</td>
+                        <td>Yes</td>
+                        <td>Yes (with institution)</td>
+                        <td>Account verification</td>
+                    </tr>
+                    <tr>
+                        <td>Seat Number</td>
+                        <td>Yes</td>
+                        <td>Yes (with institution)</td>
+                        <td>Academic records</td>
+                    </tr>
+                    <tr>
+                        <td>Academic Info</td>
+                        <td>Yes</td>
+                        <td>Yes (with institution)</td>
+                        <td>Track enrollment</td>
+                    </tr>
+                    <tr>
+                        <td>Official Photo</td>
+                        <td>Yes</td>
+                        <td>Yes (with institution)</td>
+                        <td>Identity verification</td>
+                    </tr>
+                    <tr>
+                        <td>Identity Documents</td>
+                        <td>Yes</td>
+                        <td>Yes (with institution)</td>
+                        <td>Identity verification</td>
+                    </tr>
+                </tbody>
+            </table>
             <p><strong>Data Encryption:</strong> Yes (in transit via HTTPS, at rest for sensitive data)</p>
             <p><strong>Data Deletion:</strong> Users can request deletion; data is immediately removed</p>
-`,
+        `,
 
         // Supervisor Terms (English)
         sup_terms_sec1: `
