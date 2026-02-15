@@ -1244,7 +1244,7 @@ const translations = {
         dash_feat3: "Manage permissions and approvals",
 
         // Terms & Conditions (English)
-        terms_last_updated: "<strong>Last Updated:</strong> January 24, 2026",
+        terms_last_updated: "<strong>Last Updated:</strong> February 14, 2026",
         terms_sec1: `
             <h2><span class="section-number">1.</span> Agreement to Terms</h2>
             <p>Welcome to Med Attendance. These Terms and Conditions ("Terms") constitute a legally binding agreement between you ("User," "you," or "your") and Med Attendance ("we," "us," or "our") governing your use of the Med Attendance mobile application ("App").</p>
@@ -1448,10 +1448,12 @@ const translations = {
             <h2><span class="section-number">11.</span> Disclaimer of Warranties</h2>
             <div class="legal-text">
                 <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
-                <li>IMPLIED WARRANTIES OF MERCHANTABILITY</li>
-                <li>FITNESS FOR A PARTICULAR PURPOSE</li>
-                <li>NON-INFRINGEMENT</li>
-                <li>ACCURACY OR COMPLETENESS OF CONTENT</li>
+                <ul>
+                    <li>IMPLIED WARRANTIES OF MERCHANTABILITY</li>
+                    <li>FITNESS FOR A PARTICULAR PURPOSE</li>
+                    <li>NON-INFRINGEMENT</li>
+                    <li>ACCURACY OR COMPLETENESS OF CONTENT</li>
+                </ul>
                 <p>WE DO NOT WARRANT THAT THE APP WILL BE ERROR-FREE, SECURE, OR UNINTERRUPTED.</p>
             </div>
         `,
@@ -1538,6 +1540,7 @@ const translations = {
         `,
 
         // Privacy Policy
+        privacy_last_updated: "<strong>Last Updated:</strong> February 14, 2026",
         privacy_title: "Privacy Policy",
         privacy_intro: `
             <h2>Introduction</h2>
@@ -1709,7 +1712,7 @@ const translations = {
             <div class="contact-section">
                 <h2>Contact Us</h2>
                 <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:</p>
-                <p><strong>Email:</strong> support@med-attendance.online </p>
+                <p><strong>Email:</strong> support@med-attendance.online</p>
                 <br>
                 <p>You may also view our:</p>
                 <ul>
@@ -1816,11 +1819,11 @@ const translations = {
 
         // Supervisor Terms (English)
         sup_terms_sec1: `
-            <h2>1. Agreement to Terms</h2>
-            <p>By downloading, installing, accessing, or using the Attendance Supervisor mobile application ("App" or "Service"), you ("User" or "you") acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions ("Terms"). If you do not agree to these Terms, you must not use the App.</p>
-        `,
+    < h2 > 1. Agreement to Terms</h2 >
+        <p>By downloading, installing, accessing, or using the Attendance Supervisor mobile application ("App" or "Service"), you ("User" or "you") acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions ("Terms"). If you do not agree to these Terms, you must not use the App.</p>
+`,
         sup_terms_sec2: `
-            <h2>2. Service Description</h2>
+    < h2 > 2. Service Description</h2 >
             <p>Attendance Supervisor is a mobile application designed for educational and training institutions to manage and track attendance. The App provides the following features:</p>
             <ul>
                 <li><strong>Attendance Tracking:</strong> Recording student/trainee attendance using multiple methods including NFC cards, Bluetooth (BLE) devices, and manual entry.</li>
@@ -1829,18 +1832,18 @@ const translations = {
                 <li><strong>Attendance Reports:</strong> Viewing attendance statistics, lists, and historical records.</li>
                 <li><strong>Offline Operation:</strong> Recording attendance while offline with automatic synchronization when connectivity is restored.</li>
             </ul>
-        `,
+`,
         sup_terms_sec3: `
-            <h2>3. Eligibility</h2>
+    < h2 > 3. Eligibility</h2 >
             <p>To use the App, you must:</p>
             <ul>
                 <li>Be at least 18 years of age.</li>
                 <li>Be an authorized member of an institution subscribing to the Service.</li>
                 <li>Have the legal capacity to enter into a binding agreement.</li>
             </ul>
-        `,
+`,
         sup_terms_sec4: `
-            <h2>4. User Accounts</h2>
+    < h2 > 4. User Accounts</h2 >
             <h3>4.1 Account Registration</h3>
             <p>To use the App, you must create an account by providing accurate and complete information, including:</p>
             <ul>
@@ -1862,9 +1865,9 @@ const translations = {
             <p>Your account is currently restricted to use on <strong>one device at a time</strong>. Using your account on multiple devices simultaneously is not supported and may result in service interruptions.</p>
             <h3>4.4 Phone Verification</h3>
             <p>For security purposes, you are required to verify your mobile phone number. Verification can be completed through the Telegram platform. When using Telegram verification, you will interact with our designated verification bot to receive a verification code.</p>
-        `,
+`,
         sup_terms_sec5: `
-            <h2>5. User Responsibilities and Conduct</h2>
+    < h2 > 5. User Responsibilities and Conduct</h2 >
             <p>By using the App, you agree to:</p>
             <ul>
                 <li>Provide accurate, current, and complete information.</li>
@@ -1880,9 +1883,9 @@ const translations = {
                 <li>Not impersonate any person or entity.</li>
                 <li>Not use automated systems or software to access the Service without permission.</li>
             </ul>
-        `,
+`,
         sup_terms_sec6: `
-            <h2>6. Device Permissions</h2>
+    < h2 > 6. Device Permissions</h2 >
             <p>The App requires specific device permissions to function correctly:</p>
             <h3>6.1 Bluetooth and Location</h3>
             <p>The App uses Bluetooth Low Energy (BLE) technology to scan for and detect student/trainee devices for attendance tracking.</p>
@@ -1898,9 +1901,9 @@ const translations = {
             <div class="highlight-box">
                 <p>All permissions are used solely for the core attendance tracking functionality of the App and not for any other purpose.</p>
             </div>
-        `,
+`,
         sup_terms_sec7: `
-            <h2>7. Data Ownership and Intellectual Property</h2>
+    < h2 > 7. Data Ownership and Intellectual Property</h2 >
             <h3>7.1 App Ownership</h3>
             <p>The App, including its design, features, functionality, source code, graphics, user interface, and all related intellectual property rights, is owned by the App Provider and protected by copyright, trademark, and other intellectual property laws.</p>
             <h3>7.2 Attendance Data Ownership</h3>
@@ -1913,9 +1916,9 @@ const translations = {
                 <li>Use the App for commercial purposes outside of institutional attendance management.</li>
                 <li>Remove or alter any proprietary notices or marks on the App.</li>
             </ul>
-        `,
+`,
         sup_terms_sec8: `
-            <h2>8. Third-Party Services</h2>
+    < h2 > 8. Third - Party Services</h2 >
             <h3>Telegram Integration</h3>
             <p>The App integrates with Telegram for phone number verification purposes only. When you choose to verify your phone number via Telegram:</p>
             <ul>
@@ -1924,18 +1927,18 @@ const translations = {
                 <li>Your interaction is subject to Telegram's Terms of Service and Privacy Policy.</li>
             </ul>
             <p>We are not responsible for the availability, security, or practices of Telegram or any third-party service.</p>
-        `,
+`,
         sup_terms_sec9: `
-            <h2>9. App Updates</h2>
+    < h2 > 9. App Updates</h2 >
             <p>The App may be updated from time to time to improve functionality, fix bugs, or address security issues. Some updates may be:</p>
             <ul>
                 <li><strong>Mandatory:</strong> Required to continue using the App. You will be prompted to update and effectively locked out until the update is installed.</li>
                 <li><strong>Optional:</strong> Recommended but not required for continued use.</li>
             </ul>
             <p>We recommend keeping the App updated to the latest version to ensure optimal performance and security.</p>
-        `,
+`,
         sup_terms_sec10: `
-            <h2>10. Offline Use and Data Sync</h2>
+    < h2 > 10. Offline Use and Data Sync</h2 >
             <p>The App supports offline functionality, allowing you to record attendance without an active internet connection. When offline:</p>
             <ul>
                 <li>Attendance records are stored locally on your device.</li>
@@ -1943,9 +1946,9 @@ const translations = {
                 <li>There is no limit to how long data can remain stored offline before syncing.</li>
             </ul>
             <p>You are responsible for ensuring your device eventually connects to the internet to sync pending attendance records.</p>
-        `,
+`,
         sup_terms_sec11: `
-            <h2>11. Service Availability</h2>
+    < h2 > 11. Service Availability</h2 >
             <p>The Service is provided on an "as is" and "as available" basis. We strive to maintain consistent service availability but do not guarantee uninterrupted or error-free operation. The Service may be temporarily unavailable due to:</p>
             <ul>
                 <li>Scheduled or unscheduled maintenance.</li>
@@ -1953,9 +1956,9 @@ const translations = {
                 <li>Factors beyond our reasonable control.</li>
             </ul>
             <p>We will not be liable for any loss or damage resulting from service interruptions or unavailability.</p>
-        `,
+`,
         sup_terms_sec12: `
-            <h2>12. Disclaimer of Warranties</h2>
+    < h2 > 12. Disclaimer of Warranties</h2 >
             <h3>12.1 "As Is" Basis</h3>
             <p class="uppercase"><strong>The App and Service are provided "as is" and "as available" without warranties of any kind, whether express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement.</strong></p>
             <h3>12.2 No Guarantee</h3>
@@ -1964,19 +1967,19 @@ const translations = {
                 <li>The App will meet your specific requirements.</li>
                 <li>The App will be uninterrupted, timely, secure, or error-free.</li>
             </ul>
-        `,
+`,
         sup_terms_sec13: `
-            <h2>13. Limitation of Liability</h2>
-            <div class="warning-box">
-                <p><strong>To the maximum extent permitted by applicable law:</strong></p>
-                <ul>
-                    <li>In no event shall the App Provider be liable for any indirect, incidental, special, consequential, or punitive damages.</li>
-                    <li>The App Provider shall not be liable for any direct or indirect damages resulting from your use or inability to use the App.</li>
-                </ul>
-            </div>
-        `,
+    < h2 > 13. Limitation of Liability</h2 >
+        <div class="warning-box">
+            <p><strong>To the maximum extent permitted by applicable law:</strong></p>
+            <ul>
+                <li>In no event shall the App Provider be liable for any indirect, incidental, special, consequential, or punitive damages.</li>
+                <li>The App Provider shall not be liable for any direct or indirect damages resulting from your use or inability to use the App.</li>
+            </ul>
+        </div>
+`,
         sup_terms_sec14: `
-            <h2>14. Indemnification</h2>
+    < h2 > 14. Indemnification</h2 >
             <p>You agree to indemnify, defend, and hold harmless the App Provider and its affiliates, officers, directors, employees, agents, and licensors from and against any and all claims, damages, obligations, losses, liabilities, costs, and expenses (including attorney's fees) arising from:</p>
             <ul>
                 <li>Your use of the App.</li>
@@ -1984,9 +1987,9 @@ const translations = {
                 <li>Your violation of any third-party right.</li>
                 <li>Your violation of any applicable law or regulation.</li>
             </ul>
-        `,
+`,
         sup_terms_sec15: `
-            <h2>15. Account Termination</h2>
+    < h2 > 15. Account Termination</h2 >
             <h3>15.1 Termination by Institution</h3>
             <p>Your affiliated Institution has the right to terminate your access to the App at any time and for any reason, in accordance with its internal policies.</p>
             <h3>15.2 Termination for Violations</h3>
@@ -1997,9 +2000,9 @@ const translations = {
                 <li>Violate any applicable laws or regulations.</li>
                 <li>Breach any provision of these Terms.</li>
             </ul>
-        `,
+`,
         sup_terms_sec16: `
-            <h2>16. Data Deletion</h2>
+    < h2 > 16. Data Deletion</h2 >
             <h3>16.1 Account Deletion Request</h3>
             <p>You can request to delete your account through the App settings. Upon account deletion:</p>
             <ul>
@@ -2009,25 +2012,25 @@ const translations = {
             </ul>
             <h3>16.2 Data Export</h3>
             <p>Currently, the App does not support user-initiated data export functionality. Attendance data is accessible to your Institution through its administrative access.</p>
-        `,
+`,
         sup_terms_sec17: `
-            <h2>17. Privacy Policy</h2>
+    < h2 > 17. Privacy Policy</h2 >
             <p>Your use of the App is also governed by our Privacy Policy, which describes how we collect, use, store, and protect your personal information. The Privacy Policy is incorporated into these Terms by reference.</p>
             <div class="highlight-box">
                 <p><strong>Important:</strong> By using the App, you acknowledge that you have read and understood our <a href="supervisor_privacy.html" target="_blank">Privacy Policy</a>.</p>
             </div>
-        `,
+`,
         sup_terms_sec18: `
-            <h2>18. Governing Law and Dispute Resolution</h2>
+    < h2 > 18. Governing Law and Dispute Resolution</h2 >
             <h3>18.1 Governing Law</h3>
             <p>These Terms shall be governed by and construed in accordance with the laws of the <strong>Arab Republic of Egypt</strong>, without regard to its conflict of law principles.</p>
             <h3>18.2 Jurisdiction</h3>
             <p>Any disputes arising out of or relating to these Terms or the use of the App shall be subject to the exclusive jurisdiction of the courts of Egypt.</p>
             <h3>18.3 Dispute Resolution</h3>
             <p>Prior to initiating any legal proceedings, you agree to first attempt to resolve any dispute informally by contacting us at the email address provided in Section 21. We will attempt to resolve the dispute through good faith negotiations.</p>
-        `,
+`,
         sup_terms_sec19: `
-            <h2>19. Changes to Terms</h2>
+    < h2 > 19. Changes to Terms</h2 >
             <p>We reserve the right to modify, alter, or update these Terms at any time at our sole discretion. When we make changes:</p>
             <ul>
                 <li>The updated Terms will be posted within the App.</li>
@@ -2035,9 +2038,9 @@ const translations = {
                 <li>For material changes, we may provide additional notice through the App or via email.</li>
             </ul>
             <p>Your continued use of the App following any changes constitutes your acceptance of the new Terms. If you do not agree to the modified Terms, you must stop using the App.</p>
-        `,
+`,
         sup_terms_sec20: `
-            <h2>20. General Provisions</h2>
+    < h2 > 20. General Provisions</h2 >
             <h3>20.1 Entire Agreement</h3>
             <p>These Terms, together with our <a href="supervisor_privacy.html" target="_blank">Privacy Policy</a>, constitute the entire agreement between you and the App Provider regarding your use of the Service and supersede all prior agreements and understandings.</p>
             <h3>20.2 Severability</h3>
@@ -2050,31 +2053,31 @@ const translations = {
             <p>We shall not be liable for any failure or delay in performing our obligations under these Terms due to circumstances beyond our reasonable control, including but not limited to acts of God, war, terrorism, riots, government action, or technical failures.</p>
             <h3>20.6 Language</h3>
             <p>These Terms are provided in English. In the event of any conflict between the English version and any translation, the English version shall prevail.</p>
-        `,
+`,
         sup_terms_sec21: `
-            <h2>21. Contact Information</h2>
+    < h2 > 21. Contact Information</h2 >
             <p>If you have any questions, concerns, or complaints regarding these Terms or the App, please contact us at:</p>
             <div class="contact-box">
                 <p><strong>Email</strong></p>
                 <a href="mailto:support@med-attendance.online">support@med-attendance.online</a>
             </div>
-        `,
+`,
         sup_terms_sec22: `
-            <h2>22. Acknowledgment</h2>
-            <div class="highlight-box">
-                <p>By using the Attendance Supervisor App, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.</p>
-            </div>
-        `,
+    < h2 > 22. Acknowledgment</h2 >
+        <div class="highlight-box">
+            <p>By using the Attendance Supervisor App, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.</p>
+        </div>
+`,
 
         // Supervisor Privacy (English)
         sup_privacy_intro: `
-            <h2>1. Introduction</h2>
+    < h2 > 1. Introduction</h2 >
             <p>Welcome to Attendance Supervisor ("App", "Service", "we", "us", or "our"). We are committed to protecting your privacy and ensuring the security of your personal information.</p>
             <p>This Privacy Policy explains how we collect, use, store, share, and protect your information when you use the Attendance Supervisor mobile application. By using the App, you agree to the practices described in this Privacy Policy.</p>
             <p>Please read this Privacy Policy carefully. If you do not agree with our policies and practices, do not use the App.</p>
-        `,
+`,
         sup_privacy_collect: `
-            <h2>2. Information We Collect</h2>
+    < h2 > 2. Information We Collect</h2 >
             <p>We collect various types of information to provide and improve our Service.</p>
             <h3>2.1 Personal Information You Provide</h3>
             <p>When you register for an account and use the App, you provide us with the following personal information:</p>
@@ -2149,9 +2152,9 @@ const translations = {
                 <li>Bluetooth device identifiers</li>
                 <li>Attendance status</li>
             </ul>
-        `,
+`,
         sup_privacy_usage: `
-            <h2>3. How We Use Your Information</h2>
+    < h2 > 3. How We Use Your Information</h2 >
             <p>We use the information we collect for the following purposes:</p>
             <ul>
                 <li><strong>Account Management:</strong> Creating and administering your account</li>
@@ -2162,9 +2165,9 @@ const translations = {
                 <li><strong>Support:</strong> Responding to your inquiries and providing assistance</li>
                 <li><strong>Security:</strong> Detecting and preventing fraud and security incidents</li>
             </ul>
-        `,
+`,
         sup_privacy_sharing: `
-            <h2>4. How We Share Your Information</h2>
+    < h2 > 4. How We Share Your Information</h2 >
             <div class="highlight-box">
                 <p><strong>We do not sell your personal information.</strong></p>
             </div>
@@ -2185,9 +2188,9 @@ const translations = {
             </ul>
             <h3>4.3 Legal Requirements</h3>
             <p>We may disclose your information if required to do so by law, legal process, or government request, or to protect our rights, privacy, safety, or property.</p>
-        `,
+`,
         sup_privacy_storage: `
-            <h2>5. Data Storage and Security</h2>
+    < h2 > 5. Data Storage and Security</h2 >
             <h3>5.1 Data Storage</h3>
             <p>Your data is stored in the following ways:</p>
             <table class="data-table">
@@ -2230,9 +2233,9 @@ const translations = {
                 <li><strong>Access Controls:</strong> Server access is restricted to authorized personnel only.</li>
                 <li><strong>Session Management:</strong> Automatic session timeout for security.</li>
             </ul>
-        `,
+`,
         sup_privacy_ownership: `
-            <h2>6. Data Ownership</h2>
+    < h2 > 6. Data Ownership</h2 >
             <h3>6.1 Your Personal Data</h3>
             <p>You retain ownership of your personal profile information (name, phone number, job title, etc.).</p>
             <h3>6.2 Attendance Data</h3>
@@ -2245,9 +2248,9 @@ const translations = {
                 </ul>
             </div>
             <p>Your Institution has full rights to access, manage, and use this attendance data in accordance with its policies.</p>
-        `,
+`,
         sup_privacy_retention: `
-            <h2>7. Data Retention</h2>
+    < h2 > 7. Data Retention</h2 >
             <h3>7.1 Active Accounts</h3>
             <p>We retain your personal information for as long as your account is active and as needed to provide you with the Service.</p>
             <h3>7.2 After Account Deletion</h3>
@@ -2278,9 +2281,9 @@ const translations = {
                     </tr>
                 </tbody>
             </table>
-        `,
+`,
         sup_privacy_rights: `
-            <h2>8. Your Rights and Choices</h2>
+    < h2 > 8. Your Rights and Choices</h2 >
             <h3>8.1 Access Your Information</h3>
             <p>You can access and view your profile information through the App's profile settings.</p>
             <h3>8.2 Update Your Information</h3>
@@ -2296,24 +2299,24 @@ const translations = {
             <p>Currently, the App does not support user-initiated data export. Attendance data may be available through your Institution's administrative access.</p>
             <h3>8.5 Withdraw Consent</h3>
             <p>You may withdraw your consent to data processing by deleting your account. Note that withdrawing consent may affect your ability to use the Service.</p>
-        `,
+`,
         sup_privacy_children: `
-            <h2>9. Children's Privacy</h2>
-            <div class="warning-box">
-                <p>Attendance Supervisor is <strong>not intended for use by children under the age of 18</strong>. We do not knowingly collect personal information from children under 18.</p>
-            </div>
-        `,
+    < h2 > 9. Children's Privacy</h2>
+        < div class="warning-box" >
+            <p>Attendance Supervisor is <strong>not intended for use by children under the age of 18</strong>. We do not knowingly collect personal information from children under 18.</p>
+            </div >
+    `,
         sup_privacy_thirdparty: `
-            <h2>10. Third-Party Services and Links</h2>
+    < h2 > 10. Third - Party Services and Links</h2 >
             <h3>Telegram</h3>
             <p>The App uses Telegram solely for phone verification purposes. When using Telegram verification:</p>
             <ul>
                 <li>You are subject to Telegram's Privacy Policy and Terms of Service</li>
                 <li>We only receive verification confirmation; we do not access your Telegram data</li>
             </ul>
-        `,
+`,
         sup_privacy_offline: `
-            <h2>11. Offline Data and Sync</h2>
+    < h2 > 11. Offline Data and Sync</h2 >
             <h3>11.1 Offline Storage</h3>
             <p>The App stores attendance data locally on your device when you are offline. This includes:</p>
             <ul>
@@ -2322,29 +2325,29 @@ const translations = {
             </ul>
             <h3>11.2 Synchronization</h3>
             <p>When internet connectivity is restored, offline data is automatically synced with our servers.</p>
-        `,
+`,
         sup_privacy_changes: `
-            <h2>12. Changes to This Privacy Policy</h2>
-            <p>We may update this Privacy Policy from time to time. The updated Privacy Policy will be posted within the App.</p>
-        `,
+    < h2 > 12. Changes to This Privacy Policy</h2 >
+        <p>We may update this Privacy Policy from time to time. The updated Privacy Policy will be posted within the App.</p>
+`,
         sup_privacy_contact: `
-            <h2>13. Contact Us</h2>
+    < h2 > 13. Contact Us</h2 >
             <p>If you have any questions, please contact us at:</p>
             <div class="contact-box">
                 <p><strong>Email</strong></p>
                 <a href="mailto:support@med-attendance.online">support@med-attendance.online</a>
             </div>
-        `,
+`,
         sup_privacy_legal: `
-            <h2>14. Legal Basis for Processing</h2>
-            <p>We process your personal information based on consent, contract performance, legitimate interests, and legal obligation.</p>
-        `,
+    < h2 > 14. Legal Basis for Processing</h2 >
+        <p>We process your personal information based on consent, contract performance, legitimate interests, and legal obligation.</p>
+`,
         sup_privacy_governing: `
-            <h2>15. Governing Law</h2>
-            <p>This Privacy Policy is governed by the laws of the <strong>Arab Republic of Egypt</strong>. Any disputes arising from this Privacy Policy are subject to the exclusive jurisdiction of the courts of Egypt.</p>
-        `,
+    < h2 > 15. Governing Law</h2 >
+        <p>This Privacy Policy is governed by the laws of the <strong>Arab Republic of Egypt</strong>. Any disputes arising from this Privacy Policy are subject to the exclusive jurisdiction of the courts of Egypt.</p>
+`,
         sup_privacy_summary: `
-            <h2>16. Summary of Key Points</h2>
+    < h2 > 16. Summary of Key Points</h2 >
             <p>For your convenience, here is a summary of the key points of this Privacy Policy:</p>
             <table class="data-table">
                 <thead>
@@ -2380,12 +2383,12 @@ const translations = {
                     </tr>
                 </tbody>
             </table>
-        `,
+`,
         sup_privacy_acknowledgment: `
-            <h2>17. Acknowledgment</h2>
-            <div class="highlight-box">
-                <p>By using the Attendance Supervisor App, you acknowledge that you have read, understood, and agree to the terms of this Privacy Policy and our <a href="supervisor_terms.html" target="_blank">Terms and Conditions</a>, and consent to the collection, use, and sharing of your information as described herein.</p>
-            </div>
-        `,
+    < h2 > 17. Acknowledgment</h2 >
+        <div class="highlight-box">
+            <p>By using the Attendance Supervisor App, you acknowledge that you have read, understood, and agree to the terms of this Privacy Policy and our <a href="supervisor_terms.html" target="_blank">Terms and Conditions</a>, and consent to the collection, use, and sharing of your information as described herein.</p>
+        </div>
+`,
     }
 };
